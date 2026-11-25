@@ -2,14 +2,256 @@
   "alliance": "",
   "updated": "2026-11-26",
   "next_update": "2026-11-29",
-  "window": {"start": "2026-11-26", "end": "2026-12-06"},
+  "window": {
+    "start": "2026-11-26",
+    "end": "2026-12-06"
+  },
   "headline": "Two battle weekends and KvK. Tri-Alliance Clash on Saturday, Swordland on Sunday, then five KvK prep days and the KvK battle on Saturday Dec 5.",
+  "timeline": [
+    {
+      "name": "Tri-Alliance Clash",
+      "level": "main",
+      "start": "2026-11-28T00:00Z",
+      "end": "2026-11-29T00:00Z",
+      "event": "tri",
+      "note": "One hour at our registered slot."
+    },
+    {
+      "name": "KvK matchmaking",
+      "level": "main",
+      "start": "2026-11-28T00:00Z",
+      "end": "2026-11-30T00:00Z",
+      "event": "kvk",
+      "note": "Opponent revealed on Sunday."
+    },
+    {
+      "name": "Swordland Showdown",
+      "level": "main",
+      "start": "2026-11-29T00:00Z",
+      "end": "2026-11-30T00:00Z",
+      "event": "swordland",
+      "note": "One hour at our registered time."
+    },
+    {
+      "name": "KvK prep – 5 days",
+      "level": "main",
+      "start": "2026-11-30T00:00Z",
+      "end": "2026-12-05T10:00Z",
+      "event": "kvk",
+      "note": "A new theme every day. Open all three chests daily."
+    },
+    {
+      "name": "KvK battle",
+      "level": "main",
+      "start": "2026-12-05T10:00Z",
+      "end": "2026-12-05T22:00Z",
+      "event": "kvk",
+      "note": "10:00–22:00 UTC. Shield before 10:00 if you can't play."
+    },
+    {
+      "name": "Castle fight",
+      "level": "main",
+      "start": "2026-12-05T12:00Z",
+      "end": "2026-12-05T17:00Z",
+      "event": "castle",
+      "note": "12:00–17:00 UTC inside the KvK battle."
+    },
+    {
+      "name": "Field Triage",
+      "level": "main",
+      "start": "2026-12-05T22:00Z",
+      "end": "2026-12-07T22:00Z",
+      "event": "kvk",
+      "note": "Send all 20 Rescue Orders."
+    },
+    {
+      "name": "Alliance Brawl",
+      "level": "main",
+      "start": "2026-12-07T00:00Z",
+      "end": "2026-12-13T12:00Z",
+      "event": "brawl",
+      "note": "Be in the alliance by Sun Dec 6, 23:00 UTC."
+    },
+    {
+      "name": "Championship rounds",
+      "level": "routine",
+      "start": "2026-11-26T00:00Z",
+      "end": "2026-11-28T12:00Z",
+      "event": "championship"
+    },
+    {
+      "name": "Alliance Mobilization",
+      "level": "routine",
+      "start": "2026-11-23T00:00Z",
+      "end": "2026-11-29T00:00Z",
+      "event": "mobilization"
+    },
+    {
+      "name": "Sanctuary Battle",
+      "level": "routine",
+      "start": "2026-11-27T00:00Z",
+      "end": "2026-11-28T00:00Z",
+      "event": "sanctuary"
+    },
+    {
+      "name": "Armament Competition",
+      "level": "routine",
+      "start": "2026-11-27T00:00Z",
+      "end": "2026-11-29T00:00Z"
+    },
+    {
+      "name": "Mystic Divination",
+      "level": "routine",
+      "start": "2026-11-27T00:00Z",
+      "end": "2026-11-29T00:00Z"
+    },
+    {
+      "name": "Caesar's Fury",
+      "level": "routine",
+      "start": "2026-11-28T00:00Z",
+      "end": "2026-12-01T00:00Z",
+      "event": "caesar"
+    },
+    {
+      "name": "Officer Project",
+      "level": "routine",
+      "start": "2026-11-29T00:00Z",
+      "end": "2026-12-01T00:00Z"
+    },
+    {
+      "name": "Championship sign-up",
+      "level": "routine",
+      "start": "2026-11-30T00:00Z",
+      "end": "2026-12-02T23:00Z",
+      "event": "championship",
+      "note": "Closes Wed 23:00 UTC."
+    },
+    {
+      "name": "Golden Glaives",
+      "level": "routine",
+      "start": "2026-11-30T00:00Z",
+      "end": "2026-12-02T00:00Z"
+    },
+    {
+      "name": "Treasure Cove",
+      "level": "routine",
+      "start": "2026-11-30T00:00Z",
+      "end": "2026-12-07T00:00Z"
+    },
+    {
+      "name": "Viking Vengeance",
+      "level": "routine",
+      "start": "2026-12-01T00:00Z",
+      "end": "2026-12-02T00:00Z",
+      "event": "vikings",
+      "note": "At the hour the Ops Officer posts."
+    },
+    {
+      "name": "Hero Roulette",
+      "level": "routine",
+      "start": "2026-12-01T00:00Z",
+      "end": "2026-12-04T00:00Z"
+    },
+    {
+      "name": "Defeat Beasts",
+      "level": "routine",
+      "start": "2026-12-01T00:00Z",
+      "end": "2026-12-03T00:00Z"
+    },
+    {
+      "name": "Eternity's Reach",
+      "level": "routine",
+      "start": "2026-12-01T00:00Z",
+      "end": "2026-12-02T00:00Z"
+    },
+    {
+      "name": "Sanctuary sign-up",
+      "level": "routine",
+      "start": "2026-12-01T00:00Z",
+      "end": "2026-12-04T00:00Z",
+      "event": "sanctuary"
+    },
+    {
+      "name": "Viking Vengeance",
+      "level": "routine",
+      "start": "2026-12-03T00:00Z",
+      "end": "2026-12-04T00:00Z",
+      "event": "vikings",
+      "note": "At the hour the Ops Officer posts."
+    },
+    {
+      "name": "Championship rounds",
+      "level": "routine",
+      "start": "2026-12-03T00:00Z",
+      "end": "2026-12-05T12:00Z",
+      "event": "championship"
+    },
+    {
+      "name": "Blizzard Brawl",
+      "level": "routine",
+      "start": "2026-12-03T00:00Z",
+      "end": "2026-12-05T00:00Z",
+      "event": "blizzard"
+    },
+    {
+      "name": "Sanctuary Battle",
+      "level": "routine",
+      "start": "2026-12-04T00:00Z",
+      "end": "2026-12-05T00:00Z",
+      "event": "sanctuary"
+    },
+    {
+      "name": "Finder's Fortune",
+      "level": "routine",
+      "start": "2026-12-06T00:00Z",
+      "end": "2026-12-09T00:00Z"
+    },
+    {
+      "name": "Merchant Empire",
+      "level": "routine",
+      "start": "2026-12-07T00:00Z",
+      "end": "2026-12-14T00:00Z",
+      "event": "merchant"
+    }
+  ],
+  "recurring": [
+    {
+      "name": "Bear Hunt",
+      "note": "Every 2 days at our fixed hour – check the alliance notice.",
+      "event": "bear"
+    }
+  ],
   "goals": [
-    {"owner": "war", "title": "Full squads for both weekend battles", "when": "Sat Nov 28 and Sun Nov 29", "detail": "Tri-Alliance Clash and Swordland Showdown, one hour each. Only confirmed players are registered."},
-    {"owner": "members", "title": "Every KvK chest, every day", "when": "Mon Nov 30 – Fri Dec 4", "detail": "Spend on each day's theme and open all three daily chests. Saved speedups go in now, not before."},
-    {"owner": "war", "title": "Support the lead alliance in KvK", "when": "Sat Dec 5, 10:00–22:00 UTC", "detail": "Fill the rallies we are given and hold our turret. Nobody marches on the castle alone."},
-    {"owner": "people", "title": "Nobody zeroed, nobody left out", "when": "Dec 5 – Dec 6", "detail": "Absentees shielded before 10:00 UTC. All Rescue Orders sent after the battle. Recruits in before Sun Dec 6 23:00 UTC."},
-    {"owner": "people", "title": "40 Championship marches", "when": "Register by Wed Dec 2, 23:00 UTC", "detail": "The minimum is 10. More marches means stronger lanes."}
+    {
+      "owner": "war",
+      "title": "Full squads for both weekend battles",
+      "when": "Sat Nov 28 and Sun Nov 29",
+      "detail": "Tri-Alliance Clash and Swordland Showdown, one hour each. Only confirmed players are registered."
+    },
+    {
+      "owner": "members",
+      "title": "Every KvK chest, every day",
+      "when": "Mon Nov 30 – Fri Dec 4",
+      "detail": "Spend on each day's theme and open all three daily chests. Saved speedups go in now, not before."
+    },
+    {
+      "owner": "war",
+      "title": "Support the lead alliance in KvK",
+      "when": "Sat Dec 5, 10:00–22:00 UTC",
+      "detail": "Fill the rallies we are given and hold our turret. Nobody marches on the castle alone."
+    },
+    {
+      "owner": "people",
+      "title": "Nobody zeroed, nobody left out",
+      "when": "Dec 5 – Dec 6",
+      "detail": "Absentees shielded before 10:00 UTC. All Rescue Orders sent after the battle. Recruits in before Sun Dec 6 23:00 UTC."
+    },
+    {
+      "owner": "people",
+      "title": "40 Championship marches",
+      "when": "Register by Wed Dec 2, 23:00 UTC",
+      "detail": "The minimum is 10. More marches means stronger lanes."
+    }
   ],
   "rules": [
     "Until Monday Nov 30, hold speedups, Truegold, roulette spins, hero shards, taming marks, forgehammers and widgets. They score far more in KvK prep.",
@@ -20,137 +262,494 @@
     "Can't play on Saturday Dec 5? Tell the People Officer and shield before 10:00 UTC."
   ],
   "days": [
-    {"date": "2026-11-26", "label": "Rosters", "on": [
-      {"text": "Tri-Alliance registration closes", "event": "tri"},
-      {"text": "Swordland registration closes", "event": "swordland"},
-      {"text": "Championship rounds", "event": "championship"},
-      {"text": "Alliance Mobilization", "event": "mobilization"}
-    ], "tasks": [
-      {"role": "members", "text": "Tell the People Officer today if you can play Saturday, Sunday or both."},
-      {"role": "events", "text": "Confirm the final Tri-Alliance and Swordland times and lock both rosters with confirmed players only."},
-      {"role": "war", "text": "Set Championship lanes before each round: two strong lanes, give up the third."},
-      {"role": "ops", "text": "Refresh the Mobilization board on every cooldown; clear speedup and shard missions."}
-    ]},
-    {"date": "2026-11-27", "label": "Sanctuary", "on": [
-      {"text": "Sanctuary Battle", "event": "sanctuary"},
-      {"text": "Championship rounds", "event": "championship"},
-      {"text": "Alliance Mobilization", "event": "mobilization"},
-      "Armament Competition", "Mystic Divination"
-    ], "tasks": [
-      {"role": "members", "text": "Join the Sanctuary NPC rally when it is called. Finish both days of Mystic Divination missions."},
-      {"role": "war", "text": "Lead the Sanctuary NPC rally with a full rally, then garrison at once."},
-      {"role": "events", "text": "Hand out Ruler's chests after a win. Post tomorrow's Tri-Alliance time and roster."},
-      {"role": "ops", "text": "Refresh the Mobilization board on every cooldown."}
-    ]},
-    {"date": "2026-11-28", "label": "Clash", "kind": "peak", "on": [
-      {"text": "Tri-Alliance Clash battle", "event": "tri"},
-      {"text": "KvK matchmaking", "event": "kvk"},
-      {"text": "Caesar's Fury starts", "event": "caesar"},
-      {"text": "Mobilization ends", "event": "mobilization"},
-      {"text": "Championship final round", "event": "championship"}
-    ], "tasks": [
-      {"role": "members", "text": "If you are on the roster, be online 10 minutes before the Clash and stay the full hour."},
-      {"role": "members", "text": "Caesar's Fury: lock the highest difficulty you can fully clear."},
-      {"role": "war", "text": "Lead the Clash and appoint Captains. Ask the kingdom's lead alliance what our KvK job is on Dec 5."},
-      {"role": "ops", "text": "Last Mobilization push before it ends."},
-      {"role": "leader", "text": "Be there for the Clash if you can. It is one hour."}
-    ]},
-    {"date": "2026-11-29", "label": "Swordland", "on": [
-      {"text": "Swordland Showdown battle", "event": "swordland"},
-      {"text": "KvK opponent revealed", "event": "kvk"},
-      {"text": "Caesar's Fury", "event": "caesar"},
-      "Officer Project"
-    ], "tasks": [
-      {"role": "members", "text": "Leave today's intel missions undone. Empty your infirmary before Swordland."},
-      {"role": "war", "text": "Lead Swordland. Hold buildings; do not chase kills."},
-      {"role": "ops", "text": "Summon Caesar's Fury Captains right after Bear Hunt, with a 10-minute warning. Set Tuesday's Viking hour and difficulty."},
-      {"role": "events", "text": "Schedule the five KvK prep notices for Monday to Friday."},
-      {"role": "people", "text": "Remove inactive members today, the last calm day before KvK week."}
-    ]},
-    {"date": "2026-11-30", "label": "KvK prep 1", "kind": "prep", "on": [
-      {"text": "KvK prep: City Construction", "event": "kvk"},
-      {"text": "Caesar's Fury ends", "event": "caesar"},
-      {"text": "Championship registration opens", "event": "championship"},
-      "Golden Glaives", "Treasure Cove"
-    ], "tasks": [
-      {"role": "members", "text": "Construction and research speedups, Truegold on buildings, intel missions, charms. Open all three chests."},
-      {"role": "members", "text": "Use your remaining Caesar's Fury Accords and register for the Championship."},
-      {"role": "ops", "text": "Announce tomorrow's Viking hour and name the HQ garrison leader."},
-      {"role": "people", "text": "Start chasing Championship registrations."}
-    ]},
-    {"date": "2026-12-01", "label": "KvK prep 2", "kind": "prep", "on": [
-      {"text": "KvK prep: Basic Skills Up", "event": "kvk"},
-      {"text": "Viking Vengeance", "event": "vikings"},
-      {"text": "Sanctuary sign-up", "event": "sanctuary"},
-      "Hero Roulette", "Defeat Beasts", "Eternity's Reach"
-    ], "tasks": [
-      {"role": "members", "text": "Hero Roulette spins and hero shards score best today. Send gatherers out. Open all three chests."},
-      {"role": "members", "text": "Vikings tonight: reinforce online allies with infantry and cavalry, keep archers home, do not heal."},
-      {"role": "ops", "text": "Run Viking Vengeance at the set hour on a difficulty we clear reliably."},
-      {"role": "events", "text": "Sign up one Sanctuary and one Fortress for Friday. Pick 3 time slots."}
-    ]},
-    {"date": "2026-12-02", "label": "KvK prep 3", "kind": "prep", "on": [
-      {"text": "KvK prep: Pet Training", "event": "kvk"},
-      {"text": "Championship registration closes 23:00", "event": "championship"},
-      "Hero Roulette"
-    ], "tasks": [
-      {"role": "members", "text": "Advanced Taming Marks, roulette spins, shards, intel missions. Open all three chests."},
-      {"role": "people", "text": "At least 10 Championship marches before 23:00 UTC. Start the KvK shield list."},
-      {"role": "ops", "text": "Announce tomorrow's Viking hour."}
-    ]},
-    {"date": "2026-12-03", "label": "KvK prep 4", "kind": "prep", "on": [
-      {"text": "KvK prep: Hero Development", "event": "kvk"},
-      {"text": "Viking Vengeance", "event": "vikings"},
-      {"text": "Championship rounds", "event": "championship"},
-      {"text": "Blizzard Brawl", "event": "blizzard"}
-    ], "tasks": [
-      {"role": "members", "text": "Train and promote the troops you saved. Widgets, forgehammers, charms. Open all three chests."},
-      {"role": "ops", "text": "Run Viking Vengeance at the set hour."},
-      {"role": "war", "text": "Set Championship lanes. Agree the Saturday plan with the lead alliance."}
-    ]},
-    {"date": "2026-12-04", "label": "KvK prep 5", "kind": "prep", "on": [
-      {"text": "KvK prep: Power Boost", "event": "kvk"},
-      {"text": "Sanctuary Battle", "event": "sanctuary"},
-      {"text": "Championship rounds", "event": "championship"},
-      {"text": "Blizzard Brawl", "event": "blizzard"}
-    ], "tasks": [
-      {"role": "members", "text": "Spend everything left. Tonight empty your infirmary."},
-      {"role": "war", "text": "Lead the Sanctuary rally. Post battle roles for Saturday: rally lead, backup, garrison lead."},
-      {"role": "people", "text": "Post the shield list."},
-      {"role": "events", "text": "Schedule Saturday's battle notice for the morning."}
-    ]},
-    {"date": "2026-12-05", "label": "KvK battle", "kind": "peak", "on": [
-      {"text": "KvK battle 10:00–22:00", "event": "kvk"},
-      {"text": "Castle 12:00–17:00", "event": "castle"},
-      {"text": "Field Triage from 22:00", "event": "kvk"},
-      {"text": "Championship final round", "event": "championship"}
-    ], "tasks": [
-      {"role": "members", "text": "Not playing? Shield before 10:00 UTC. Playing? Be in position by 12:00 and follow the War Lead."},
-      {"role": "members", "text": "At 22:00 open Field Triage and send all 20 Rescue Orders."},
-      {"role": "people", "text": "09:30: check everyone on the shield list is shielded."},
-      {"role": "war", "text": "Run our part of the castle fight. Remind chat: heal in small batches."},
-      {"role": "leader", "text": "Be online 12:00–17:00 if you can."}
-    ]},
-    {"date": "2026-12-06", "label": "Triage", "on": [
-      {"text": "Field Triage", "event": "kvk"},
-      {"text": "Alliance Brawl roster locks 23:00", "event": "brawl"},
-      "Finder's Fortune"
-    ], "tasks": [
-      {"role": "members", "text": "Finish your Rescue Orders. Stay in the alliance past 23:00 UTC."},
-      {"role": "people", "text": "New recruits in before 23:00 UTC."},
-      {"role": "ops", "text": "Post the Alliance Brawl plan for next week."},
-      {"role": "leader", "text": "Ten minutes with the officers: what went well, what was missed."}
-    ]}
+    {
+      "date": "2026-11-26",
+      "label": "Rosters",
+      "on": [
+        {
+          "text": "Tri-Alliance registration closes",
+          "event": "tri"
+        },
+        {
+          "text": "Swordland registration closes",
+          "event": "swordland"
+        },
+        {
+          "text": "Championship rounds",
+          "event": "championship"
+        },
+        {
+          "text": "Alliance Mobilization",
+          "event": "mobilization"
+        }
+      ],
+      "tasks": [
+        {
+          "role": "members",
+          "text": "Tell the People Officer today if you can play Saturday, Sunday or both."
+        },
+        {
+          "role": "events",
+          "text": "Confirm the final Tri-Alliance and Swordland times and lock both rosters with confirmed players only."
+        },
+        {
+          "role": "war",
+          "text": "Set Championship lanes before each round: two strong lanes, give up the third."
+        },
+        {
+          "role": "ops",
+          "text": "Refresh the Mobilization board on every cooldown; clear speedup and shard missions."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "label": "Sanctuary",
+      "on": [
+        {
+          "text": "Sanctuary Battle",
+          "event": "sanctuary"
+        },
+        {
+          "text": "Championship rounds",
+          "event": "championship"
+        },
+        {
+          "text": "Alliance Mobilization",
+          "event": "mobilization"
+        },
+        "Armament Competition",
+        "Mystic Divination"
+      ],
+      "tasks": [
+        {
+          "role": "members",
+          "text": "Join the Sanctuary NPC rally when it is called. Finish both days of Mystic Divination missions."
+        },
+        {
+          "role": "war",
+          "text": "Lead the Sanctuary NPC rally with a full rally, then garrison at once."
+        },
+        {
+          "role": "events",
+          "text": "Hand out Ruler's chests after a win. Post tomorrow's Tri-Alliance time and roster."
+        },
+        {
+          "role": "ops",
+          "text": "Refresh the Mobilization board on every cooldown."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-28",
+      "label": "Clash",
+      "kind": "peak",
+      "on": [
+        {
+          "text": "Tri-Alliance Clash battle",
+          "event": "tri"
+        },
+        {
+          "text": "KvK matchmaking",
+          "event": "kvk"
+        },
+        {
+          "text": "Caesar's Fury starts",
+          "event": "caesar"
+        },
+        {
+          "text": "Mobilization ends",
+          "event": "mobilization"
+        },
+        {
+          "text": "Championship final round",
+          "event": "championship"
+        }
+      ],
+      "tasks": [
+        {
+          "role": "members",
+          "text": "If you are on the roster, be online 10 minutes before the Clash and stay the full hour."
+        },
+        {
+          "role": "members",
+          "text": "Caesar's Fury: lock the highest difficulty you can fully clear."
+        },
+        {
+          "role": "war",
+          "text": "Lead the Clash and appoint Captains. Ask the kingdom's lead alliance what our KvK job is on Dec 5."
+        },
+        {
+          "role": "ops",
+          "text": "Last Mobilization push before it ends."
+        },
+        {
+          "role": "leader",
+          "text": "Be there for the Clash if you can. It is one hour."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-29",
+      "label": "Swordland",
+      "on": [
+        {
+          "text": "Swordland Showdown battle",
+          "event": "swordland"
+        },
+        {
+          "text": "KvK opponent revealed",
+          "event": "kvk"
+        },
+        {
+          "text": "Caesar's Fury",
+          "event": "caesar"
+        },
+        "Officer Project"
+      ],
+      "tasks": [
+        {
+          "role": "members",
+          "text": "Leave today's intel missions undone. Empty your infirmary before Swordland."
+        },
+        {
+          "role": "war",
+          "text": "Lead Swordland. Hold buildings; do not chase kills."
+        },
+        {
+          "role": "ops",
+          "text": "Summon Caesar's Fury Captains right after Bear Hunt, with a 10-minute warning. Set Tuesday's Viking hour and difficulty."
+        },
+        {
+          "role": "events",
+          "text": "Schedule the five KvK prep notices for Monday to Friday."
+        },
+        {
+          "role": "people",
+          "text": "Remove inactive members today, the last calm day before KvK week."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-30",
+      "label": "KvK prep 1",
+      "kind": "prep",
+      "on": [
+        {
+          "text": "KvK prep: City Construction",
+          "event": "kvk"
+        },
+        {
+          "text": "Caesar's Fury ends",
+          "event": "caesar"
+        },
+        {
+          "text": "Championship registration opens",
+          "event": "championship"
+        },
+        "Golden Glaives",
+        "Treasure Cove"
+      ],
+      "tasks": [
+        {
+          "role": "members",
+          "text": "Construction and research speedups, Truegold on buildings, intel missions, charms. Open all three chests."
+        },
+        {
+          "role": "members",
+          "text": "Use your remaining Caesar's Fury Accords and register for the Championship."
+        },
+        {
+          "role": "ops",
+          "text": "Announce tomorrow's Viking hour and name the HQ garrison leader."
+        },
+        {
+          "role": "people",
+          "text": "Start chasing Championship registrations."
+        }
+      ]
+    },
+    {
+      "date": "2026-12-01",
+      "label": "KvK prep 2",
+      "kind": "prep",
+      "on": [
+        {
+          "text": "KvK prep: Basic Skills Up",
+          "event": "kvk"
+        },
+        {
+          "text": "Viking Vengeance",
+          "event": "vikings"
+        },
+        {
+          "text": "Sanctuary sign-up",
+          "event": "sanctuary"
+        },
+        "Hero Roulette",
+        "Defeat Beasts",
+        "Eternity's Reach"
+      ],
+      "tasks": [
+        {
+          "role": "members",
+          "text": "Hero Roulette spins and hero shards score best today. Send gatherers out. Open all three chests."
+        },
+        {
+          "role": "members",
+          "text": "Vikings tonight: reinforce online allies with infantry and cavalry, keep archers home, do not heal."
+        },
+        {
+          "role": "ops",
+          "text": "Run Viking Vengeance at the set hour on a difficulty we clear reliably."
+        },
+        {
+          "role": "events",
+          "text": "Sign up one Sanctuary and one Fortress for Friday. Pick 3 time slots."
+        }
+      ]
+    },
+    {
+      "date": "2026-12-02",
+      "label": "KvK prep 3",
+      "kind": "prep",
+      "on": [
+        {
+          "text": "KvK prep: Pet Training",
+          "event": "kvk"
+        },
+        {
+          "text": "Championship registration closes 23:00",
+          "event": "championship"
+        },
+        "Hero Roulette"
+      ],
+      "tasks": [
+        {
+          "role": "members",
+          "text": "Advanced Taming Marks, roulette spins, shards, intel missions. Open all three chests."
+        },
+        {
+          "role": "people",
+          "text": "At least 10 Championship marches before 23:00 UTC. Start the KvK shield list."
+        },
+        {
+          "role": "ops",
+          "text": "Announce tomorrow's Viking hour."
+        }
+      ]
+    },
+    {
+      "date": "2026-12-03",
+      "label": "KvK prep 4",
+      "kind": "prep",
+      "on": [
+        {
+          "text": "KvK prep: Hero Development",
+          "event": "kvk"
+        },
+        {
+          "text": "Viking Vengeance",
+          "event": "vikings"
+        },
+        {
+          "text": "Championship rounds",
+          "event": "championship"
+        },
+        {
+          "text": "Blizzard Brawl",
+          "event": "blizzard"
+        }
+      ],
+      "tasks": [
+        {
+          "role": "members",
+          "text": "Train and promote the troops you saved. Widgets, forgehammers, charms. Open all three chests."
+        },
+        {
+          "role": "ops",
+          "text": "Run Viking Vengeance at the set hour."
+        },
+        {
+          "role": "war",
+          "text": "Set Championship lanes. Agree the Saturday plan with the lead alliance."
+        }
+      ]
+    },
+    {
+      "date": "2026-12-04",
+      "label": "KvK prep 5",
+      "kind": "prep",
+      "on": [
+        {
+          "text": "KvK prep: Power Boost",
+          "event": "kvk"
+        },
+        {
+          "text": "Sanctuary Battle",
+          "event": "sanctuary"
+        },
+        {
+          "text": "Championship rounds",
+          "event": "championship"
+        },
+        {
+          "text": "Blizzard Brawl",
+          "event": "blizzard"
+        }
+      ],
+      "tasks": [
+        {
+          "role": "members",
+          "text": "Spend everything left. Tonight empty your infirmary."
+        },
+        {
+          "role": "war",
+          "text": "Lead the Sanctuary rally. Post battle roles for Saturday: rally lead, backup, garrison lead."
+        },
+        {
+          "role": "people",
+          "text": "Post the shield list."
+        },
+        {
+          "role": "events",
+          "text": "Schedule Saturday's battle notice for the morning."
+        }
+      ]
+    },
+    {
+      "date": "2026-12-05",
+      "label": "KvK battle",
+      "kind": "peak",
+      "on": [
+        {
+          "text": "KvK battle 10:00–22:00",
+          "event": "kvk"
+        },
+        {
+          "text": "Castle 12:00–17:00",
+          "event": "castle"
+        },
+        {
+          "text": "Field Triage from 22:00",
+          "event": "kvk"
+        },
+        {
+          "text": "Championship final round",
+          "event": "championship"
+        }
+      ],
+      "tasks": [
+        {
+          "role": "members",
+          "text": "Not playing? Shield before 10:00 UTC. Playing? Be in position by 12:00 and follow the War Lead."
+        },
+        {
+          "role": "members",
+          "text": "At 22:00 open Field Triage and send all 20 Rescue Orders."
+        },
+        {
+          "role": "people",
+          "text": "09:30: check everyone on the shield list is shielded."
+        },
+        {
+          "role": "war",
+          "text": "Run our part of the castle fight. Remind chat: heal in small batches."
+        },
+        {
+          "role": "leader",
+          "text": "Be online 12:00–17:00 if you can."
+        }
+      ]
+    },
+    {
+      "date": "2026-12-06",
+      "label": "Triage",
+      "on": [
+        {
+          "text": "Field Triage",
+          "event": "kvk"
+        },
+        {
+          "text": "Alliance Brawl roster locks 23:00",
+          "event": "brawl"
+        },
+        "Finder's Fortune"
+      ],
+      "tasks": [
+        {
+          "role": "members",
+          "text": "Finish your Rescue Orders. Stay in the alliance past 23:00 UTC."
+        },
+        {
+          "role": "people",
+          "text": "New recruits in before 23:00 UTC."
+        },
+        {
+          "role": "ops",
+          "text": "Post the Alliance Brawl plan for next week."
+        },
+        {
+          "role": "leader",
+          "text": "Ten minutes with the officers: what went well, what was missed."
+        }
+      ]
+    }
   ],
   "notices": [
-    {"owner": "events", "post": "Thu Nov 26", "title": "Roll call", "text": "Roll call: Tri-Alliance Clash Sat Nov 28 and Swordland Sun Nov 29, one hour each. Reply in chat today: 1 = Saturday, 2 = Sunday, 3 = both. Only confirmed players get a spot."},
-    {"owner": "events", "post": "Sun Nov 29", "title": "KvK spending freeze", "text": "KvK prep starts tomorrow. Until then HOLD speedups, Truegold, roulette spins, hero shards, taming marks, forgehammers and widgets. Leave today's intel missions for Monday. Battle: Sat Dec 5, 10:00-22:00 UTC."},
-    {"owner": "events", "post": "Mon Nov 30", "title": "KvK prep day 1", "text": "KvK prep day 1: City Construction. Construction and research speedups, Truegold on buildings, intel missions, charms. Gems to finish timers give NO points. Open all 3 daily chests."},
-    {"owner": "events", "post": "Tue Dec 1", "title": "KvK prep day 2", "text": "KvK prep day 2: Basic Skills Up. Hero Roulette spins and hero shards score best today. Send gatherers out. Vikings tonight at HH:00 UTC. Open all 3 daily chests."},
-    {"owner": "events", "post": "Wed Dec 2", "title": "KvK prep day 3", "text": "KvK prep day 3: Pet Training. Advanced Taming Marks, roulette spins, shards, intel missions. Register for Alliance Championship before 23:00 UTC. Open all 3 daily chests."},
-    {"owner": "events", "post": "Thu Dec 3", "title": "KvK prep day 4", "text": "KvK prep day 4: Hero Development. Train and PROMOTE the troops you saved. Use forgehammers, widgets and charms. Vikings tonight at HH:00 UTC. Open all 3 daily chests."},
-    {"owner": "events", "post": "Fri Dec 4", "title": "KvK prep day 5", "text": "KvK prep day 5: Power Boost. Spend everything left. Tonight empty your infirmary. Can't play Saturday? Shield before 10:00 UTC Sat, long enough to cover 22:00."},
-    {"owner": "war", "post": "Sat Dec 5", "title": "KvK battle day", "text": "KvK battle today 10:00-22:00 UTC. Castle fight 12:00-17:00. Join the rallies the War Lead calls, never attack the castle alone, heal in small batches. At 22:00 open Field Triage and send all 20 Rescue Orders."},
-    {"owner": "ops", "post": "Before each Viking run", "title": "Viking Vengeance", "text": "Viking Vengeance at HH:00 UTC. Empty your city: infantry and cavalry reinforce allies who are online, archers stay home. Swap reinforcements 1 hour before. Do not heal during the event."}
+    {
+      "owner": "events",
+      "post": "Thu Nov 26",
+      "title": "Roll call",
+      "text": "Roll call: Tri-Alliance Clash Sat Nov 28 and Swordland Sun Nov 29, one hour each. Reply in chat today: 1 = Saturday, 2 = Sunday, 3 = both. Only confirmed players get a spot."
+    },
+    {
+      "owner": "events",
+      "post": "Sun Nov 29",
+      "title": "KvK spending freeze",
+      "text": "KvK prep starts tomorrow. Until then HOLD speedups, Truegold, roulette spins, hero shards, taming marks, forgehammers and widgets. Leave today's intel missions for Monday. Battle: Sat Dec 5, 10:00-22:00 UTC."
+    },
+    {
+      "owner": "events",
+      "post": "Mon Nov 30",
+      "title": "KvK prep day 1",
+      "text": "KvK prep day 1: City Construction. Construction and research speedups, Truegold on buildings, intel missions, charms. Gems to finish timers give NO points. Open all 3 daily chests."
+    },
+    {
+      "owner": "events",
+      "post": "Tue Dec 1",
+      "title": "KvK prep day 2",
+      "text": "KvK prep day 2: Basic Skills Up. Hero Roulette spins and hero shards score best today. Send gatherers out. Vikings tonight at HH:00 UTC. Open all 3 daily chests."
+    },
+    {
+      "owner": "events",
+      "post": "Wed Dec 2",
+      "title": "KvK prep day 3",
+      "text": "KvK prep day 3: Pet Training. Advanced Taming Marks, roulette spins, shards, intel missions. Register for Alliance Championship before 23:00 UTC. Open all 3 daily chests."
+    },
+    {
+      "owner": "events",
+      "post": "Thu Dec 3",
+      "title": "KvK prep day 4",
+      "text": "KvK prep day 4: Hero Development. Train and PROMOTE the troops you saved. Use forgehammers, widgets and charms. Vikings tonight at HH:00 UTC. Open all 3 daily chests."
+    },
+    {
+      "owner": "events",
+      "post": "Fri Dec 4",
+      "title": "KvK prep day 5",
+      "text": "KvK prep day 5: Power Boost. Spend everything left. Tonight empty your infirmary. Can't play Saturday? Shield before 10:00 UTC Sat, long enough to cover 22:00."
+    },
+    {
+      "owner": "war",
+      "post": "Sat Dec 5",
+      "title": "KvK battle day",
+      "text": "KvK battle today 10:00-22:00 UTC. Castle fight 12:00-17:00. Join the rallies the War Lead calls, never attack the castle alone, heal in small batches. At 22:00 open Field Triage and send all 20 Rescue Orders."
+    },
+    {
+      "owner": "ops",
+      "post": "Before each Viking run",
+      "title": "Viking Vengeance",
+      "text": "Viking Vengeance at HH:00 UTC. Empty your city: infantry and cavalry reinforce allies who are online, archers stay home. Swap reinforcements 1 hour before. Do not heal during the event."
+    }
   ]
 }

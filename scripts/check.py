@@ -108,6 +108,34 @@ for d in week.get("days", []):
             err(f"day {d.get('date')}: task role {t.get('role')!r} unknown")
         if not t.get("text"):
             err(f"day {d.get('date')}: empty task")
+def stamp(s, where):
+    try:
+        return dt.datetime.fromisoformat(s.replace("Z", "+00:00"))
+    except Exception:  # noqa: BLE001
+        err(f"{where}: bad time {s!r} (use YYYY-MM-DDTHH:MMZ, UTC)")
+        return None
+
+
+tl = week.get("timeline", [])
+if not tl:
+    err("week.json has no timeline")
+if not any(t.get("level") == "main" for t in tl):
+    err("timeline has no main event")
+for t in tl:
+    where = f"timeline {t.get('name')!r}"
+    if t.get("level") not in ("main", "routine"):
+        err(f"{where}: level must be main or routine")
+    s, e = stamp(t.get("start", ""), where), stamp(t.get("end", ""), where)
+    if s and e and e <= s:
+        err(f"{where}: end is not after start")
+    if s and not str(t.get("start", "")).endswith("Z"):
+        err(f"{where}: times must end in Z (UTC)")
+    if t.get("event") and t["event"] not in event_ids:
+        err(f"{where}: unknown event {t['event']!r}")
+for r in week.get("recurring", []):
+    if r.get("event") and r["event"] not in event_ids:
+        err(f"recurring {r.get('name')!r}: unknown event")
+
 for n in week.get("notices", []):
     if n.get("owner") not in ROLES:
         err(f"notice {n.get('title')!r}: owner unknown")
