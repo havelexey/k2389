@@ -20,6 +20,7 @@
     <span class="clock" id="clock"></span>
   </div>
   <nav class="wrap nav" aria-label="Sections">
+    <a href="#timeline">Timeline</a>
     <a href="#goals">Goals</a>
     <a href="#calendar">Calendar</a>
     <a href="#events">Events</a>
@@ -32,8 +33,20 @@
   <p class="stamp" id="stamp">Loading this week's plan…</p>
   <div class="stale" id="stale" hidden></div>
 
+  <section id="timeline" aria-labelledby="h-tl">
+    <h2 id="h-tl">Coming up</h2>
+    <div class="next" id="next"></div>
+    <div class="tl-legend">
+      <span><i class="sw sw-main"></i>Main events</span>
+      <span><i class="sw sw-routine"></i>Regular events</span>
+      <span><i class="sw sw-now"></i>Now</span>
+    </div>
+    <div class="tl-scroll" id="tl-scroll"><div class="tl" id="tl"></div></div>
+    <p class="note" id="recurring"></p>
+  </section>
+
   <section id="goals" aria-labelledby="h-goals">
-    <h2 id="h-goals">This week</h2>
+    <h2 id="h-goals">This week's goals</h2>
     <p class="lead" id="headline"></p>
     <div class="goals" id="goal-list"></div>
     <div class="rules">
