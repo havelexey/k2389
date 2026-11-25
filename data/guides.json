@@ -1,0 +1,295 @@
+{
+  "roles": {
+    "members": {"title": "Everyone", "short": "All", "name": "", "owns": "Every member of the alliance.", "backup": ""},
+    "war": {"title": "War Lead", "short": "War", "name": "", "owns": "Leads every fight: Tri-Alliance Clash, Swordland, Sanctuary rallies, KvK and the Castle Battle. Sets Championship lanes. Talks to the kingdom's lead alliance.", "backup": "ops"},
+    "events": {"title": "Events Officer", "short": "Events", "name": "", "owns": "Votes, time slots, sign-ups and rosters for Tri-Alliance, Swordland and Sanctuary. Writes the daily notice. Hands out Ruler's chests.", "backup": "people"},
+    "ops": {"title": "Ops Officer", "short": "Ops", "name": "", "owns": "Bear Hunt, Viking Vengeance, Caesar's Fury Captains, the Mobilization board, the Alliance Brawl plan, alliance tech.", "backup": "war"},
+    "people": {"title": "People Officer", "short": "People", "name": "", "owns": "Attendance for battles, Championship registrations, the KvK shield list, Rescue Orders, recruiting, removing inactive members.", "backup": "events"},
+    "leader": {"title": "Leader", "short": "R5", "name": "", "owns": "Final decisions, promotions to R4, agreements with other alliances, disputes between officers.", "backup": ""}
+  },
+  "events": [
+    {
+      "id": "kvk",
+      "name": "KvK – Kingdom of Power",
+      "when": "Every 4 weeks: matchmaking Sat–Sun, prep Mon–Fri, battle Sat 10:00–22:00 UTC",
+      "know": [
+        "Nothing to register. Matchmaking runs by itself and the opponent shows on Sunday.",
+        "Prep days: Mon City Construction, Tue Basic Skills Up, Wed Pet Training, Thu Hero Development, Fri Power Boost.",
+        "Only speedup items score in prep. Gems to finish timers and beast hunting score nothing.",
+        "The kingdom that wins prep attacks, and the castle fight happens in the loser's kingdom.",
+        "Battle day: 10:00–12:00 open fighting, 12:00–17:00 King's Castle, 17:00–22:00 open fighting.",
+        "Kills only score against cities within 3 Town Center levels of yours.",
+        "After 22:00 Field Triage opens for about two days. Each member sends 20 Rescue Orders and can receive 50."
+      ],
+      "todo": [
+        "Before prep: hold speedups, Truegold, roulette spins, hero shards, taming marks, forgehammers and widgets.",
+        "Train troops one tier below your best and keep them for Thursday promotions.",
+        "Every prep day: spend on that day's theme and open all three daily chests.",
+        "Can't play on battle day? Shield before 10:00 UTC with cover until 22:00.",
+        "Battle day: join the rallies the War Lead calls, never march on the castle alone, heal in small batches.",
+        "At 22:00: open Field Triage and send all 20 Rescue Orders."
+      ],
+      "videos": [],
+      "links": [
+        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1532-kingdom-of-power/"},
+        {"text": "Prep points guide", "url": "https://kingshotmastery.com/guides/kingshot-kvk-prep-guide"}
+      ]
+    },
+    {
+      "id": "castle",
+      "name": "Castle Battle",
+      "when": "Saturdays 12:00–17:00 UTC, about every two weeks, and inside KvK",
+      "know": [
+        "The castle goes to the first alliance to hold it 2.5 hours in a row, or the longest total hold in 5 hours.",
+        "Four turrets fire on the castle holder. An alliance holding turrets weakens the castle garrison.",
+        "Two hours before the start, cities inside the alert zone are moved out at random.",
+        "Troops at the castle are wounded, not killed, unless your infirmary overflows."
+      ],
+      "todo": [
+        "Take the turret or rally job the War Lead gives you.",
+        "Join rallies with the first-slot hero you are told to use.",
+        "Reinforce garrisons when asked, and heal in small batches."
+      ],
+      "videos": [],
+      "links": [
+        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/faq/9047-castle-battle-1783425489/"},
+        {"text": "Castle guide", "url": "https://www.kingshotmastery.com/guides/kingshot-castle-battle-guide"}
+      ]
+    },
+    {
+      "id": "bear",
+      "name": "Bear Hunt",
+      "when": "Every 2 days at the alliance's fixed hour",
+      "know": [
+        "A 30-minute damage race with no troop losses. It pays forgehammers and hero gear chests.",
+        "Only R4 and above can start it. You have a 46-hour personal cooldown across both traps.",
+        "Each trap level adds 5% attack, up to 25% at level 5. Arrowheads from intel missions level it up."
+      ],
+      "todo": [
+        "Joiners: first-slot hero Chenko, Amadeus or Yeonwoo, then Amane or Margot.",
+        "Never put Jabel, Gordon, Edwin, Long Fei, Helga or Diana first. Join with no hero instead.",
+        "Troop mix: 10% infantry, 10% cavalry, 80% archers.",
+        "Bring all troops home from gathering before the hunt starts.",
+        "Donate Explosive Arrowheads until the trap is level 5."
+      ],
+      "videos": [],
+      "links": [
+        {"text": "Bear Hunt guide", "url": "https://kingshotmastery.com/events/bear-hunt"}
+      ]
+    },
+    {
+      "id": "vikings",
+      "name": "Viking Vengeance",
+      "when": "Every 2 weeks, Tuesday and Thursday",
+      "know": [
+        "20 waves hit member cities and the alliance HQ in about 40 minutes.",
+        "Waves 7, 14 and 17 hit online players only. Waves 10 and 20 hit the HQ.",
+        "Rewards depend on the whole alliance's result. Shields do not work."
+      ],
+      "todo": [
+        "Empty your city: infantry and cavalry reinforce allies who are online, archers stay home.",
+        "Swap reinforcements with your group about one hour before the start.",
+        "Lead reinforcements with Chenko, Amadeus, Yeonwoo or Amane.",
+        "Do not heal during the event."
+      ],
+      "videos": [],
+      "links": [
+        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1386-viking-vengeance/"},
+        {"text": "Vikings guide", "url": "https://kingshotmastery.com/guides/kingshot-vikings-event-guide"}
+      ]
+    },
+    {
+      "id": "tri",
+      "name": "Tri-Alliance Clash",
+      "when": "Monthly: vote Mon–Tue, sign-up Wed–Thu, matchmaking Fri, battle Sat",
+      "know": [
+        "A 60-minute battle with three alliances from different kingdoms. Troops are copies, so nothing real is lost.",
+        "Officers pick up to 30 fighters plus 10 substitutes. Only confirmed players get a spot.",
+        "Minute 0–20 seize buildings, 20–40 Garrisons, 40–60 Temple.",
+        "Leaving early locks you out for 12 minutes."
+      ],
+      "todo": [
+        "Answer the roll call by Thursday if you can play.",
+        "Be online 10 minutes before the slot and stay the full hour.",
+        "Follow the Captains the War Lead appoints on the field."
+      ],
+      "videos": [],
+      "links": [
+        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1547-tri-alliance-clash/"},
+        {"text": "Tri-Alliance guide", "url": "https://kingshotmastery.com/guides/tri-alliance-clash"}
+      ]
+    },
+    {
+      "id": "swordland",
+      "name": "Swordland Showdown",
+      "when": "Every 2 weeks: vote, register, matchmaking, battle on Sunday",
+      "know": [
+        "A one-hour Legion against Legion battle, won on points from held buildings. Troops heal for free when you leave.",
+        "Points per minute: Swordshrine 1,800, Sanctum 1,200, Abbey 600. Kills only give personal points.",
+        "Alliance rewards follow Legion 1, so the most reliable players go there."
+      ],
+      "todo": [
+        "Answer the roll call if you can play Sunday.",
+        "Empty your infirmary before you enter.",
+        "Hold buildings; do not chase kills."
+      ],
+      "videos": [],
+      "links": [
+        {"text": "Swordland guide", "url": "https://kingshotmastery.com/guides/swordland-showdown"}
+      ]
+    },
+    {
+      "id": "sanctuary",
+      "name": "Sanctuary Battle",
+      "when": "Weekly: sign-up from Tuesday, battle on Friday",
+      "know": [
+        "We fight for one Sanctuary and one Fortress on the kingdom map. Losses are 30% wounded, none dead.",
+        "Only members in the rally that clears the NPC garrison get the participation chest.",
+        "A contested building needs 30 minutes of unbroken control."
+      ],
+      "todo": [
+        "Join the War Lead's NPC rally until it is full.",
+        "After the clear, garrison the building with infantry and cavalry."
+      ],
+      "videos": [],
+      "links": [
+        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1738-sanctuary-battle/"}
+      ]
+    },
+    {
+      "id": "championship",
+      "name": "Alliance Championship",
+      "when": "Weekly: register Mon to Wed 23:00 UTC, rounds Thu to Sat",
+      "know": [
+        "An automatic tournament: 6 alliances, 5 rounds, 3 lanes. You do not need to be online.",
+        "We need at least 10 registered marches. Officers move people between lanes before each round."
+      ],
+      "todo": [
+        "Register your march before Wednesday 23:00 UTC (Town Center 10 or higher).",
+        "Switch on pet, appointment and city buffs before you register.",
+        "Troop mix: 50% infantry, 20% cavalry, 30% archers."
+      ],
+      "videos": [],
+      "links": [
+        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1387-alliance-championship/"},
+        {"text": "Championship guide", "url": "https://kingshotmastery.com/guides/kingshot-alliance-championship-guide"}
+      ]
+    },
+    {
+      "id": "mobilization",
+      "name": "Alliance Mobilization",
+      "when": "Every 4 weeks, Monday to Saturday",
+      "know": [
+        "A mission race against 19 other alliances. Top 3 move up a league, bottom 3 move down.",
+        "Good value: train troops, 20 forgehammers, 10 Terrors or 30 beasts, gather 30M."
+      ],
+      "todo": [
+        "Do your two personal missions first.",
+        "Accept only missions you can finish today.",
+        "Skip missions that eat speedups or shards in a KvK week."
+      ],
+      "videos": [],
+      "links": [
+        {"text": "Mission calculator", "url": "https://kingshotguide.org/calculator/alliance-mobilization-calculator"}
+      ]
+    },
+    {
+      "id": "caesar",
+      "name": "Caesar's Fury",
+      "when": "Every 3 weeks, three days (Sat–Mon)",
+      "know": [
+        "A personal PvE ladder that starts by itself. You lock one difficulty at the start.",
+        "Officers summon alliance Captains once enough members reach the required level. A Captain escapes 30 minutes after the scout."
+      ],
+      "todo": [
+        "Lock the highest difficulty you can fully clear.",
+        "On a Captain call: tag with a one-troop march first, then send full marches when told.",
+        "Use all your Accords before the last day ends."
+      ],
+      "videos": [],
+      "links": [
+        {"text": "Caesar's Fury guide", "url": "https://kingshotmastery.com/guides/cesares-fury"}
+      ]
+    },
+    {
+      "id": "brawl",
+      "name": "Alliance Brawl",
+      "when": "The week after KvK, Monday to Sunday",
+      "know": [
+        "A daily development race against an alliance from another kingdom. There is no fighting.",
+        "You must be in the alliance by Sunday 23:00 UTC before it starts to count.",
+        "A caravan escort or raid is worth 10,000 points every day."
+      ],
+      "todo": [
+        "Run all caravans and raids every day.",
+        "Spend on each day's theme only; keep a reserve for the weekend finale."
+      ],
+      "videos": [],
+      "links": [
+        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1500-alliance-brawl/"},
+        {"text": "Brawl guide", "url": "https://kingshotmastery.com/events/alliance-brawl-event"}
+      ]
+    },
+    {
+      "id": "blizzard",
+      "name": "Blizzard Brawl",
+      "when": "Two days, four match windows a day",
+      "know": [
+        "A solo 10-player match of 10 minutes. Town Center 25 or higher.",
+        "Points come from holding the Vault and camps, not from kills."
+      ],
+      "todo": [
+        "Play all 6 matches of the season.",
+        "Bring all marches home and switch off auto-join before you queue."
+      ],
+      "videos": [],
+      "links": [
+        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1784-blizzard-brawl/"}
+      ]
+    },
+    {
+      "id": "merchant",
+      "name": "Merchant Empire",
+      "when": "Seven days, with Alliance Brawl",
+      "know": [
+        "Four caravans and four raids a day. Allies cannot raid each other.",
+        "Only squads on the assistance list can be invited to help."
+      ],
+      "todo": [
+        "Send all four caravans every day, not right at server reset.",
+        "Post an assisting squad on the list."
+      ],
+      "videos": [],
+      "links": [
+        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1501-merchant-empire/"}
+      ]
+    }
+  ],
+  "tool_groups": [
+    {
+      "name": "Our kingdom",
+      "tools": [
+        {"name": "Kingdom 2389 tracker", "url": "https://www.kingshotguide.org/kingdom-rankings/2389", "what": "Our server age, event dates and next KvK."},
+        {"name": "Event calendar", "url": "https://www.kingshotguide.org/calendar", "what": "The 4-week event rotation with real dates."}
+      ]
+    },
+    {
+      "name": "Calculators",
+      "tools": [
+        {"name": "Mobilization calculator", "url": "https://kingshotguide.org/calculator/alliance-mobilization-calculator", "what": "Which Mobilization missions are worth taking."},
+        {"name": "Server timeline", "url": "https://kingshotmastery.com/tools/server-timeline", "what": "What unlocks on which server day."}
+      ]
+    },
+    {
+      "name": "Official",
+      "tools": [
+        {"name": "Help center", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/", "what": "The game's own rules for every event."}
+      ]
+    }
+  ],
+  "confirm": [
+    "Every date on this page. They come from a fan tracker, so check the in-game Events tab.",
+    "Time slots on the registration screens, which can differ from what is listed here.",
+    "Castle hold time: official help says 2.5 hours; some fan sites still say 3."
+  ]
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>K2389 Alliance Board</title>
+<meta name="description" content="This week's goals, calendar, event guides, videos and tools for our Kingshot alliance in Kingdom 2389.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <div class="brand">
+      <span class="kd">Kingdom 2389</span>
+      <h1 id="alliance">Alliance Board</h1>
+    </div>
+    <span class="clock" id="clock"></span>
+  </div>
+  <nav class="wrap nav" aria-label="Sections">
+    <a href="#goals">Goals</a>
+    <a href="#calendar">Calendar</a>
+    <a href="#events">Events</a>
+    <a href="#tools">Tools</a>
+    <a href="#officers">Officers</a>
+  </nav>
+</header>
+
+<main class="wrap main">
+  <p class="stamp" id="stamp">Loading this week's plan…</p>
+  <div class="stale" id="stale" hidden></div>
+
+  <section id="goals" aria-labelledby="h-goals">
+    <h2 id="h-goals">This week</h2>
+    <p class="lead" id="headline"></p>
+    <div class="goals" id="goal-list"></div>
+    <div class="rules">
+      <h3>Rules for everyone</h3>
+      <ul id="rule-list"></ul>
+    </div>
+  </section>
+
+  <section id="calendar" aria-labelledby="h-cal">
+    <h2 id="h-cal">Calendar</h2>
+    <p class="note">Times are UTC, the game clock. Central Europe is one hour ahead.</p>
+    <div class="pick" id="role-pick" aria-label="Show tasks for"></div>
+    <div class="days" id="day-list"></div>
+  </section>
+
+  <section id="events" aria-labelledby="h-ev">
+    <h2 id="h-ev">Event guides</h2>
+    <p class="note">What to know, what to do, and the best videos for each event. Tap an event to open it.</p>
+    <div id="event-list"></div>
+  </section>
+
+  <section id="tools" aria-labelledby="h-tools">
+    <h2 id="h-tools">Tools and calculators</h2>
+    <div class="tools" id="tool-list"></div>
+  </section>
+
+  <section id="officers" aria-labelledby="h-off">
+    <h2 id="h-off">Officers</h2>
+    <p class="note">Ask the officer who owns the topic first. Each officer has a backup.</p>
+    <div class="roles" id="role-list"></div>
+    <h3>Notices to post this week</h3>
+    <p class="note">Copy, replace anything in capitals, paste into Alliance Notices. Limit about 300 characters.</p>
+    <div id="notice-list"></div>
+  </section>
+
+  <footer class="foot">
+    <h3>Check in game</h3>
+    <ul id="confirm-list"></ul>
+    <p id="sources"></p>
+  </footer>
+</main>
+<script src="assets/app.js" defer></script>
+</body>
+</html>
