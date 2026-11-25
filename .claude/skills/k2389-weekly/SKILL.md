@@ -20,6 +20,10 @@ The site is static: `index.html` + `assets/` render two data files. Weekly work 
 3. Rewrite `data/week.json`:
    - `updated` = today, `next_update` = next Sunday, `window.start` = Monday, `window.end` = the Sunday 13 days later (two weeks; the second week can be lighter).
    - `headline`: one or two sentences naming the big moments with dates.
+   - `timeline`: the main block at the top of the page. One item per event occurrence: `name`, `level`, `start`, `end` (UTC, `YYYY-MM-DDTHH:MMZ`, end exclusive; whole days = `T00:00Z` to next day `T00:00Z`), optional `event` (guide id) and `note` (one line, what to do). Include anything overlapping the window, plus events starting up to 2 days after it.
+     - `level: "main"` = the big moments people plan around: KvK phases (matchmaking, prep, battle, Field Triage), Castle Battle, Tri-Alliance Clash battle day, Swordland battle day, Alliance Brawl, Strongest Governor, Flamedragon Tyrant, and every seasonal or limited event (Halloween Party, Christmas Festival, New Year, anniversary). Find seasonal ones on the official news (https://www.centurygames.com/ – Kingshot posts) and kingshotmastery.com/blog; add only with confirmed dates.
+     - `level: "routine"` = everything regular: Championship, Mobilization, Sanctuary, Vikings, Caesar's Fury, Armament, Officer Project, Golden Glaives, Hero Roulette, Defeat Beasts, Blizzard Brawl, Merchant Empire, Treasure Cove and the rest.
+   - `recurring`: things with no fixed date in the data (Bear Hunt at the alliance's hour).
    - `goals`: 3–5, each with an owner role, a date, and a measurable target.
    - `rules`: what every member must do or hold this fortnight (spending freezes before KvK prep or Strongest Governor, troop backlog, intel timing, shield rules).
    - `days`: one entry per day with something on it. Link events with `{"text": ..., "event": "<guides id>"}`; plain strings for events with no guide. Tasks: `members` tasks first, then the officer who owns it. Peak battle days `"kind": "peak"`, KvK prep days `"kind": "prep"`.
