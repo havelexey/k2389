@@ -1,11 +1,47 @@
 {
   "roles": {
-    "members": {"title": "Everyone", "short": "All", "name": "", "owns": "Every member of the alliance.", "backup": ""},
-    "war": {"title": "War Lead", "short": "War", "name": "", "owns": "Leads every fight: Tri-Alliance Clash, Swordland, Sanctuary rallies, KvK and the Castle Battle. Sets Championship lanes. Talks to the kingdom's lead alliance.", "backup": "ops"},
-    "events": {"title": "Events Officer", "short": "Events", "name": "", "owns": "Votes, time slots, sign-ups and rosters for Tri-Alliance, Swordland and Sanctuary. Writes the daily notice. Hands out Ruler's chests.", "backup": "people"},
-    "ops": {"title": "Ops Officer", "short": "Ops", "name": "", "owns": "Bear Hunt, Viking Vengeance, Caesar's Fury Captains, the Mobilization board, the Alliance Brawl plan, alliance tech.", "backup": "war"},
-    "people": {"title": "People Officer", "short": "People", "name": "", "owns": "Attendance for battles, Championship registrations, the KvK shield list, Rescue Orders, recruiting, removing inactive members.", "backup": "events"},
-    "leader": {"title": "Leader", "short": "R5", "name": "", "owns": "Final decisions, promotions to R4, agreements with other alliances, disputes between officers.", "backup": ""}
+    "members": {
+      "title": "Everyone",
+      "short": "All",
+      "name": "",
+      "owns": "Every member of the alliance.",
+      "backup": ""
+    },
+    "war": {
+      "title": "War Lead",
+      "short": "War",
+      "name": "",
+      "owns": "Leads every fight: Tri-Alliance Clash, Swordland, Sanctuary rallies, KvK and the Castle Battle. Sets Championship lanes. Talks to the kingdom's lead alliance.",
+      "backup": "ops"
+    },
+    "events": {
+      "title": "Events Officer",
+      "short": "Events",
+      "name": "",
+      "owns": "Votes, time slots, sign-ups and rosters for Tri-Alliance, Swordland and Sanctuary. Writes the daily notice. Hands out Ruler's chests.",
+      "backup": "people"
+    },
+    "ops": {
+      "title": "Ops Officer",
+      "short": "Ops",
+      "name": "",
+      "owns": "Bear Hunt, Viking Vengeance, Caesar's Fury Captains, the Mobilization board, the Alliance Brawl plan, alliance tech.",
+      "backup": "war"
+    },
+    "people": {
+      "title": "People Officer",
+      "short": "People",
+      "name": "",
+      "owns": "Attendance for battles, Championship registrations, the KvK shield list, Rescue Orders, recruiting, removing inactive members.",
+      "backup": "events"
+    },
+    "leader": {
+      "title": "Leader",
+      "short": "R5",
+      "name": "",
+      "owns": "Final decisions, promotions to R4, agreements with other alliances, disputes between officers.",
+      "backup": ""
+    }
   },
   "events": [
     {
@@ -29,10 +65,37 @@
         "Battle day: join the rallies the War Lead calls, never march on the castle alone, heal in small batches.",
         "At 22:00: open Field Triage and send all 20 Rescue Orders."
       ],
-      "videos": [],
+      "videos": [
+        {
+          "title": "Kingshot KvK Guide 2026: Complete Preparation & Battle Guide + Duel of the Elites",
+          "channel": "WOSKing",
+          "url": "https://www.youtube.com/watch?v=GVnqtpt2y-A",
+          "year": 2026
+        },
+        {
+          "title": "Kingshot KVK PREP GUIDE List and Tips",
+          "channel": "Xora KingShot",
+          "url": "https://www.youtube.com/watch?v=WlqHhPXQWjk",
+          "year": 2026
+        }
+      ],
       "links": [
-        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1532-kingdom-of-power/"},
-        {"text": "Prep points guide", "url": "https://kingshotmastery.com/guides/kingshot-kvk-prep-guide"}
+        {
+          "text": "Official rules",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1532-kingdom-of-power/"
+        },
+        {
+          "text": "Prep points guide",
+          "url": "https://kingshotmastery.com/guides/kingshot-kvk-prep-guide"
+        },
+        {
+          "text": "KvK points calculator",
+          "url": "https://www.kingshotguide.org/calculator/kvk-event-calculator"
+        },
+        {
+          "text": "KvK opponent scout",
+          "url": "https://www.kingshotguide.org/tools/kvk-opponent-scout"
+        }
       ]
     },
     {
@@ -50,10 +113,37 @@
         "Join rallies with the first-slot hero you are told to use.",
         "Reinforce garrisons when asked, and heal in small batches."
       ],
-      "videos": [],
+      "videos": [
+        {
+          "title": "Kingshot Castle Battle: EVERYTHING You Need to Know! (Full Beginner Guide)",
+          "channel": "KingshotGiGi",
+          "url": "https://www.youtube.com/watch?v=abbVqQlCJ6Q",
+          "year": 2026
+        },
+        {
+          "title": "Ultimate Kingshot Castle Battle Guide for Beginners to Pros",
+          "channel": "wetcat",
+          "url": "https://www.youtube.com/watch?v=FfPOznV3gLA",
+          "year": 2026
+        }
+      ],
       "links": [
-        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/faq/9047-castle-battle-1783425489/"},
-        {"text": "Castle guide", "url": "https://www.kingshotmastery.com/guides/kingshot-castle-battle-guide"}
+        {
+          "text": "Official rules",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/faq/9047-castle-battle-1783425489/"
+        },
+        {
+          "text": "Castle guide",
+          "url": "https://www.kingshotmastery.com/guides/kingshot-castle-battle-guide"
+        },
+        {
+          "text": "Castle scheduler",
+          "url": "https://www.kingshotguide.org/calculator/kingshot-castle-scheduler"
+        },
+        {
+          "text": "March sync timer",
+          "url": "https://www.kingshotguide.org/calculator/kingshot-march-sync-timer"
+        }
       ]
     },
     {
@@ -72,9 +162,33 @@
         "Bring all troops home from gathering before the hunt starts.",
         "Donate Explosive Arrowheads until the trap is level 5."
       ],
-      "videos": [],
+      "videos": [
+        {
+          "title": "Kingshot Bear Hunt Joiner Heroes Tier List",
+          "channel": "Strat Game Sloth",
+          "url": "https://www.youtube.com/watch?v=PgH8a8kgC1E",
+          "year": 2026
+        },
+        {
+          "title": "The Perfect Bear Hunt Formation (Proven with Math)",
+          "channel": "Strat Game Sloth",
+          "url": "https://www.youtube.com/watch?v=7HLKH73_Syg",
+          "year": 2026
+        }
+      ],
       "links": [
-        {"text": "Bear Hunt guide", "url": "https://kingshotmastery.com/events/bear-hunt"}
+        {
+          "text": "Bear Hunt guide",
+          "url": "https://kingshotmastery.com/events/bear-hunt"
+        },
+        {
+          "text": "Bear Trap calculator",
+          "url": "https://www.kingshotguide.org/calculator/bear-trap-calculator"
+        },
+        {
+          "text": "Bear ratio calculator",
+          "url": "https://www.kingshotguide.org/calculator/bear-ratio-calculator"
+        }
       ]
     },
     {
@@ -92,10 +206,33 @@
         "Lead reinforcements with Chenko, Amadeus, Yeonwoo or Amane.",
         "Do not heal during the event."
       ],
-      "videos": [],
+      "videos": [
+        {
+          "title": "VIKING VENGENCE EVENT GUIDE (Tips to get More Points) Kingshot",
+          "channel": "Xora KingShot",
+          "url": "https://www.youtube.com/watch?v=30fBAKPlVS8",
+          "year": 2026
+        },
+        {
+          "title": "7 Alliance Mistakes Costing YOU Viking Vengeance Rewards in Kingshot",
+          "channel": "Strat Game Sloth",
+          "url": "https://www.youtube.com/watch?v=8ItL0xowxz0",
+          "year": 2025
+        }
+      ],
       "links": [
-        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1386-viking-vengeance/"},
-        {"text": "Vikings guide", "url": "https://kingshotmastery.com/guides/kingshot-vikings-event-guide"}
+        {
+          "text": "Official rules",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1386-viking-vengeance/"
+        },
+        {
+          "text": "Vikings guide",
+          "url": "https://kingshotmastery.com/guides/kingshot-vikings-event-guide"
+        },
+        {
+          "text": "Viking calculator",
+          "url": "https://www.kingshotguide.org/calculator/viking-vengeance-calculator"
+        }
       ]
     },
     {
@@ -113,10 +250,29 @@
         "Be online 10 minutes before the slot and stay the full hour.",
         "Follow the Captains the War Lead appoints on the field."
       ],
-      "videos": [],
+      "videos": [
+        {
+          "title": "How to Win Every Tri-Alliance Clash in Kingshot!",
+          "channel": "WOSKing",
+          "url": "https://www.youtube.com/watch?v=2C2x4dbCy6E",
+          "year": 2026
+        },
+        {
+          "title": "Ultimate Tri-Alliance Clash Guide | Kingshot",
+          "channel": "Strat Game Sloth",
+          "url": "https://www.youtube.com/watch?v=rDhoS5HQEEs",
+          "year": 2025
+        }
+      ],
       "links": [
-        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1547-tri-alliance-clash/"},
-        {"text": "Tri-Alliance guide", "url": "https://kingshotmastery.com/guides/tri-alliance-clash"}
+        {
+          "text": "Official rules",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1547-tri-alliance-clash/"
+        },
+        {
+          "text": "Tri-Alliance guide",
+          "url": "https://kingshotmastery.com/guides/tri-alliance-clash"
+        }
       ]
     },
     {
@@ -133,9 +289,29 @@
         "Empty your infirmary before you enter.",
         "Hold buildings; do not chase kills."
       ],
-      "videos": [],
+      "videos": [
+        {
+          "title": "Kingshot Swordland Showdown: Complete Guide, Strategies, and Tips to Maximize Rewards",
+          "channel": "wetcat",
+          "url": "https://www.youtube.com/watch?v=Gfrz-ZS0dAA",
+          "year": 2026
+        },
+        {
+          "title": "Ultimate Swordland Showdown Guide | Kingshot",
+          "channel": "Strat Game Sloth",
+          "url": "https://www.youtube.com/watch?v=_KffCiPI_HM",
+          "year": 2025
+        }
+      ],
       "links": [
-        {"text": "Swordland guide", "url": "https://kingshotmastery.com/guides/swordland-showdown"}
+        {
+          "text": "Swordland guide",
+          "url": "https://kingshotmastery.com/guides/swordland-showdown"
+        },
+        {
+          "text": "Swordland planner",
+          "url": "https://www.kingshotguide.org/tools/swordland-showdown-planner"
+        }
       ]
     },
     {
@@ -151,9 +327,19 @@
         "Join the War Lead's NPC rally until it is full.",
         "After the clear, garrison the building with infantry and cavalry."
       ],
-      "videos": [],
+      "videos": [
+        {
+          "title": "KINGSHOT- Strategy guide for Sanctuaries and Fortresses",
+          "channel": "Kingshot Mastery",
+          "url": "https://www.youtube.com/watch?v=NIQxYPqJ_RE",
+          "year": 2025
+        }
+      ],
       "links": [
-        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1738-sanctuary-battle/"}
+        {
+          "text": "Official rules",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1738-sanctuary-battle/"
+        }
       ]
     },
     {
@@ -169,10 +355,33 @@
         "Switch on pet, appointment and city buffs before you register.",
         "Troop mix: 50% infantry, 20% cavalry, 30% archers."
       ],
-      "videos": [],
+      "videos": [
+        {
+          "title": "Kingshot ALLIANCE CHAMPIONSHIP GUIDE (Best Tips to Win)",
+          "channel": "Xora KingShot",
+          "url": "https://www.youtube.com/watch?v=GH0pNG5Vitw",
+          "year": 2026
+        },
+        {
+          "title": "Updated Guide: Do your Alliance Championship Lanes like a PRO",
+          "channel": "Tonton Gaming",
+          "url": "https://www.youtube.com/watch?v=WYWjEWBTcu8",
+          "year": 2026
+        }
+      ],
       "links": [
-        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1387-alliance-championship/"},
-        {"text": "Championship guide", "url": "https://kingshotmastery.com/guides/kingshot-alliance-championship-guide"}
+        {
+          "text": "Official rules",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1387-alliance-championship/"
+        },
+        {
+          "text": "Championship guide",
+          "url": "https://kingshotmastery.com/guides/kingshot-alliance-championship-guide"
+        },
+        {
+          "text": "Lane calculator",
+          "url": "https://kingshotmastery.com/tools/alliance-championship-calculator"
+        }
       ]
     },
     {
@@ -188,9 +397,25 @@
         "Accept only missions you can finish today.",
         "Skip missions that eat speedups or shards in a KvK week."
       ],
-      "videos": [],
+      "videos": [
+        {
+          "title": "Alliance Mobilization Guide: Best Missions for Better Points (Kingshot)",
+          "channel": "wetcat",
+          "url": "https://www.youtube.com/watch?v=oVuDcM2NMMw",
+          "year": 2026
+        },
+        {
+          "title": "F2P Friendly Guide to Alliance Mobilization | Kingshot",
+          "channel": "Strat Game Sloth",
+          "url": "https://www.youtube.com/watch?v=6OPMYzQDpX4",
+          "year": 2025
+        }
+      ],
       "links": [
-        {"text": "Mission calculator", "url": "https://kingshotguide.org/calculator/alliance-mobilization-calculator"}
+        {
+          "text": "Mission calculator",
+          "url": "https://kingshotguide.org/calculator/alliance-mobilization-calculator"
+        }
       ]
     },
     {
@@ -206,9 +431,25 @@
         "On a Captain call: tag with a one-troop march first, then send full marches when told.",
         "Use all your Accords before the last day ends."
       ],
-      "videos": [],
+      "videos": [
+        {
+          "title": "How to Get 21 Chests Instead of 7 in Kingshot Caesar's Fury",
+          "channel": "wetcat",
+          "url": "https://www.youtube.com/watch?v=Hd8_ZhCmYHc",
+          "year": 2026
+        },
+        {
+          "title": "Cesares Fury: Turn this Stamina Trap into a Kingshot Jackpot",
+          "channel": "Strat Game Sloth",
+          "url": "https://www.youtube.com/watch?v=L0fq4Da6gUM",
+          "year": 2025
+        }
+      ],
       "links": [
-        {"text": "Caesar's Fury guide", "url": "https://kingshotmastery.com/guides/cesares-fury"}
+        {
+          "text": "Caesar's Fury guide",
+          "url": "https://kingshotmastery.com/guides/cesares-fury"
+        }
       ]
     },
     {
@@ -224,10 +465,29 @@
         "Run all caravans and raids every day.",
         "Spend on each day's theme only; keep a reserve for the weekend finale."
       ],
-      "videos": [],
+      "videos": [
+        {
+          "title": "Kingshot alliance brawl ultimate guide. Win without compromising your prep.",
+          "channel": "Fredostrike",
+          "url": "https://www.youtube.com/watch?v=uSC5r5GZLCA",
+          "year": 2026
+        },
+        {
+          "title": "How to Dominate Alliance Brawl in Kingshot - Win Every Time",
+          "channel": "ECHO Gaming",
+          "url": "https://www.youtube.com/watch?v=AifskVo6nZ8",
+          "year": 2025
+        }
+      ],
       "links": [
-        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1500-alliance-brawl/"},
-        {"text": "Brawl guide", "url": "https://kingshotmastery.com/events/alliance-brawl-event"}
+        {
+          "text": "Official rules",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1500-alliance-brawl/"
+        },
+        {
+          "text": "Brawl guide",
+          "url": "https://kingshotmastery.com/events/alliance-brawl-event"
+        }
       ]
     },
     {
@@ -242,9 +502,25 @@
         "Play all 6 matches of the season.",
         "Bring all marches home and switch off auto-join before you queue."
       ],
-      "videos": [],
+      "videos": [
+        {
+          "title": "Kingshot Blizzard Brawl: Is It Worth Your Time? (Tips & Review)",
+          "channel": "Xora KingShot",
+          "url": "https://www.youtube.com/watch?v=oxnp9AcrtbU",
+          "year": 2026
+        },
+        {
+          "title": "Blizzard Brawl Is HERE! The Day 1 Strategy You NEED",
+          "channel": "Big Nasty Gaming",
+          "url": "https://www.youtube.com/watch?v=-4K8Q1URijY",
+          "year": 2026
+        }
+      ],
       "links": [
-        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1784-blizzard-brawl/"}
+        {
+          "text": "Official rules",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1784-blizzard-brawl/"
+        }
       ]
     },
     {
@@ -259,9 +535,25 @@
         "Send all four caravans every day, not right at server reset.",
         "Post an assisting squad on the list."
       ],
-      "videos": [],
+      "videos": [
+        {
+          "title": "Kingshot Alliance Brawl + Merchant Empire Guide | DOUBLE Rewards & Best Strategy",
+          "channel": "Falcon OP - Kingshot Guides",
+          "url": "https://www.youtube.com/watch?v=4txWhtv5r6w",
+          "year": 2026
+        },
+        {
+          "title": "Pro Tips for Merchant Empire Domination (and Winning Alliance Brawl) in Kingshot",
+          "channel": "Strat Game Sloth",
+          "url": "https://www.youtube.com/watch?v=wdjIzBulKN0",
+          "year": 2025
+        }
+      ],
       "links": [
-        {"text": "Official rules", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1501-merchant-empire/"}
+        {
+          "text": "Official rules",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1501-merchant-empire/"
+        }
       ]
     }
   ],
@@ -269,21 +561,171 @@
     {
       "name": "Our kingdom",
       "tools": [
-        {"name": "Kingdom 2389 tracker", "url": "https://www.kingshotguide.org/kingdom-rankings/2389", "what": "Our server age, event dates and next KvK."},
-        {"name": "Event calendar", "url": "https://www.kingshotguide.org/calendar", "what": "The 4-week event rotation with real dates."}
+        {
+          "name": "Kingdom 2389 tracker",
+          "url": "https://www.kingshotguide.org/kingdom-rankings/2389",
+          "what": "Our server age, power rank, event dates and next KvK."
+        },
+        {
+          "name": "Event calendar",
+          "url": "https://www.kingshotguide.org/calendar",
+          "what": "The 28-day event rotation with real dates, in UTC or your time."
+        },
+        {
+          "name": "Event overlap planner",
+          "url": "https://kingshotmastery.com/tools/event-overlap-planner",
+          "what": "Which actions score in several running events at once."
+        },
+        {
+          "name": "Server timeline",
+          "url": "https://kingshotmastery.com/tools/server-timeline",
+          "what": "What unlocks on which server day: heroes, pets, KvK."
+        }
       ]
     },
     {
-      "name": "Calculators",
+      "name": "KvK and Castle",
       "tools": [
-        {"name": "Mobilization calculator", "url": "https://kingshotguide.org/calculator/alliance-mobilization-calculator", "what": "Which Mobilization missions are worth taking."},
-        {"name": "Server timeline", "url": "https://kingshotmastery.com/tools/server-timeline", "what": "What unlocks on which server day."}
+        {
+          "name": "KvK points calculator",
+          "url": "https://www.kingshotguide.org/calculator/kvk-event-calculator",
+          "what": "Prep points per action, with daily and total sums."
+        },
+        {
+          "name": "KvK prep tasks",
+          "url": "https://kingshot.net/kvk-tools",
+          "what": "Each prep day's point tasks on one page."
+        },
+        {
+          "name": "KvK prep scheduler",
+          "url": "https://www.kingshotguide.org/tools/kvk-prep-scheduler",
+          "what": "Collects availability and speedups, builds the alliance prep schedule."
+        },
+        {
+          "name": "KvK opponent scout",
+          "url": "https://www.kingshotguide.org/tools/kvk-opponent-scout",
+          "what": "Compare the opponent kingdom's power, kills and top alliances."
+        },
+        {
+          "name": "Castle scheduler",
+          "url": "https://www.kingshotguide.org/calculator/kingshot-castle-scheduler",
+          "what": "Assign alliances to the castle and four turrets on a timeline."
+        },
+        {
+          "name": "March sync timer",
+          "url": "https://www.kingshotguide.org/calculator/kingshot-march-sync-timer",
+          "what": "When to launch each rally so they land together."
+        },
+        {
+          "name": "Minister schedule",
+          "url": "https://www.kingshotguide.org/tools/kvk-minister-scheduler",
+          "what": "30-minute rotation for kingdom office buffs."
+        }
       ]
     },
     {
-      "name": "Official",
+      "name": "Bear Hunt and Vikings",
       "tools": [
-        {"name": "Help center", "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/", "what": "The game's own rules for every event."}
+        {
+          "name": "Bear Trap calculator",
+          "url": "https://www.kingshotguide.org/calculator/bear-trap-calculator",
+          "what": "Rally formation, joiner counts and joiner hero picks."
+        },
+        {
+          "name": "Bear ratio calculator",
+          "url": "https://www.kingshotguide.org/calculator/bear-ratio-calculator",
+          "what": "Your troop counts against the 10/10/80 split."
+        },
+        {
+          "name": "Bear rally damage",
+          "url": "https://kingshotmastery.com/tools/bear-trap-calculator",
+          "what": "Estimates rally damage from heroes, skills and stats."
+        },
+        {
+          "name": "Viking calculator",
+          "url": "https://www.kingshotguide.org/calculator/viking-vengeance-calculator",
+          "what": "Pick the Viking difficulty the alliance can clear."
+        },
+        {
+          "name": "Troop calculator",
+          "url": "https://www.kingshotguide.org/calculator/troops-calculator",
+          "what": "Troop splits for Bear and Vikings, training goals."
+        }
+      ]
+    },
+    {
+      "name": "Alliance events",
+      "tools": [
+        {
+          "name": "Mobilization calculator",
+          "url": "https://www.kingshotguide.org/calculator/alliance-mobilization-calculator",
+          "what": "Which Mobilization missions are worth taking."
+        },
+        {
+          "name": "Championship lanes",
+          "url": "https://kingshotmastery.com/tools/alliance-championship-calculator",
+          "what": "Lane lineup for all 5 rounds from roster and opponents."
+        },
+        {
+          "name": "Championship split",
+          "url": "https://kingshot.net/alliance-championship-calculator",
+          "what": "Splits squads across the three lanes by power."
+        },
+        {
+          "name": "Swordland planner",
+          "url": "https://www.kingshotguide.org/tools/swordland-showdown-planner",
+          "what": "Plan Swordland groups on the map for each phase."
+        },
+        {
+          "name": "Event RSVP",
+          "url": "https://www.kingshotguide.org/tools/alliance-event-coordinator",
+          "what": "Availability and time voting for Bear, Vikings and battles."
+        }
+      ]
+    },
+    {
+      "name": "Your account",
+      "tools": [
+        {
+          "name": "Troop training",
+          "url": "https://kingshot.net/troop-training-calculator",
+          "what": "Training cost, time, power and event points."
+        },
+        {
+          "name": "Hero ascension",
+          "url": "https://kingshotmastery.com/tools/hero-ascension-calculator",
+          "what": "Shards needed to reach max stars."
+        },
+        {
+          "name": "VIP calculator",
+          "url": "https://kingshotmastery.com/tools/vip-calculator",
+          "what": "VIP points and cost to reach any VIP level."
+        },
+        {
+          "name": "Combat simulator",
+          "url": "https://www.kingshotguide.org/tools/kingshot-combat-simulator",
+          "what": "Test formations and hero teams before a fight."
+        }
+      ]
+    },
+    {
+      "name": "Gift codes and official",
+      "tools": [
+        {
+          "name": "Redeem gift codes",
+          "url": "https://ks-giftcode.centurygame.com/",
+          "what": "Official page: enter your Player ID and a code."
+        },
+        {
+          "name": "Active gift codes",
+          "url": "https://www.kingshotguide.org/gift-codes",
+          "what": "The current list of working codes."
+        },
+        {
+          "name": "Help center",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/",
+          "what": "The game's own rules for every event."
+        }
       ]
     }
   ],
