@@ -171,11 +171,15 @@
       d.appendChild(b);
       box.appendChild(d);
     });
-    if (location.hash.indexOf('#ev-') === 0) {
-      var t = document.getElementById(location.hash.slice(1));
-      if (t) { t.open = true; t.scrollIntoView(); }
-    }
+    openFromHash();
   }
+
+  function openFromHash() {
+    if (location.hash.indexOf('#ev-') !== 0) return;
+    var t = document.getElementById(location.hash.slice(1));
+    if (t) { t.open = true; t.scrollIntoView(); }
+  }
+  window.addEventListener('hashchange', openFromHash);
 
   function renderTools() {
     var box = $('tool-list'); clear(box);
@@ -258,10 +262,6 @@
     var saved = pref('filter');
     if (saved && (saved === 'all' || roles[saved])) filter = saved;
     renderHead(); renderGoals(); renderPick(); renderDays(); renderEvents(); renderTools(); renderOfficers(); renderFoot();
-    var today = document.getElementById('day-' + todayUTC());
-    if (today && !location.hash) {
-      document.querySelector('.days').scrollLeft = 0;
-    }
   }).catch(function (e) {
     $('stamp').textContent = 'The plan did not load. Refresh the page; if it keeps failing, tell an officer. (' + e.message + ')';
   });
