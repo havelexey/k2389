@@ -112,6 +112,9 @@ for d in week.get("days", []):
             err(f"day {d.get('date')}: task role {t.get('role')!r} unknown")
         if not t.get("text"):
             err(f"day {d.get('date')}: empty task")
+        names = [o if isinstance(o, str) else o.get("text") for o in d.get("on", [])]
+        if t.get("on") and t["on"] not in names:
+            err(f"day {d.get('date')}: task 'on' {t['on']!r} is not one of that day's events")
 def stamp(s, where):
     try:
         return dt.datetime.fromisoformat(s.replace("Z", "+00:00"))

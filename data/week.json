@@ -286,18 +286,32 @@
       "tasks": [
         {
           "role": "members",
-          "text": "Tell the People Officer today if you can play Saturday, Sunday or both."
+          "on": "Tri-Alliance registration closes",
+          "text": "Tell the People Officer today if you can play Saturday's Clash."
+        },
+        {
+          "role": "members",
+          "on": "Swordland registration closes",
+          "text": "Tell the People Officer today if you can play Sunday's Swordland."
         },
         {
           "role": "events",
-          "text": "Confirm the final Tri-Alliance and Swordland times and lock both rosters with confirmed players only."
+          "on": "Tri-Alliance registration closes",
+          "text": "Confirm the final Clash time and lock the roster with confirmed players only."
+        },
+        {
+          "role": "events",
+          "on": "Swordland registration closes",
+          "text": "Confirm the final Swordland time and lock the roster with confirmed players only."
         },
         {
           "role": "war",
+          "on": "Championship rounds",
           "text": "Set Championship lanes before each round: two strong lanes, give up the third."
         },
         {
           "role": "ops",
+          "on": "Alliance Mobilization",
           "text": "Refresh the Mobilization board on every cooldown; clear speedup and shard missions."
         }
       ]
@@ -324,18 +338,31 @@
       "tasks": [
         {
           "role": "members",
-          "text": "Join the Sanctuary NPC rally when it is called. Finish both days of Mystic Divination missions."
+          "on": "Sanctuary Battle",
+          "text": "Join the Sanctuary NPC rally when it is called."
+        },
+        {
+          "role": "members",
+          "on": "Mystic Divination",
+          "text": "Finish both days of Mystic Divination missions."
         },
         {
           "role": "war",
+          "on": "Sanctuary Battle",
           "text": "Lead the Sanctuary NPC rally with a full rally, then garrison at once."
         },
         {
           "role": "events",
-          "text": "Hand out Ruler's chests after a win. Post tomorrow's Tri-Alliance time and roster."
+          "on": "Sanctuary Battle",
+          "text": "Hand out Ruler's chests after a win."
+        },
+        {
+          "role": "events",
+          "text": "Post tomorrow's Tri-Alliance time and roster."
         },
         {
           "role": "ops",
+          "on": "Alliance Mobilization",
           "text": "Refresh the Mobilization board on every cooldown."
         }
       ]
@@ -369,22 +396,32 @@
       "tasks": [
         {
           "role": "members",
+          "on": "Tri-Alliance Clash battle",
           "text": "If you are on the roster, be online 10 minutes before the Clash and stay the full hour."
         },
         {
           "role": "members",
-          "text": "Caesar's Fury: lock the highest difficulty you can fully clear."
+          "on": "Caesar's Fury starts",
+          "text": "Lock the highest difficulty you can fully clear."
         },
         {
           "role": "war",
-          "text": "Lead the Clash and appoint Captains. Ask the kingdom's lead alliance what our KvK job is on Dec 5."
+          "on": "Tri-Alliance Clash battle",
+          "text": "Lead the Clash and appoint Captains."
+        },
+        {
+          "role": "war",
+          "on": "KvK matchmaking",
+          "text": "Ask the kingdom's lead alliance what our KvK job is on Dec 5."
         },
         {
           "role": "ops",
+          "on": "Mobilization ends",
           "text": "Last Mobilization push before it ends."
         },
         {
           "role": "leader",
+          "on": "Tri-Alliance Clash battle",
           "text": "Be there for the Clash if you can. It is one hour."
         }
       ]
@@ -410,18 +447,31 @@
       "tasks": [
         {
           "role": "members",
-          "text": "Leave today's intel missions undone. Empty your infirmary before Swordland."
+          "on": "Swordland Showdown battle",
+          "text": "Empty your infirmary before Swordland."
+        },
+        {
+          "role": "members",
+          "on": "KvK opponent revealed",
+          "text": "Leave today's intel missions undone. On Monday they count for KvK."
         },
         {
           "role": "war",
+          "on": "Swordland Showdown battle",
           "text": "Lead Swordland. Hold buildings; do not chase kills."
         },
         {
           "role": "ops",
-          "text": "Summon Caesar's Fury Captains right after Bear Hunt, with a 10-minute warning. Set Tuesday's Viking hour and difficulty."
+          "on": "Caesar's Fury",
+          "text": "Summon Caesar's Fury Captains right after Bear Hunt, with a 10-minute warning."
+        },
+        {
+          "role": "ops",
+          "text": "Set Tuesday's Viking hour and difficulty."
         },
         {
           "role": "events",
+          "on": "KvK opponent revealed",
           "text": "Schedule the five KvK prep notices for Monday to Friday."
         },
         {
@@ -453,19 +503,27 @@
       "tasks": [
         {
           "role": "members",
+          "on": "KvK prep: City Construction",
           "text": "Construction and research speedups, Truegold on buildings, intel missions, charms. Open all three chests."
         },
         {
           "role": "members",
-          "text": "Use your remaining Caesar's Fury Accords and register for the Championship."
+          "on": "Caesar's Fury ends",
+          "text": "Use your remaining Caesar's Fury Accords."
+        },
+        {
+          "role": "members",
+          "on": "Championship registration opens",
+          "text": "Register your march for the Championship."
+        },
+        {
+          "role": "people",
+          "on": "Championship registration opens",
+          "text": "Start chasing Championship registrations."
         },
         {
           "role": "ops",
           "text": "Announce tomorrow's Viking hour and name the HQ garrison leader."
-        },
-        {
-          "role": "people",
-          "text": "Start chasing Championship registrations."
         }
       ]
     },
@@ -493,18 +551,22 @@
       "tasks": [
         {
           "role": "members",
+          "on": "KvK prep: Basic Skills Up",
           "text": "Hero Roulette spins and hero shards score best today. Send gatherers out. Open all three chests."
         },
         {
           "role": "members",
-          "text": "Vikings tonight: reinforce online allies with infantry and cavalry, keep archers home, do not heal."
+          "on": "Viking Vengeance",
+          "text": "Tonight: reinforce online allies with infantry and cavalry, keep archers home, do not heal."
         },
         {
           "role": "ops",
+          "on": "Viking Vengeance",
           "text": "Run Viking Vengeance at the set hour on a difficulty we clear reliably."
         },
         {
           "role": "events",
+          "on": "Sanctuary sign-up",
           "text": "Sign up one Sanctuary and one Fortress for Friday. Pick 3 time slots."
         }
       ]
@@ -527,11 +589,18 @@
       "tasks": [
         {
           "role": "members",
+          "on": "KvK prep: Pet Training",
           "text": "Advanced Taming Marks, roulette spins, shards, intel missions. Open all three chests."
         },
         {
           "role": "people",
-          "text": "At least 10 Championship marches before 23:00 UTC. Start the KvK shield list."
+          "on": "Championship registration closes 23:00",
+          "text": "At least 10 Championship marches before 23:00 UTC."
+        },
+        {
+          "role": "people",
+          "on": "KvK prep: Pet Training",
+          "text": "Start the KvK shield list."
         },
         {
           "role": "ops",
@@ -564,15 +633,23 @@
       "tasks": [
         {
           "role": "members",
+          "on": "KvK prep: Hero Development",
           "text": "Train and promote the troops you saved. Widgets, forgehammers, charms. Open all three chests."
         },
         {
           "role": "ops",
+          "on": "Viking Vengeance",
           "text": "Run Viking Vengeance at the set hour."
         },
         {
           "role": "war",
-          "text": "Set Championship lanes. Agree the Saturday plan with the lead alliance."
+          "on": "Championship rounds",
+          "text": "Set Championship lanes."
+        },
+        {
+          "role": "war",
+          "on": "KvK prep: Hero Development",
+          "text": "Agree the Saturday plan with the lead alliance."
         }
       ]
     },
@@ -601,18 +678,27 @@
       "tasks": [
         {
           "role": "members",
+          "on": "KvK prep: Power Boost",
           "text": "Spend everything left. Tonight empty your infirmary."
         },
         {
           "role": "war",
-          "text": "Lead the Sanctuary rally. Post battle roles for Saturday: rally lead, backup, garrison lead."
+          "on": "Sanctuary Battle",
+          "text": "Lead the Sanctuary rally."
+        },
+        {
+          "role": "war",
+          "on": "KvK prep: Power Boost",
+          "text": "Post battle roles for Saturday: rally lead, backup, garrison lead."
         },
         {
           "role": "people",
+          "on": "KvK prep: Power Boost",
           "text": "Post the shield list."
         },
         {
           "role": "events",
+          "on": "KvK prep: Power Boost",
           "text": "Schedule Saturday's battle notice for the morning."
         }
       ]
@@ -642,22 +728,32 @@
       "tasks": [
         {
           "role": "members",
-          "text": "Not playing? Shield before 10:00 UTC. Playing? Be in position by 12:00 and follow the War Lead."
+          "on": "KvK battle 10:00–22:00",
+          "text": "Not playing? Shield before 10:00 UTC."
         },
         {
           "role": "members",
+          "on": "Castle 12:00–17:00",
+          "text": "Playing? Be in position by 12:00 and follow the War Lead."
+        },
+        {
+          "role": "members",
+          "on": "Field Triage from 22:00",
           "text": "At 22:00 open Field Triage and send all 20 Rescue Orders."
         },
         {
           "role": "people",
+          "on": "KvK battle 10:00–22:00",
           "text": "09:30: check everyone on the shield list is shielded."
         },
         {
           "role": "war",
+          "on": "Castle 12:00–17:00",
           "text": "Run our part of the castle fight. Remind chat: heal in small batches."
         },
         {
           "role": "leader",
+          "on": "Castle 12:00–17:00",
           "text": "Be online 12:00–17:00 if you can."
         }
       ]
@@ -679,14 +775,22 @@
       "tasks": [
         {
           "role": "members",
-          "text": "Finish your Rescue Orders. Stay in the alliance past 23:00 UTC."
+          "on": "Field Triage",
+          "text": "Finish your Rescue Orders."
+        },
+        {
+          "role": "members",
+          "on": "Alliance Brawl roster locks 23:00",
+          "text": "Stay in the alliance past 23:00 UTC."
         },
         {
           "role": "people",
+          "on": "Alliance Brawl roster locks 23:00",
           "text": "New recruits in before 23:00 UTC."
         },
         {
           "role": "ops",
+          "on": "Alliance Brawl roster locks 23:00",
           "text": "Post the Alliance Brawl plan for next week."
         },
         {

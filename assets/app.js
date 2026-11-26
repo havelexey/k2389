@@ -51,6 +51,8 @@
     a.addEventListener('click', function () { var d = document.getElementById('ev-' + ref); if (d) d.open = true; });
     return a;
   }
+  function onName(o) { return typeof o === 'string' ? o : o.text; }
+  function onItem(d, name) { return d.on.filter(function (o) { return onName(o) === name; })[0]; }
   function onTag(o) {
     var name = typeof o === 'string' ? o : o.text;
     var ref = typeof o === 'string' ? null : o.event;
@@ -59,7 +61,7 @@
 
   /* Ticked to-dos live in this browser only, one list per day. */
   function doneList(day) { try { return JSON.parse(pref('done-' + day) || '[]'); } catch (e) { return []; } }
-  function todo(day, key, text, cls) {
+  function todo(day, key, text, cls, label) {
     var lab = el('label', 'todo' + (cls ? ' ' + cls : ''));
     var box = document.createElement('input'); box.type = 'checkbox';
     box.checked = doneList(day).indexOf(key) >= 0;
@@ -71,7 +73,10 @@
       lab.classList.toggle('done', box.checked);
     });
     lab.appendChild(box);
-    lab.appendChild(el('span', null, text));
+    var sp = el('span');
+    if (label) sp.appendChild(el('small', 'ev-l', label));
+    sp.appendChild(document.createTextNode(text));
+    lab.appendChild(sp);
     return lab;
   }
 
@@ -315,7 +320,7 @@
       var job = group('Your job as ' + roleName(me), me);
       var mine = tasks.filter(function (x) { return x.role === me; });
       var nts = (week.notices || []).filter(function (n) { return n.date === t && n.owner === me; });
-      mine.forEach(function (x) { job.appendChild(todo(t, me + ':' + x.text, x.text)); });
+      mine.forEach(function (x) { job.appendChild(todo(t, me + ':' + x.text, x.text, null, x.on)); });
       nts.forEach(function (n) {
         job.appendChild(el('p', 'sub', 'Post this notice today'));
         job.appendChild(noticeCard(n));
@@ -348,7 +353,7 @@
     var mt = tasks.filter(function (x) { return x.role === 'members'; });
     if (mt.length) {
       mem.appendChild(el('p', 'sub', 'Today'));
-      mt.forEach(function (x) { mem.appendChild(todo(t, 'm:' + x.text, x.text, 'big')); });
+      mt.forEach(function (x) { mem.appendChild(todo(t, 'm:' + x.text, x.text, 'big', x.on)); });
     }
     if ((guides.daily || []).length) {
       mem.appendChild(el('p', 'sub', 'Every day'));
@@ -412,22 +417,43 @@
       if (d.label) h.appendChild(el('span', 'day-mk', d.label));
       if (d.date === t) h.appendChild(el('span', 'now', 'Today'));
       card.appendChild(h);
-      var tags = el('div', 'day-tags');
-      d.on.forEach(function (o) { tags.appendChild(onTag(o)); });
-      card.appendChild(tags);
       var list = d.tasks.filter(forMe);
       list.sort(function (a, b) {
         function rank(r) { return r === me ? -1 : ROLE_ORDER.indexOf(r); }
         return rank(a.role) - rank(b.role);
       });
-      if (!list.length) card.appendChild(el('p', 'empty', 'Nothing for you this day.'));
-      list.forEach(function (x) {
-        var row = el('div', 'task' + (x.role === me && me !== 'members' ? ' mine' : ''));
-        row.setAttribute('data-role', x.role);
-        row.appendChild(chip(x.role, x.role === 'members' ? 'All' : (x.role === me ? 'You' : roles[x.role].short)));
-        row.appendChild(el('span', null, x.text));
-        card.appendChild(row);
+      function row(x) {
+        var r = el('div', 'task' + (x.role === me && me !== 'members' ? ' mine' : ''));
+        r.setAttribute('data-role', x.role);
+        r.appendChild(chip(x.role, x.role === 'members' ? 'All' : (x.role === me ? 'You' : roles[x.role].short)));
+        r.appendChild(el('span', null, x.text));
+        return r;
+      }
+      var idle = [];
+      d.on.forEach(function (o) {
+        var its = list.filter(function (x) { return x.on === onName(o); });
+        if (!its.length) { idle.push(o); return; }
+        var blk = el('div', 'evb');
+        var h4 = el('h4', 'evb-h');
+        h4.appendChild(typeof o === 'string' ? el('span', null, o) : evLink(null, o.text, o.event));
+        blk.appendChild(h4);
+        its.forEach(function (x) { blk.appendChild(row(x)); });
+        card.appendChild(blk);
       });
+      var gen = list.filter(function (x) { return !x.on || !onItem(d, x.on); });
+      if (gen.length) {
+        var gb = el('div', 'evb');
+        gb.appendChild(el('h4', 'evb-h plain', 'Other jobs'));
+        gen.forEach(function (x) { gb.appendChild(row(x)); });
+        card.appendChild(gb);
+      }
+      if (!list.length) card.appendChild(el('p', 'empty', 'Nothing for you this day.'));
+      if (idle.length) {
+        var tags = el('div', 'day-tags also');
+        tags.appendChild(el('span', 'on-k', list.length ? 'Also running' : 'Running'));
+        idle.forEach(function (o) { tags.appendChild(onTag(o)); });
+        card.appendChild(tags);
+      }
       box.appendChild(card);
     });
   }
