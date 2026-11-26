@@ -59,7 +59,7 @@ for r in ROLES:
         err(f"guides.roles missing {r}")
 event_ids = set()
 for i, e in enumerate(guides.get("events", [])):
-    for k in ("id", "name", "when", "know", "todo"):
+    for k in ("id", "name", "when", "know", "todo", "tips", "links"):
         if not e.get(k):
             err(f"guides.events[{i}] missing {k}")
     if e.get("owner") and e["owner"] not in ROLES:
@@ -105,7 +105,9 @@ for d in week.get("days", []):
         err(f"day {d.get('date')} outside the window")
     prev = dd or prev
     for o in d.get("on", []):
-        if isinstance(o, dict) and o.get("event") not in event_ids:
+        if isinstance(o, str):
+            err(f"day {d.get('date')}: {o!r} has no event guide (use {{\"text\", \"event\"}})")
+        elif o.get("event") not in event_ids:
             err(f"day {d.get('date')}: unknown event {o.get('event')!r}")
     for t in d.get("tasks", []):
         if t.get("role") not in ROLES:
@@ -137,7 +139,9 @@ for t in tl:
         err(f"{where}: end is not after start")
     if s and not str(t.get("start", "")).endswith("Z"):
         err(f"{where}: times must end in Z (UTC)")
-    if t.get("event") and t["event"] not in event_ids:
+    if not t.get("event"):
+        err(f"{where}: no event guide (every event needs one in guides.json)")
+    elif t["event"] not in event_ids:
         err(f"{where}: unknown event {t['event']!r}")
 for r in week.get("recurring", []):
     if r.get("event") and r["event"] not in event_ids:

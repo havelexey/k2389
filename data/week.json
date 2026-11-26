@@ -97,13 +97,15 @@
       "name": "Armament Competition",
       "level": "routine",
       "start": "2026-11-27T00:00Z",
-      "end": "2026-11-29T00:00Z"
+      "end": "2026-11-29T00:00Z",
+      "event": "armament"
     },
     {
       "name": "Mystic Divination",
       "level": "routine",
       "start": "2026-11-27T00:00Z",
-      "end": "2026-11-29T00:00Z"
+      "end": "2026-11-29T00:00Z",
+      "event": "divination"
     },
     {
       "name": "Caesar's Fury",
@@ -116,7 +118,8 @@
       "name": "Officer Project",
       "level": "routine",
       "start": "2026-11-29T00:00Z",
-      "end": "2026-12-01T00:00Z"
+      "end": "2026-12-01T00:00Z",
+      "event": "officer"
     },
     {
       "name": "Championship sign-up",
@@ -130,13 +133,15 @@
       "name": "Golden Glaives",
       "level": "routine",
       "start": "2026-11-30T00:00Z",
-      "end": "2026-12-02T00:00Z"
+      "end": "2026-12-02T00:00Z",
+      "event": "glaives"
     },
     {
       "name": "Treasure Cove",
       "level": "routine",
       "start": "2026-11-30T00:00Z",
-      "end": "2026-12-07T00:00Z"
+      "end": "2026-12-07T00:00Z",
+      "event": "cove"
     },
     {
       "name": "Viking Vengeance",
@@ -150,19 +155,22 @@
       "name": "Hero Roulette",
       "level": "routine",
       "start": "2026-12-01T00:00Z",
-      "end": "2026-12-04T00:00Z"
+      "end": "2026-12-04T00:00Z",
+      "event": "roulette"
     },
     {
       "name": "Defeat Beasts",
       "level": "routine",
       "start": "2026-12-01T00:00Z",
-      "end": "2026-12-03T00:00Z"
+      "end": "2026-12-03T00:00Z",
+      "event": "beasts"
     },
     {
       "name": "Eternity's Reach",
       "level": "routine",
       "start": "2026-12-01T00:00Z",
-      "end": "2026-12-02T00:00Z"
+      "end": "2026-12-02T00:00Z",
+      "event": "eternity"
     },
     {
       "name": "Sanctuary sign-up",
@@ -204,7 +212,8 @@
       "name": "Finder's Fortune",
       "level": "routine",
       "start": "2026-12-06T00:00Z",
-      "end": "2026-12-09T00:00Z"
+      "end": "2026-12-09T00:00Z",
+      "event": "finder"
     },
     {
       "name": "Merchant Empire",
@@ -332,8 +341,14 @@
           "text": "Alliance Mobilization",
           "event": "mobilization"
         },
-        "Armament Competition",
-        "Mystic Divination"
+        {
+          "text": "Armament Competition",
+          "event": "armament"
+        },
+        {
+          "text": "Mystic Divination",
+          "event": "divination"
+        }
       ],
       "tasks": [
         {
@@ -442,7 +457,10 @@
           "text": "Caesar's Fury",
           "event": "caesar"
         },
-        "Officer Project"
+        {
+          "text": "Officer Project",
+          "event": "officer"
+        }
       ],
       "tasks": [
         {
@@ -497,8 +515,14 @@
           "text": "Championship registration opens",
           "event": "championship"
         },
-        "Golden Glaives",
-        "Treasure Cove"
+        {
+          "text": "Golden Glaives",
+          "event": "glaives"
+        },
+        {
+          "text": "Treasure Cove",
+          "event": "cove"
+        }
       ],
       "tasks": [
         {
@@ -544,9 +568,18 @@
           "text": "Sanctuary sign-up",
           "event": "sanctuary"
         },
-        "Hero Roulette",
-        "Defeat Beasts",
-        "Eternity's Reach"
+        {
+          "text": "Hero Roulette",
+          "event": "roulette"
+        },
+        {
+          "text": "Defeat Beasts",
+          "event": "beasts"
+        },
+        {
+          "text": "Eternity's Reach",
+          "event": "eternity"
+        }
       ],
       "tasks": [
         {
@@ -584,7 +617,10 @@
           "text": "Championship registration closes 23:00",
           "event": "championship"
         },
-        "Hero Roulette"
+        {
+          "text": "Hero Roulette",
+          "event": "roulette"
+        }
       ],
       "tasks": [
         {
@@ -775,7 +811,10 @@
           "text": "Alliance Brawl roster locks 23:00",
           "event": "brawl"
         },
-        "Finder's Fortune"
+        {
+          "text": "Finder's Fortune",
+          "event": "finder"
+        }
       ],
       "tasks": [
         {
