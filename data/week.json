@@ -61,7 +61,7 @@
       "level": "main",
       "start": "2026-12-05T22:00Z",
       "end": "2026-12-07T22:00Z",
-      "event": "kvk",
+      "event": "triage",
       "note": "Send all 20 Rescue Orders."
     },
     {
@@ -718,7 +718,7 @@
         },
         {
           "text": "Field Triage from 22:00",
-          "event": "kvk"
+          "event": "triage"
         },
         {
           "text": "Championship final round",
@@ -739,12 +739,17 @@
         {
           "role": "members",
           "on": "Field Triage from 22:00",
-          "text": "At 22:00 open Field Triage and send all 20 Rescue Orders."
+          "text": "At 22:00 open Field Triage and send all 20 Rescue Orders as the People Officer posted."
         },
         {
           "role": "people",
           "on": "KvK battle 10:00–22:00",
           "text": "09:30: check everyone on the shield list is shielded."
+        },
+        {
+          "role": "people",
+          "on": "Field Triage from 22:00",
+          "text": "Before 22:00, post who sends Rescue Orders to whom: biggest losses first, nobody above 50."
         },
         {
           "role": "war",
@@ -764,7 +769,7 @@
       "on": [
         {
           "text": "Field Triage",
-          "event": "kvk"
+          "event": "triage"
         },
         {
           "text": "Alliance Brawl roster locks 23:00",
