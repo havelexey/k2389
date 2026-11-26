@@ -58,19 +58,21 @@
       "know": [
         "Nothing to register. Matchmaking runs by itself and the opponent shows on Sunday.",
         "Prep days: Mon City Construction, Tue Basic Skills Up, Wed Pet Training, Thu Hero Development, Fri Power Boost.",
-        "Only speedup items score in prep. Gems to finish timers and beast hunting score nothing.",
         "The kingdom that wins prep attacks, and the castle fight happens in the loser's kingdom.",
-        "Battle day: 10:00–12:00 open fighting, 12:00–17:00 King's Castle, 17:00–22:00 open fighting.",
-        "Kills only score against cities within 3 Town Center levels of yours.",
-        "After 22:00 Field Triage opens and brings back up to 90% of lost troops. It has its own guide."
+        "Battle day: 10:00–12:00 UTC open fighting, 12:00–17:00 UTC King's Castle, 17:00–22:00 UTC open fighting.",
+        "Kills only score against cities within 3 Town Center levels of yours. Each Truegold star counts as a level, and in a rally the rally starter's level counts."
       ],
       "todo": [
-        "Before prep: hold speedups, Truegold, roulette spins, hero shards, taming marks, forgehammers and widgets.",
-        "Train troops one tier below your best and keep them for Thursday promotions.",
+        "Before prep: hold speedups, Truegold, roulette spins, hero shards, taming marks, Mithril, forgehammers and widgets.",
         "Every prep day: spend on that day's theme and open all three daily chests.",
-        "Can't play on battle day? Shield before 10:00 UTC with cover until 22:00.",
-        "Battle day: join the rallies the War Lead calls, never march on the castle alone, heal in small batches.",
-        "At 22:00: open Field Triage (see its guide)."
+        "Battle day: join the rallies the War Lead calls, never march on the castle alone, heal in small batches. Can't play? Shield before 10:00 UTC with cover until 22:00 UTC.",
+        "At 22:00 UTC: open Field Triage (see its guide)."
+      ],
+      "tips": [
+        "Claim all three chests every prep day. Each full day earns a Kingdom Medal, and 2 medals unlock the Medal Rewards.",
+        "Speedups score 30 points a minute. Save taming marks for Wed or Fri, Mithril and widgets for Thu or Fri, roulette spins for Tue or Wed.",
+        "Train troops one tier below your best between KvKs, then promote them on Thursday for training points.",
+        "In the top 150 by power? You are in Duel of the Elites. Each group winner adds 1% to the kingdom's prep points the next day."
       ],
       "videos": [
         {
@@ -92,16 +94,12 @@
           "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1532-kingdom-of-power/"
         },
         {
-          "text": "Prep points guide",
+          "text": "Prep points guide (Kingshot Mastery)",
           "url": "https://kingshotmastery.com/guides/kingshot-kvk-prep-guide"
         },
         {
-          "text": "KvK points calculator",
+          "text": "Points calculator",
           "url": "https://www.kingshotguide.org/calculator/kvk-event-calculator"
-        },
-        {
-          "text": "KvK opponent scout",
-          "url": "https://www.kingshotguide.org/tools/kvk-opponent-scout"
         }
       ],
       "owner": "war"
@@ -112,16 +110,22 @@
       "when": "Right after the KvK battle: opens Sat 22:00 UTC, runs about two days",
       "know": [
         "It opens at 22:00 UTC the moment the KvK battle ends and runs about two days. The in-game timer is the truth.",
-        "It brings back troops lost in KvK. The system revives 30%, Rescue Orders from allies add up to 50% more, and Medical Satchels (gems) up to 10%. The most you get back is 90%.",
-        "Each member has 20 Rescue Orders to send and can receive up to 50. Each order adds 1% and costs nothing.",
+        "It brings back troops lost in KvK: 30% free from the system, up to 50% more from allies' Rescue Orders, up to 10% from Medical Satchels (gems). The most is 90%.",
+        "Each member has 20 Rescue Orders to send and can receive up to 50. Each order adds 1%.",
         "There are fewer orders to send than to receive, so we split them by plan, not first come, first served.",
         "Troops lost beyond a full infirmary go to the Enlistment Office instead (70% back for Loyalty Points). Check both screens."
       ],
       "todo": [
-        "At 22:00 Saturday open Field Triage and see how many troops you can get back.",
+        "At 22:00 UTC Saturday open Field Triage and see how many troops you can get back.",
         "Send all 20 Rescue Orders the way the People Officer posts it, within the first 24 hours.",
         "Collect your free orders first. Buy Medical Satchels only if you lost high-tier troops.",
         "During the battle, heal in small batches so your infirmary never overflows."
+      ],
+      "tips": [
+        "The 90% on screen is a ceiling, not a gift. You only get 30% free; the rest comes from orders and satchels.",
+        "Farm accounts in the alliance get 20 orders too. Log them in and send their orders to members with the biggest losses.",
+        "Medical Satchels are sold only during Field Triage and add at most 10%. Check the gem cost before you buy.",
+        "Infirmary overflow skips Field Triage: 70% goes to the Enlistment Office and 30% is lost for good. Heal often during the battle."
       ],
       "videos": [
         {
@@ -131,7 +135,7 @@
           "year": 2025
         },
         {
-          "title": "You're NOT Losing All Your Troops in KvK – How Kingshot's Casualty System Really Works",
+          "title": "You're NOT Losing All Your Troops in KvK – Here's How Kingshot's Casualty System Really Works",
           "channel": "BurgasGR",
           "url": "https://www.youtube.com/watch?v=Rd8gK5bA-ss",
           "year": 2025
@@ -143,11 +147,11 @@
           "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/faq/8355-it-is-shown-that-90-of-my-troops-will-be-revived-but-why-are-my-actual-revived-troops-less-than-that/"
         },
         {
-          "text": "Field Triage guide",
+          "text": "Field Triage guide (Kingshot Handbook)",
           "url": "https://kingshothandbook.com/guides/kvk-field-triage-guide"
         },
         {
-          "text": "KvK guide (recovery section)",
+          "text": "KvK guide (Kingshot Mastery)",
           "url": "https://www.kingshotmastery.com/guides/kingshot-kingdom-of-power-guide"
         }
       ],
@@ -159,7 +163,7 @@
       "when": "Saturdays 12:00–17:00 UTC, about every two weeks, and inside KvK",
       "know": [
         "The castle goes to the first alliance to hold it 2.5 hours in a row, or the longest total hold in 5 hours.",
-        "Four turrets fire on the castle holder. An alliance holding turrets weakens the castle garrison.",
+        "Four turrets fire on the castle holder, faster the longer they are held. A turret the castle holder also holds does not fire.",
         "Two hours before the start, cities inside the alert zone are moved out at random.",
         "Troops at the castle are wounded, not killed, unless your infirmary overflows."
       ],
@@ -167,6 +171,12 @@
         "Take the turret or rally job the War Lead gives you.",
         "Join rallies with the first-slot hero you are told to use.",
         "Reinforce garrisons when asked, and heal in small batches."
+      ],
+      "tips": [
+        "Personal points come from kills, from the power of troops you keep in the castle or a turret, and from your own wounded. Rallies and garrisons both count.",
+        "Milestone rewards arrive by mail the moment you reach each tier, so keep fighting until the next one.",
+        "Holding a turret scores too and stops it firing on our castle garrison.",
+        "Heal in batches with alliance help, not speedups, and watch your infirmary. Overflow means 30% of those troops are lost for good."
       ],
       "videos": [
         {
@@ -188,12 +198,8 @@
           "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/faq/9047-castle-battle-1783425489/"
         },
         {
-          "text": "Castle guide",
+          "text": "Full guide (Kingshot Mastery)",
           "url": "https://www.kingshotmastery.com/guides/kingshot-castle-battle-guide"
-        },
-        {
-          "text": "Castle scheduler",
-          "url": "https://www.kingshotguide.org/calculator/kingshot-castle-scheduler"
         },
         {
           "text": "March sync timer",
@@ -208,15 +214,22 @@
       "when": "Every 2 days at the alliance's fixed hour",
       "know": [
         "A 30-minute damage race with no troop losses. It pays forgehammers and hero gear chests.",
-        "Only R4 and above can start it. You have a 46-hour personal cooldown across both traps.",
-        "Each trap level adds 5% attack, up to 25% at level 5. Arrowheads from intel missions level it up."
+        "Only R4 and above can start it. You have a 46-hour personal cooldown across both traps, counted from the end of the hunt you joined.",
+        "Each Pitfall level adds 5% attack, up to 25% at level 5. Hunting Arrows from Intel Missions level it up.",
+        "Only a joiner's first hero's first skill counts, and only the 4 strongest joiner skills apply to a rally.",
+        "Leaving the alliance wipes your Bear Hunt ranking points, even if you rejoin."
       ],
       "todo": [
         "Joiners: first-slot hero Chenko, Amadeus or Yeonwoo, then Amane or Margot.",
         "Never put Jabel, Gordon, Edwin, Long Fei, Helga or Diana first. Join with no hero instead.",
-        "Troop mix: 10% infantry, 10% cavalry, 80% archers.",
-        "Bring all troops home from gathering before the hunt starts.",
-        "Donate Explosive Arrowheads until the trap is level 5."
+        "Troop mix: 10% infantry, 10% cavalry, 80% archers. Bring all troops home from gathering before the hunt starts.",
+        "Donate Hunting Arrows until the Pitfall is level 5."
+      ],
+      "tips": [
+        "Save a bear preset (hero and troop mix) so you can rejoin in one tap the moment a march comes back.",
+        "Move your city close to the Pitfall. Shorter marches mean more hits in 30 minutes.",
+        "Turn on your attack and lethality pet buffs just before the hunt starts.",
+        "In the last 5–7 minutes, everyone with a free march opens a rally, so no troops sit idle."
       ],
       "videos": [
         {
@@ -234,16 +247,16 @@
       ],
       "links": [
         {
+          "text": "Official FAQ",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1740-bear-hunt/"
+        },
+        {
           "text": "Bear Hunt guide",
           "url": "https://kingshotmastery.com/events/bear-hunt"
         },
         {
           "text": "Bear Trap calculator",
           "url": "https://www.kingshotguide.org/calculator/bear-trap-calculator"
-        },
-        {
-          "text": "Bear ratio calculator",
-          "url": "https://www.kingshotguide.org/calculator/bear-ratio-calculator"
         }
       ],
       "owner": "ops"
@@ -253,15 +266,22 @@
       "name": "Viking Vengeance",
       "when": "Every 2 weeks, Tuesday and Thursday",
       "know": [
-        "20 waves hit member cities and the alliance HQ in about 40 minutes.",
+        "20 waves hit member cities and the alliance HQ.",
         "Waves 7, 14 and 17 hit online players only. Waves 10 and 20 hit the HQ.",
-        "Rewards depend on the whole alliance's result. Shields do not work."
+        "Rewards depend on the whole alliance's result. Shields do not work.",
+        "After 2 failed defenses, the Vikings stop attacking your city.",
+        "Points come from kills by your troops, in your own city or in a city you reinforce."
       ],
       "todo": [
         "Empty your city: infantry and cavalry reinforce allies who are online, archers stay home.",
         "Swap reinforcements with your group about one hour before the start.",
         "Lead reinforcements with Chenko, Amadeus, Yeonwoo or Amane.",
         "Do not heal during the event."
+      ],
+      "tips": [
+        "Put your three strongest heroes in your Guard Station. Their buffs apply to every reinforcement in your city.",
+        "Check battle reports. If your reinforcement scored few kills or the city is burning, recall it and send it to another online ally.",
+        "Be in game for waves 7, 14 and 17. They hit online players only and are worth far more points than the waves around them."
       ],
       "videos": [
         {
@@ -300,13 +320,20 @@
       "know": [
         "A 60-minute battle with three alliances from different kingdoms. Troops are copies, so nothing real is lost.",
         "Officers pick up to 30 fighters plus 10 substitutes. Only confirmed players get a spot.",
-        "Minute 0–20 seize buildings, 20–40 Garrisons, 40–60 Temple.",
-        "Leaving early locks you out for 12 minutes."
+        "Minutes 0–3 prep, 3–20 seize buildings, 20–40 Garrisons, 40–60 Temple.",
+        "Leaving early locks you out for 12 minutes.",
+        "Alliance rewards follow Legion 1's final rank only."
       ],
       "todo": [
         "Answer the roll call by Thursday if you can play.",
         "Be online 10 minutes before the slot and stay the full hour.",
         "Follow the Captains the War Lead appoints on the field."
+      ],
+      "tips": [
+        "Garrisons score 1,800 points a minute from minute 20, and the Temple holder at the end gets a 50,000-point bonus. Save energy for both moments.",
+        "Sit your squads in a building and make yourself its Captain: Captains regain energy faster. You can captain only one building.",
+        "Don't spend energy on instant revives too readily. If a squad is trapped in an enemy building, Dismiss it to revive at the Bastion.",
+        "Leaving also strips your Captain bonus for good, even after you return. Stay until the results show."
       ],
       "videos": [
         {
@@ -328,7 +355,7 @@
           "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1547-tri-alliance-clash/"
         },
         {
-          "text": "Tri-Alliance guide",
+          "text": "Full guide (Kingshot Mastery)",
           "url": "https://kingshotmastery.com/guides/tri-alliance-clash"
         }
       ],
@@ -339,7 +366,7 @@
       "name": "Swordland Showdown",
       "when": "Every 2 weeks: vote, register, matchmaking, battle on Sunday",
       "know": [
-        "A one-hour Legion against Legion battle, won on points from held buildings. Troops heal for free when you leave.",
+        "A one-hour Legion against Legion battle, won on points from held buildings. Troops heal for free when you leave, and you can return after 12 minutes.",
         "Points per minute: Swordshrine 1,800, Sanctum 1,200, Abbey 600. Kills only give personal points.",
         "Alliance rewards follow Legion 1, so the most reliable players go there."
       ],
@@ -347,6 +374,12 @@
         "Answer the roll call if you can play Sunday.",
         "Empty your infirmary before you enter.",
         "Hold buildings; do not chase kills."
+      ],
+      "tips": [
+        "Your personal reward tier depends on your own Relic Points, so keep scoring even if the match is lost.",
+        "The first capture of each building pays a one-time bonus on top of its points per minute. Be in the opening wave.",
+        "Attackers earn 80 personal points per 10,000 enemy power defeated, defenders 40. Pick off isolated enemy marches.",
+        "Loot the crates that drop when a building changes hands, and mine Undercellars in the last phase."
       ],
       "videos": [
         {
@@ -364,7 +397,11 @@
       ],
       "links": [
         {
-          "text": "Swordland guide",
+          "text": "Official battlefield rules",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/faq/9226-swordland-summit-league-battlefield-rules/"
+        },
+        {
+          "text": "Full guide (Kingshot Mastery)",
           "url": "https://kingshotmastery.com/guides/swordland-showdown"
         },
         {
@@ -386,7 +423,14 @@
       ],
       "todo": [
         "Join the War Lead's NPC rallies on our Sanctuaries until they are full.",
-        "After the clear, garrison the building with infantry and cavalry."
+        "After the clear, garrison the building with infantry and cavalry.",
+        "Check your Task List or mail for the battle time. All alliances signed up vote on the slot, so it can differ from ours."
+      ],
+      "tips": [
+        "Join a clearing rally early: joining after the NPCs fall does not earn the participation reward.",
+        "Season points: 1 per Sanctuary, 2 per Fortress, added up over the season's 8 weekly phases. Holding both our Sanctuaries every week is what pays.",
+        "If no one holds a contested building for 30 minutes, the last alliance in it wins. Keep reinforcing to the final minute.",
+        "Alliance Territory buffs don't work in a Sanctuary garrison, so send your strongest defensive heroes."
       ],
       "videos": [
         {
@@ -394,12 +438,22 @@
           "channel": "Kingshot Mastery",
           "url": "https://www.youtube.com/watch?v=NIQxYPqJ_RE",
           "year": 2025
+        },
+        {
+          "title": "Kingshot Sanctuary Battle Rewards Guide (Don't Miss These!)",
+          "channel": "Luffy Quest",
+          "url": "https://www.youtube.com/watch?v=EZEDFbDRiN0",
+          "year": 2026
         }
       ],
       "links": [
         {
           "text": "Official rules",
           "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1738-sanctuary-battle/"
+        },
+        {
+          "text": "Full guide (Kingshot Handbook)",
+          "url": "https://kingshothandbook.com/guides/sanctuary-battle-guide"
         }
       ],
       "owner": "war"
@@ -410,12 +464,21 @@
       "when": "Weekly: register Mon to Wed 23:00 UTC, rounds Thu to Sat",
       "know": [
         "An automatic tournament: 6 alliances, 5 rounds, 3 lanes. You do not need to be online.",
-        "We need at least 10 registered marches. Officers move people between lanes before each round."
+        "We need at least 10 registered marches. Officers move people between lanes before each round.",
+        "Each lane holds up to 20 marches, and winning 2 of 3 lanes wins the round.",
+        "Your stats are saved when you register. Buffs switched on later do not count."
       ],
       "todo": [
         "Register your march before Wednesday 23:00 UTC (Town Center 10 or higher).",
         "Switch on pet, appointment and city buffs before you register.",
-        "Troop mix: 50% infantry, 20% cavalry, 30% archers."
+        "Troop mix: 50% infantry, 20% cavalry, 30% archers.",
+        "Don't re-register later without the same buffs on: a new registration replaces the saved one."
+      ],
+      "tips": [
+        "Equip hero gear and finish combat research on your three heroes before you register.",
+        "Squad Power comes from Hero Power and troop level, so register your highest-tier troops.",
+        "Personal rewards come from knockouts, and each march can beat at most 2 enemy marches a round. A fully buffed march gets more KOs.",
+        "Spend badges on items that unblock an upgrade, such as Gilded Threads. Buy hero shards only for heroes you are building."
       ],
       "videos": [
         {
@@ -426,7 +489,7 @@
         },
         {
           "title": "Updated Guide: Do your Alliance Championship Lanes like a PRO",
-          "channel": "Tonton Gaming",
+          "channel": "Tonton Gaming (Whiteout Survival and Kingshot)",
           "url": "https://www.youtube.com/watch?v=WYWjEWBTcu8",
           "year": 2026
         }
@@ -437,7 +500,7 @@
           "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1387-alliance-championship/"
         },
         {
-          "text": "Championship guide",
+          "text": "Full guide (Kingshot Mastery)",
           "url": "https://kingshotmastery.com/guides/kingshot-alliance-championship-guide"
         },
         {
@@ -453,12 +516,19 @@
       "when": "Every 4 weeks, Monday to Saturday",
       "know": [
         "A mission race against 19 other alliances. Top 3 move up a league, bottom 3 move down.",
-        "Good value: train troops, 20 forgehammers, 10 Terrors or 30 beasts, gather 30M."
+        "Best value: troop training, forgehammers, Terrors, beasts and gathering missions. The mission calculator shows exact sizes.",
+        "You need Town Center 10, and the alliance needs at least 15 members to take part.",
+        "You get 9 mission accepts by default. Extra accepts cost gems."
       ],
       "todo": [
         "Do your two personal missions first.",
         "Accept only missions you can finish today.",
         "Skip missions that eat speedups or shards in a KvK week."
+      ],
+      "tips": [
+        "Pick missions that overlap other running events, like training during a power event or beasts during a hunt event.",
+        "Put your 200% and 120% boosts on high-point missions such as troop training.",
+        "Stuck with a mission you can't finish? Tap it, choose Give Up, then Confirm to free the slot."
       ],
       "videos": [
         {
@@ -476,6 +546,10 @@
       ],
       "links": [
         {
+          "text": "Official FAQ",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1381-alliance-mobilization/"
+        },
+        {
           "text": "Mission calculator",
           "url": "https://kingshotguide.org/calculator/alliance-mobilization-calculator"
         }
@@ -488,12 +562,21 @@
       "when": "Every 3 weeks, three days (Sat–Mon)",
       "know": [
         "A personal PvE ladder that starts by itself. You lock one difficulty at the start.",
-        "Officers summon alliance Captains once enough members reach the required level. A Captain escapes 30 minutes after the scout."
+        "Officers summon alliance Captains once enough members reach the required level. Captains escape after a while, so hit them fast.",
+        "You start with 5 Accords and earn up to 5 more by answering allies' help requests. Unused Accords vanish when the event ends.",
+        "Fully clearing your difficulty unlocks the next one for the next event.",
+        "Attacking a Captain costs no stamina. Its rewards go to every member who hit it."
       ],
       "todo": [
         "Lock the highest difficulty you can fully clear.",
         "On a Captain call: tag with a one-troop march first, then send full marches when told.",
         "Use all your Accords before the last day ends."
+      ],
+      "tips": [
+        "Try a solo attack before you rally. A failed solo attack refunds its stamina.",
+        "Put Diana in your squad. Her skill cuts stamina for attacks and rallies by up to 20%.",
+        "Answer allies' help requests early to collect your 5 extra Accords.",
+        "Save Accords for boss levels you can't beat alone."
       ],
       "videos": [
         {
@@ -511,6 +594,10 @@
       ],
       "links": [
         {
+          "text": "Official FAQ",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1390-cesares-fury/"
+        },
+        {
           "text": "Caesar's Fury guide",
           "url": "https://kingshotmastery.com/guides/cesares-fury"
         }
@@ -524,11 +611,20 @@
       "know": [
         "A daily development race against an alliance from another kingdom. There is no fighting.",
         "You must be in the alliance by Sunday 23:00 UTC before it starts to count.",
-        "A caravan escort or raid is worth 10,000 points every day."
+        "A caravan escort or raid is worth 10,000 points.",
+        "Daily wins earn horns: 1 on day 1, 2 on days 2–5 and 4 in the weekend finale. The alliance with more of the 13 horns wins."
       ],
       "todo": [
         "Run all caravans and raids every day.",
-        "Spend on each day's theme only; keep a reserve for the weekend finale."
+        "Spend on each day's theme only; keep a reserve for the weekend finale.",
+        "Save Intel Missions for Tuesday and Thursday, when each one is worth 3,000 points.",
+        "Stay in the alliance until rewards go out on Sunday at 12:00 UTC."
+      ],
+      "tips": [
+        "Score with free sources first: caravans, raids, gathering, Intel Missions and beasts. Spend rare materials only when a day is close.",
+        "Wednesday is pet day: an Advanced Taming Mark is worth 9,370 points.",
+        "Thursday pays well for Forgehammers (1,875), Widgets (3,750) and Mithril (18,750). Use them then or in the finale.",
+        "Save stamina for Friday: each beast is worth 4,000–6,000 points and a Terror rally 15,000."
       ],
       "videos": [
         {
@@ -546,12 +642,16 @@
       ],
       "links": [
         {
-          "text": "Official rules",
+          "text": "Official FAQ",
           "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1500-alliance-brawl/"
         },
         {
           "text": "Brawl guide",
           "url": "https://kingshotmastery.com/events/alliance-brawl-event"
+        },
+        {
+          "text": "Daily points list",
+          "url": "https://www.kingshotguide.org/guide/kingshot-alliance-brawl"
         }
       ],
       "owner": "ops"
@@ -562,11 +662,21 @@
       "when": "Two days, four match windows a day",
       "know": [
         "A solo 10-player match of 10 minutes. Town Center 25 or higher.",
-        "Points come from holding the Vault and camps, not from kills."
+        "Points come from holding the Vault of Valor and three Forward Camps, plus supply crates and airdrops. Kills score nothing.",
+        "You get 6 matches a season. A try is used only when matchmaking succeeds and you enter.",
+        "Quitting the event completely locks you out until the next cycle. Returning to your Town does not."
       ],
       "todo": [
         "Play all 6 matches of the season.",
-        "Bring all marches home and switch off auto-join before you queue."
+        "Bring all marches home and switch off auto-join before you queue.",
+        "Ready up when a match is found. Failing to ready up again and again blocks matchmaking for a while.",
+        "Score at least some points in every match."
+      ],
+      "tips": [
+        "The Vault gives 7,000 points on first capture, then 2,100 a minute. Each Forward Camp gives 2,000, then 600 a minute. Take a camp if the Vault is crowded.",
+        "Matches that end above 0 points count toward the milestone rewards, and 25,000 season points unlocks another.",
+        "Using 5, 10 and 15 airdrop items also unlocks milestones, so fire Rocket and Ice Bombs at nearby towns.",
+        "Airdrops land in the center every 2 minutes, starting 90 seconds into the match, and only one loot squad can collect at a time."
       ],
       "videos": [
         {
@@ -586,6 +696,10 @@
         {
           "text": "Official rules",
           "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1784-blizzard-brawl/"
+        },
+        {
+          "text": "Full guide (Kingshot Mastery)",
+          "url": "https://kingshotmastery.com/guides/kingshot-blizzard-brawl-guide"
         }
       ]
     },
@@ -594,12 +708,23 @@
       "name": "Merchant Empire",
       "when": "Seven days, with Alliance Brawl",
       "know": [
-        "Four caravans and four raids a day. Allies cannot raid each other.",
-        "Only squads on the assistance list can be invited to help."
+        "Four caravans and four successful raids a day. Allies cannot raid each other.",
+        "Only squads on the assistance list can be invited to help.",
+        "Up to 2 caravans travel at once, about 3.5 hours each. Escorts run on the first 6 days only.",
+        "A caravan can be raided successfully twice and lose up to 50% of its cargo.",
+        "Every escort and raid also scores Alliance Brawl points."
       ],
       "todo": [
         "Send all four caravans every day, not right at server reset.",
-        "Post an assisting squad on the list."
+        "Post an assisting squad on the list.",
+        "Use your one daily protection request on your most valuable caravan.",
+        "Use all four raids every day, including the raid-only hours at the end."
+      ],
+      "tips": [
+        "Every caravan gets one free quality refresh. Use it before spending vouchers or gems.",
+        "Caravan Vouchers never expire, so keep spares for the next event.",
+        "Help allies' caravans with your squad. You can collect up to 3 assistance rewards a day.",
+        "Skip caravans already raided twice; they can't be hit again. Failed raids don't use up your four."
       ],
       "videos": [
         {
@@ -617,8 +742,422 @@
       ],
       "links": [
         {
-          "text": "Official rules",
+          "text": "Official FAQ",
           "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1501-merchant-empire/"
+        },
+        {
+          "text": "Merchant Empire guide",
+          "url": "https://heaven-guardian.com/kingshot-merchant-empire-event-guide/"
+        }
+      ]
+    },
+    {
+      "id": "armament",
+      "name": "Armament Competition",
+      "when": "2 days, starting Mon (Type 1) or Fri (Type 2) – check the Events tab for which weeks",
+      "know": [
+        "Opens once your kingdom reaches the Age of Truegold. Each run lasts 2 days.",
+        "Type 1 (Artisan's Vision) scores hero shards and Master items. Type 2 (Truegold) scores Forgehammers, Widgets and Mithril.",
+        "Both types score Truegold, Truegold Dust, Tempered Truegold and speedups. Speedups give only 1 point per minute.",
+        "Milestone chests are guaranteed once you reach the points. Thresholds scale with your Town Center level.",
+        "Everything this event scores also scores in KvK prep, which starts right after this run."
+      ],
+      "todo": [
+        "Open the event and check whether it's Type 1 or Type 2 before you spend anything.",
+        "Score with upgrades you were doing anyway, like a Truegold building already in progress.",
+        "Keep your KvK stockpile: Mithril, Widgets and Forgehammers for prep Thu–Fri, Truegold and speedups for Mon, Tue and Fri.",
+        "Claim each milestone chest as you reach it, then stop."
+      ],
+      "tips": [
+        "Don't use speedups here. They score 1 point per minute in this event and 30 per minute in KvK prep.",
+        "Never use Forgehammers, Widgets or Mithril in Type 1. They only score in Type 2.",
+        "Spend a rare item only when it lands you on the next chest, not far above it.",
+        "Upgrades that also count in another live event, like Strongest Governor, score in both."
+      ],
+      "videos": [],
+      "links": [
+        {
+          "text": "Kingshot Mastery guide",
+          "url": "https://kingshotmastery.com/events/armament-competition"
+        },
+        {
+          "text": "Points table (both types)",
+          "url": "https://www.kingshotguide.com/database/armament-competition-rewards"
+        },
+        {
+          "text": "Score planner",
+          "url": "https://www.kingshotguide.com/guides/kingshot-armament-competition-guide"
+        }
+      ]
+    },
+    {
+      "id": "divination",
+      "name": "Mystic Divination",
+      "when": "Every 4 weeks, 2 days",
+      "know": [
+        "Pick a Wish Reward, then flip up to 10 face-down cards with Fortune Tokens to find it.",
+        "Flips cost 1, 2, 3, 4, 6, 8, 12, 15, 20 and 25 tokens. Clearing a whole board costs 96 and guarantees the Wish Reward.",
+        "Daily missions give 22 free tokens a day, plus 1 free token a day from the event.",
+        "Unused Fortune Tokens don't expire. They carry over to the next Mystic Divination.",
+        "Back-to-back multipliers add up, not multiply: 2x then 4x gives 6x items, per the official help."
+      ],
+      "todo": [
+        "Choose your Wish Reward first. Forgehammers are a safe pick, and they also score in KvK prep on Thu and Fri.",
+        "Finish the daily missions on both days and claim the free daily token.",
+        "Flip 4 cards, then look at what's left on the board and decide: continue or reset.",
+        "Low on tokens? Keep them. They carry over, and two events' worth is close to a full board."
+      ],
+      "tips": [
+        "After 4 flips you've spent 10 tokens and a reset costs 6. Resets get cheaper the more cards you flip.",
+        "Keep going on boards that still hide your Wish Reward, a multiplier or a big Gem prize. Reset boards with only small items.",
+        "Milestones at 20 and 100 tokens spent give back 5 and 12 tokens, so plan to cross them."
+      ],
+      "videos": [
+        {
+          "title": "STOP WASTING FORTUNE TOKENS! The ULTIMATE Mystic Divination Strategy",
+          "channel": "Titan Strategy - Kingshot Guides",
+          "year": 2026,
+          "url": "https://www.youtube.com/watch?v=nWxu5U5VI1E"
+        },
+        {
+          "title": "Mystic Divination Guide (Do This for More Rewards!)",
+          "channel": "Xora KingShot",
+          "year": 2026,
+          "url": "https://www.youtube.com/watch?v=v8UJlhjtPTw"
+        }
+      ],
+      "links": [
+        {
+          "text": "Official help: multipliers",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/faq/9078-are-consecutive-multipliers-stackable-1783426398/"
+        },
+        {
+          "text": "Kingshot Mastery guide",
+          "url": "https://kingshotmastery.com/events/mystic-divination-event"
+        },
+        {
+          "text": "Kingshot Guide strategy",
+          "url": "https://www.kingshotguide.org/guide/kingshot-mystic-divination-event-guide"
+        }
+      ]
+    },
+    {
+      "id": "officer",
+      "name": "Officer Project",
+      "when": "Twice every 2 weeks, 2 days each: a Wednesday start is the troop version, a Sunday start the hero version",
+      "know": [
+        "Points are personal: each member scores on their own, claims milestone rewards, and the overall top 1,000 get ranking rewards.",
+        "A Sunday start is the hero version. Its final milestone pays Charm Designs.",
+        "Hero version points: +1 Governor Gear max score 70, Rare shard 350, Epic shard 1,220, Mythic shard 3,040, Forgehammer 6,000, Exclusive Gear widget 12,000.",
+        "A Sunday run can overlap KvK prep. Hero shards, Forgehammers and widgets are on our hold-for-KvK list."
+      ],
+      "todo": [
+        "When it opens, check which version it is: troop (Wednesday start) or hero (Sunday start).",
+        "Score with the Governor Gear upgrades you had planned anyway.",
+        "In a KvK week, keep hero shards, Forgehammers and widgets for prep unless an officer says otherwise.",
+        "Claim each milestone reward in the event before it closes."
+      ],
+      "tips": [
+        "Pick a target milestone and spend only toward it. For most players milestones pay more than chasing a rank.",
+        "Save Governor Gear materials for Sunday runs: gear score only counts in the hero version.",
+        "Save charm upgrades, Mithril and troop training for Wednesday runs. Charms score nothing on a Sunday.",
+        "Price your score with the calculators linked from the kingshot.net task list before you spend."
+      ],
+      "videos": [
+        {
+          "title": "Type 1 vs Type 2: Kingshot Officer Project Guide",
+          "channel": "Heaven Guardian King Shot",
+          "url": "https://www.youtube.com/watch?v=5VwAYQ72e5M",
+          "year": 2026
+        }
+      ],
+      "links": [
+        {
+          "text": "Tasks and points",
+          "url": "https://kingshot.net/events/officer-project"
+        },
+        {
+          "text": "Officer Project guide",
+          "url": "https://kingshotmastery.com/events/officer-project-event"
+        }
+      ]
+    },
+    {
+      "id": "glaives",
+      "name": "Golden Glaives",
+      "when": "Every 2 weeks, 3 days, during KvK or Strongest Governor prep: earn on days 1–2, shop on day 3",
+      "know": [
+        "Watchtower Intel missions pay Dim Goldstones. You swap them in the event shop for Truegold, speedups and more.",
+        "Regular Intel missions give 1 Dim Goldstone. Each Golden Glaive mission gives 10.",
+        "You earn stones on days 1 and 2 only. Day 3 is shop only.",
+        "Unspent stones turn into 10,000 Bread each when the event ends, which is a poor rate.",
+        "When it starts on KvK prep Monday (City Construction), Intel done that day counts for both."
+      ],
+      "todo": [
+        "The day before it starts: finish the 08:00 UTC Intel batch but don't claim it. Leave the 16:00 UTC batch undone.",
+        "Day 1, once Golden Glaives is live: claim the saved Intel, finish the waiting batch, then clear the new one.",
+        "Days 1 and 2: do Intel at every refresh, Golden Glaive missions first.",
+        "Day 3: spend every stone, Truegold first, then the speedups you actually need."
+      ],
+      "tips": [
+        "Keep Governor Stamina for Intel combat missions on days 1–2 instead of spending it the day before.",
+        "Don't stockpile Intel for several days: older missions refresh or expire. Only the last cycles before the start are safe to hold.",
+        "Buy out the Truegold stock first. Guides rank it the best item in the shop.",
+        "Shop items have purchase limits, so look at the whole shop before you spend."
+      ],
+      "videos": [
+        {
+          "title": "Use This Quick Kingshot Hack to Maximize Golden Glaives Rewards",
+          "channel": "Strat Game Sloth",
+          "url": "https://www.youtube.com/watch?v=PeVKMnWFzRc",
+          "year": 2025
+        }
+      ],
+      "links": [
+        {
+          "text": "Golden Glaives guide",
+          "url": "https://heaven-guardian.com/kingshot-golden-glaives-event-guide-maximize-rewards/"
+        },
+        {
+          "text": "Event facts",
+          "url": "https://kingshotmastery.com/events/golden-glaives-event"
+        }
+      ]
+    },
+    {
+      "id": "cove",
+      "name": "Treasure Cove",
+      "when": "Check the in-game Events tab",
+      "know": [
+        "A paid pack event. The treasure map has 5 sections, and a new one opens each day.",
+        "Buying that section's Treasure Cove Pack activates it. A section opening on its own doesn't count.",
+        "Activating all 5 sections unlocks the grand prize, Captain's Treasure. A partial map gives no grand prize.",
+        "A free chest on the event screen can be claimed once a day with no purchase."
+      ],
+      "todo": [
+        "Claim the free chest every day. It resets at 00:00 UTC.",
+        "Thinking of buying? Decide first whether you'll buy all 5 packs. Fewer than 5 means no Captain's Treasure.",
+        "Pick your Captain's Treasure before buying, and check it again before claiming.",
+        "Claim the grand prize yourself before the countdown ends."
+      ],
+      "tips": [
+        "You don't have to buy each pack on its opening day, but leave time before the end.",
+        "Don't rely on the mail fallback. Unclaimed prizes may arrive as a default reward, not your pick.",
+        "Compare the full 5-pack cost with the grand prize before you buy the first one.",
+        "Not spending? The free daily chest is the whole event for you."
+      ],
+      "videos": [
+        {
+          "title": "Treasure Cove Ultimate Guide Kingshot",
+          "channel": "Dino KS",
+          "year": 2026,
+          "url": "https://www.youtube.com/watch?v=A4o5DUdQngA"
+        },
+        {
+          "title": "Kingshot Treasure Cove: Are the Packs Worth Buying?",
+          "channel": "Ritam Adhikari",
+          "year": 2026,
+          "url": "https://www.youtube.com/watch?v=g7APLn8FnBI"
+        }
+      ],
+      "links": [
+        {
+          "text": "Kingshot Mastery guide",
+          "url": "https://kingshotmastery.com/guides/kingshot-treasure-cove-guide"
+        },
+        {
+          "text": "Detailed guide (2026)",
+          "url": "https://heaven-guardian.com/kingshot-treasure-cove-guide/"
+        }
+      ]
+    },
+    {
+      "id": "roulette",
+      "name": "Hero Roulette",
+      "when": "3 days, starting Day 2 of KvK, Strongest Governor or Hall of Governors",
+      "know": [
+        "One spin costs 1,500 Gems or 1 Lucky Chip. Ten spins cost 13,500 Gems.",
+        "You get 1 free Lucky Chip each day. Unused chips don't expire and carry over to later Roulettes.",
+        "Spin chests unlock at 5, 15, 35, 70 and 120 spins. The 70 chest gives 30 shards and the 120 chest gives 50.",
+        "Since the July 2026 update you can pick the current generation's hero or one from the two generations before.",
+        "You can spin up to 150 times a day."
+      ],
+      "todo": [
+        "Claim the free Lucky Chip every day, even if you don't plan to spend Gems.",
+        "Do your spins on KvK prep Tue or Wed. Each spin also scores 8,000 KvK points on those days.",
+        "Pick your target before spinning, 70 or 120 spins, and don't stop between chests.",
+        "Check the hero portrait before your first spin so the shards go to the hero you want."
+      ],
+      "tips": [
+        "Use Lucky Chips before Gems, and buy spins in tens to save 10%.",
+        "Nothing extra unlocks past 120 spins, so stop there.",
+        "Use the shards you win on Wed's prep day, when each Mythic hero shard scores 3,040 KvK points.",
+        "Can't reach 70 spins? Save your Gems and chips for a later Roulette instead of stopping halfway."
+      ],
+      "videos": [
+        {
+          "title": "The Crazy Truth: Why You Shouldn't Skip Saul! Hero Roulette Guide",
+          "channel": "wetcat",
+          "year": 2026,
+          "url": "https://www.youtube.com/watch?v=DlFrgQVYQXE"
+        },
+        {
+          "title": "Kingshot Hero Roulette Guide! Don't Spin Before Watching This!",
+          "channel": "NPC KINGS",
+          "year": 2026,
+          "url": "https://www.youtube.com/watch?v=Sg7ciSlMaNc"
+        }
+      ],
+      "links": [
+        {
+          "text": "Kingshot Mastery guide",
+          "url": "https://kingshotmastery.com/events/hero-roulette"
+        },
+        {
+          "text": "Detailed guide (2026)",
+          "url": "https://heaven-guardian.com/kingshot-hero-roulette-guide/"
+        },
+        {
+          "text": "Kingshot Guide strategy",
+          "url": "https://www.kingshotguide.org/guide/kingshot-hero-roulette"
+        }
+      ]
+    },
+    {
+      "id": "beasts",
+      "name": "Defeat Beasts",
+      "when": "Every 2 weeks, 2 days",
+      "know": [
+        "Each beast you defeat gives 1 point and costs 10 stamina.",
+        "Each Terror rally you call and win gives 3 points and costs you 25 stamina.",
+        "There are 4 milestone chests. The last one needs 80 points.",
+        "The top 100 players also get ranking rewards."
+      ],
+      "todo": [
+        "Save stamina for a day or two before the event starts.",
+        "Call Terror rallies when the alliance is online. They give more points per stamina than beasts.",
+        "Hunt beasts to fill the gap to the next milestone, or when nobody is around for rallies.",
+        "Claim all 4 milestones before chasing a rank."
+      ],
+      "tips": [
+        "Have Diana? Put her in your hunting or rally lineup. She cuts stamina costs by 10–20%.",
+        "About 27 Terror rallies reach 80 points for 675 stamina. Beasts alone take 800 stamina.",
+        "Pick Terror levels your alliance beats every time. Points only count for a win."
+      ],
+      "videos": [
+        {
+          "title": "Top Rank Victory – Crushing the \"Defeat Nearby Beasts\" Event in Kingshot",
+          "channel": "Master Gaming",
+          "year": 2025,
+          "url": "https://www.youtube.com/watch?v=Qvo9n6O3vig"
+        }
+      ],
+      "links": [
+        {
+          "text": "Kingshot Mastery guide",
+          "url": "https://kingshotmastery.com/events/defeat-nearby-beasts-event"
+        },
+        {
+          "text": "Detailed guide (2026)",
+          "url": "https://heaven-guardian.com/kingshot-defeat-nearby-beasts-event-guide/"
+        }
+      ]
+    },
+    {
+      "id": "eternity",
+      "name": "Eternity's Reach",
+      "when": "Every 2 weeks; each match lasts 30 minutes",
+      "know": [
+        "A 30-minute solo match on its own map. Event troops are unlimited, so your real army takes no losses.",
+        "You score copper ore from veins, guard kills and skills. Rewards are Governor Charm materials.",
+        "Killing Cesares Guards gives XP to unlock the in-event skill tree. Level 2 guards give more XP than Level 1.",
+        "A defeated hero sits out for about 5 minutes, so spread strong heroes across your marches."
+      ],
+      "todo": [
+        "Open Eternity's Reach in the Events tab and check when our kingdom's sessions run.",
+        "During the 2:30 countdown, pick nearby Level 2 guards to hit first.",
+        "Unlock skills in this order: Right, Right, Left, Left, Right.",
+        "After the third skill, send one march onto a vein every 60 seconds for the 5,000 bonus, then recall and resend."
+      ],
+      "tips": [
+        "Watch for the Fracture Vein warning. Recall troops a few seconds early, then grab as many Fracture Veins as you can.",
+        "Big accounts usually hold the Peak of Eternity in the center. Guides say top 10 is possible without it.",
+        "With the tree maxed, gather from Level 2 veins. Level 3 veins are usually taken by big spenders.",
+        "More march queues help a lot: more marches means more guard kills and vein bonuses."
+      ],
+      "videos": [
+        {
+          "title": "Eternity's Reach Full Event Guide: Tips to Get Top 5",
+          "channel": "Xora KingShot",
+          "url": "https://www.youtube.com/watch?v=8ql6VT4NjbY",
+          "year": 2026
+        },
+        {
+          "title": "Kingshot Eternity's Reach Guide: How I Dominated with 5 Marches",
+          "channel": "wetcat",
+          "url": "https://www.youtube.com/watch?v=7TY04g8d560",
+          "year": 2026
+        }
+      ],
+      "links": [
+        {
+          "text": "F2P guide",
+          "url": "https://kingshotguides.com/guide/eternitys-reach-event-guide-f2p-friendly/"
+        },
+        {
+          "text": "Event overview",
+          "url": "https://www.kingshotguide.com/events/eternitys-reach"
+        }
+      ]
+    },
+    {
+      "id": "finder",
+      "name": "Finder's Fortune",
+      "when": "Check the in-game Events tab",
+      "know": [
+        "A hidden-object event: find the named items in a scene before the timer runs out. You need Town Center 7.",
+        "Each season restarts at Chapter 1, and there are 10 chapters right now.",
+        "Buttery Bones are spent to play stages and vanish when the event ends. Royal Cans and Focusbells carry over.",
+        "The timer never pauses, even if you leave the round. Too many wrong taps in a row lock you out for 3 seconds."
+      ],
+      "todo": [
+        "Spend every Buttery Bone before the event ends; leftovers are not mailed to you.",
+        "Failed a stage? Retry with Buttery Bones. The rewards you earned stay.",
+        "Cleared every stage? Team up with kingdom members in Finder's Fusion to finish the Daily Missions.",
+        "Before a stage, open its map in an item finder, because the clock won't stop for you."
+      ],
+      "tips": [
+        "Guides say item spots are fixed per map, so learning a map pays off on every stage that uses it.",
+        "Use Focusbells only when one or two items remain and you know where they are. Each extra-time use costs more.",
+        "Buying the Treasure Guide or Trove Map? Do it early: the Finder XP bonus only counts after you unlock it.",
+        "In Finder's Fusion, split the board with your partner, for example left and right, and call out small items."
+      ],
+      "videos": [
+        {
+          "title": "Kingshot Finder's Fortune Event: Guide and Tips",
+          "channel": "Xora KingShot",
+          "url": "https://www.youtube.com/watch?v=N5QZnxv0yJQ",
+          "year": 2026
+        },
+        {
+          "title": "Don't Waste Buttery Bones! Finder's Fortune Ultimate Guide",
+          "channel": "Falcon OP - Kingshot Guides",
+          "url": "https://www.youtube.com/watch?v=sMOpqRyT2i4",
+          "year": 2026
+        }
+      ],
+      "links": [
+        {
+          "text": "Official FAQ",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1794-finder-s-fortune/"
+        },
+        {
+          "text": "Finder's Fortune guide",
+          "url": "https://kingshotmastery.com/guides/kingshot-finders-fortune-guide"
+        },
+        {
+          "text": "Item finder",
+          "url": "https://www.kingshotguide.com/calculator/finders-fortune-item-finder"
         }
       ]
     }

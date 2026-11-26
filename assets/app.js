@@ -527,8 +527,9 @@
         items.forEach(function (t2) { ul.appendChild(el('li', null, t2)); });
         b.appendChild(ul);
       }
+      list2('In short', e.know);
       list2('What you do', e.todo);
-      list2('What to know', e.know);
+      list2('Get the most out of it', e.tips);
       if (e.videos && e.videos.length) {
         b.appendChild(el('h4', null, 'Watch'));
         var v = el('div', 'vids');
@@ -536,9 +537,9 @@
         b.appendChild(v);
       }
       if (e.links && e.links.length) {
-        b.appendChild(el('h4', null, 'Read more'));
-        var p = el('p'); p.style.margin = '0';
-        e.links.forEach(function (l, i) { if (i) p.appendChild(document.createTextNode(' · ')); p.appendChild(link(l.text, l.url)); });
+        b.appendChild(el('h4', null, 'Full guides'));
+        var p = el('div', 'ev-links');
+        e.links.forEach(function (l) { p.appendChild(link(l.text, l.url, 'ev-link')); });
         b.appendChild(p);
       }
       d.appendChild(b);
