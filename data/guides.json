@@ -43,6 +43,13 @@
       "backup": ""
     }
   },
+  "daily": [
+    "Read the Alliance Notice for today's times.",
+    "Tap Alliance Help on every request.",
+    "Donate to the alliance tech the officers marked.",
+    "Claim your alliance gifts.",
+    "Bear Hunt day? Join rallies until it ends."
+  ],
   "events": [
     {
       "id": "kvk",
@@ -96,7 +103,8 @@
           "text": "KvK opponent scout",
           "url": "https://www.kingshotguide.org/tools/kvk-opponent-scout"
         }
-      ]
+      ],
+      "owner": "war"
     },
     {
       "id": "castle",
@@ -144,7 +152,8 @@
           "text": "March sync timer",
           "url": "https://www.kingshotguide.org/calculator/kingshot-march-sync-timer"
         }
-      ]
+      ],
+      "owner": "war"
     },
     {
       "id": "bear",
@@ -189,7 +198,8 @@
           "text": "Bear ratio calculator",
           "url": "https://www.kingshotguide.org/calculator/bear-ratio-calculator"
         }
-      ]
+      ],
+      "owner": "ops"
     },
     {
       "id": "vikings",
@@ -233,7 +243,8 @@
           "text": "Viking calculator",
           "url": "https://www.kingshotguide.org/calculator/viking-vengeance-calculator"
         }
-      ]
+      ],
+      "owner": "ops"
     },
     {
       "id": "tri",
@@ -273,7 +284,8 @@
           "text": "Tri-Alliance guide",
           "url": "https://kingshotmastery.com/guides/tri-alliance-clash"
         }
-      ]
+      ],
+      "owner": "war"
     },
     {
       "id": "swordland",
@@ -312,7 +324,8 @@
           "text": "Swordland planner",
           "url": "https://www.kingshotguide.org/tools/swordland-showdown-planner"
         }
-      ]
+      ],
+      "owner": "war"
     },
     {
       "id": "sanctuary",
@@ -340,7 +353,8 @@
           "text": "Official rules",
           "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/section/1738-sanctuary-battle/"
         }
-      ]
+      ],
+      "owner": "war"
     },
     {
       "id": "championship",
@@ -382,7 +396,8 @@
           "text": "Lane calculator",
           "url": "https://kingshotmastery.com/tools/alliance-championship-calculator"
         }
-      ]
+      ],
+      "owner": "war"
     },
     {
       "id": "mobilization",
@@ -416,7 +431,8 @@
           "text": "Mission calculator",
           "url": "https://kingshotguide.org/calculator/alliance-mobilization-calculator"
         }
-      ]
+      ],
+      "owner": "ops"
     },
     {
       "id": "caesar",
@@ -450,7 +466,8 @@
           "text": "Caesar's Fury guide",
           "url": "https://kingshotmastery.com/guides/cesares-fury"
         }
-      ]
+      ],
+      "owner": "ops"
     },
     {
       "id": "brawl",
@@ -488,7 +505,8 @@
           "text": "Brawl guide",
           "url": "https://kingshotmastery.com/events/alliance-brawl-event"
         }
-      ]
+      ],
+      "owner": "ops"
     },
     {
       "id": "blizzard",

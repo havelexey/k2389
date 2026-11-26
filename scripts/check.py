@@ -62,6 +62,8 @@ for i, e in enumerate(guides.get("events", [])):
     for k in ("id", "name", "when", "know", "todo"):
         if not e.get(k):
             err(f"guides.events[{i}] missing {k}")
+    if e.get("owner") and e["owner"] not in ROLES:
+        err(f"event {e.get('id')}: owner {e['owner']!r} unknown")
     if e.get("id") in event_ids:
         err(f"duplicate event id {e.get('id')}")
     event_ids.add(e.get("id"))
@@ -71,6 +73,8 @@ for i, e in enumerate(guides.get("events", [])):
         for k in ("title", "channel"):
             if not v.get(k):
                 err(f"event {e.get('id')}: video missing {k}")
+if not isinstance(guides.get("daily", []), list) or not all(isinstance(x, str) and x for x in guides.get("daily", [])):
+    err("guides.daily must be a list of non-empty strings")
 for g in guides.get("tool_groups", []):
     for t in g.get("tools", []):
         for k in ("name", "url", "what"):
@@ -139,6 +143,10 @@ for r in week.get("recurring", []):
 for n in week.get("notices", []):
     if n.get("owner") not in ROLES:
         err(f"notice {n.get('title')!r}: owner unknown")
+    if n.get("date"):
+        nd = date(n["date"], f"notice {n.get('title')!r}")
+        if nd and start and end and not (start <= nd <= end + dt.timedelta(days=7)):
+            err(f"notice {n.get('title')!r}: date {nd} outside the window")
     if len(n.get("text", "")) > NOTICE_LIMIT:
         err(f"notice {n.get('title')!r} is {len(n['text'])} chars (limit {NOTICE_LIMIT})")
 

@@ -8,7 +8,8 @@ description: Weekly refresh of the K2389 Alliance Board (Kingshot, Kingdom 2389)
 The site is static: `index.html` + `assets/` render two data files. Weekly work edits **data only**.
 
 - `data/week.json` – the plan: window, goals, rules for everyone, day-by-day calendar with tasks per role, notices.
-- `data/guides.json` – evergreen: roles (+ officer names), event guides (know / todo / videos / links), tool groups, things to confirm in game.
+- `data/guides.json` – evergreen: roles (+ officer names), `daily` (the every-day checklist for all members), event guides (know / todo / videos / links, optional `owner` = the officer role who runs it), tool groups, things to confirm in game.
+- The page is person-centred: a reader picks "I am" (Member or an officer role) and sees today's to-do, the next 14 days, goals and notices for that role. So every task must make sense on its own, read by that one person.
 - `scripts/check.py` – the gate CI runs. Run it locally before every commit.
 - Merge to `main` = deploy to GitHub Pages (https://havelexey.github.io/k2389/). Never push to main directly; always a PR.
 
@@ -26,8 +27,8 @@ The site is static: `index.html` + `assets/` render two data files. Weekly work 
    - `recurring`: things with no fixed date in the data (Bear Hunt at the alliance's hour).
    - `goals`: 3–5, each with an owner role, a date, and a measurable target.
    - `rules`: what every member must do or hold this fortnight (spending freezes before KvK prep or Strongest Governor, troop backlog, intel timing, shield rules).
-   - `days`: one entry per day with something on it. Link events with `{"text": ..., "event": "<guides id>"}`; plain strings for events with no guide. Tasks: `members` tasks first, then the officer who owns it. Peak battle days `"kind": "peak"`, KvK prep days `"kind": "prep"`.
-   - `notices`: paste-ready Alliance Notices, ≤300 characters each, with `post` = when to post.
+   - `days`: one entry per day with something on it. Every day in the window should have at least one `members` task: it is the member's to-do for that day. Link events with `{"text": ..., "event": "<guides id>"}`; plain strings for events with no guide. Tasks: `members` tasks first, then the officer who owns it. Peak battle days `"kind": "peak"`, KvK prep days `"kind": "prep"`.
+   - `notices`: paste-ready Alliance Notices, ≤300 characters each, with `post` = when to post and `date` (ISO) when it has a fixed day – the owner then sees it in Your day with a Copy button.
    - Keep `alliance` and officer names as they are unless Alex changed them.
 4. Check `data/guides.json`: does every event in the new window have a guide? If a new event appears (e.g. Flamedragon Tyrant, Strongest Governor), add a guide from the official help center (https://centurygames.helpshift.com/hc/en/140-kingshot/) and one fan guide (kingshotmastery.com, kingshotguide.org). Fix any rule the official help contradicts.
 5. Videos: only add a YouTube video after checking `https://www.youtube.com/oembed?url=<watch url>&format=json` returns a Kingshot title. Prefer the latest year. Replace a video when a newer, better one exists; never more than 2 per event.

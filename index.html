@@ -20,9 +20,10 @@
     <span class="clock" id="clock"></span>
   </div>
   <nav class="wrap nav" aria-label="Sections">
-    <a href="#timeline">Timeline</a>
+    <a href="#timeline">Coming up</a>
+    <a href="#today">Your day</a>
+    <a href="#calendar">14 days</a>
     <a href="#goals">Goals</a>
-    <a href="#calendar">Calendar</a>
     <a href="#events">Events</a>
     <a href="#tools">Tools</a>
     <a href="#officers">Officers</a>
@@ -45,6 +46,25 @@
     <p class="note" id="recurring"></p>
   </section>
 
+  <section id="today" aria-labelledby="h-today">
+    <div class="sec-head">
+      <h2 id="h-today">Your day</h2>
+      <span class="sec-date" id="today-date"></span>
+    </div>
+    <div class="me">
+      <span class="me-k">I am</span>
+      <div class="me-pick" id="me-pick" role="group" aria-label="I am"></div>
+      <p class="note" id="me-hint"></p>
+    </div>
+    <div class="today" id="today-box"></div>
+  </section>
+
+  <section id="calendar" aria-labelledby="h-cal">
+    <h2 id="h-cal">Your next 14 days</h2>
+    <p class="note" id="days-note"></p>
+    <div class="days" id="day-list"></div>
+  </section>
+
   <section id="goals" aria-labelledby="h-goals">
     <h2 id="h-goals">This week's goals</h2>
     <p class="lead" id="headline"></p>
@@ -55,16 +75,9 @@
     </div>
   </section>
 
-  <section id="calendar" aria-labelledby="h-cal">
-    <h2 id="h-cal">Calendar</h2>
-    <p class="note">Times are UTC, the game clock. Central Europe is one hour ahead.</p>
-    <div class="pick" id="role-pick" aria-label="Show tasks for"></div>
-    <div class="days" id="day-list"></div>
-  </section>
-
   <section id="events" aria-labelledby="h-ev">
     <h2 id="h-ev">Event guides</h2>
-    <p class="note">What to know, what to do, and the best videos for each event. Tap an event to open it.</p>
+    <p class="note">Soonest first. What you do, what to know, and the best videos. Tap an event to open it.</p>
     <div id="event-list"></div>
   </section>
 
@@ -77,9 +90,11 @@
     <h2 id="h-off">Officers</h2>
     <p class="note">Ask the officer who owns the topic first. Each officer has a backup.</p>
     <div class="roles" id="role-list"></div>
-    <h3>Notices to post this week</h3>
-    <p class="note">Copy, replace anything in capitals, paste into Alliance Notices. Limit about 300 characters.</p>
-    <div id="notice-list"></div>
+    <div id="notices" hidden>
+      <h3 id="notices-h">Notices to post</h3>
+      <p class="note">Copy, replace anything in capitals, paste into Alliance Notices. Limit about 300 characters.</p>
+      <div id="notice-list"></div>
+    </div>
   </section>
 
   <footer class="foot">

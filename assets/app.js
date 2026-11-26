@@ -5,7 +5,8 @@
   var WD = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
   var MO = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   var roles = {};
-  var filter = 'all';
+  var me = 'members';      // who is reading: a member, or one of the officer roles
+  var showPast = false;
   var week, guides;
 
   function $(id) { return document.getElementById(id); }
@@ -40,6 +41,64 @@
       if (v === undefined) return localStorage.getItem('k2389-' + k);
       localStorage.setItem('k2389-' + k, v);
     } catch (e) { return null; }
+  }
+  function title(r) { return r === 'members' ? 'Member' : roleName(r); }
+  function nameOf(r) { return roles[r] && roles[r].name ? roles[r].name : ''; }
+  function dayOf(iso) { return week.days.filter(function (d) { return d.date === iso; })[0]; }
+  function forMe(t) { return me === 'leader' || t.role === 'members' || t.role === me; }
+  function evLink(cls, text, ref) {
+    var a = el('a', cls, text); a.href = '#ev-' + ref;
+    a.addEventListener('click', function () { var d = document.getElementById('ev-' + ref); if (d) d.open = true; });
+    return a;
+  }
+  function onTag(o) {
+    var name = typeof o === 'string' ? o : o.text;
+    var ref = typeof o === 'string' ? null : o.event;
+    return ref ? evLink('tag', name, ref) : el('span', 'tag', name);
+  }
+
+  /* Ticked to-dos live in this browser only, one list per day. */
+  function doneList(day) { try { return JSON.parse(pref('done-' + day) || '[]'); } catch (e) { return []; } }
+  function todo(day, key, text, cls) {
+    var lab = el('label', 'todo' + (cls ? ' ' + cls : ''));
+    var box = document.createElement('input'); box.type = 'checkbox';
+    box.checked = doneList(day).indexOf(key) >= 0;
+    lab.classList.toggle('done', box.checked);
+    box.addEventListener('change', function () {
+      var l = doneList(day).filter(function (k) { return k !== key; });
+      if (box.checked) l.push(key);
+      pref('done-' + day, JSON.stringify(l));
+      lab.classList.toggle('done', box.checked);
+    });
+    lab.appendChild(box);
+    lab.appendChild(el('span', null, text));
+    return lab;
+  }
+
+  function copyBtn(text, p) {
+    var btn = el('button', 'copy', 'Copy'); btn.type = 'button';
+    btn.addEventListener('click', function () {
+      function ok() { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy'; }, 1500); }
+      function fb() {
+        try { var r = document.createRange(); r.selectNodeContents(p); var s = getSelection(); s.removeAllRanges(); s.addRange(r); } catch (e) {}
+        btn.textContent = 'Selected – copy it'; setTimeout(function () { btn.textContent = 'Copy'; }, 2500);
+      }
+      try { navigator.clipboard.writeText(text).then(ok, fb); } catch (e) { fb(); }
+    });
+    return btn;
+  }
+  function noticeCard(n) {
+    var c = el('div', 'notice'); c.setAttribute('data-role', n.owner);
+    var h = el('h4', null, n.title + ' · ');
+    h.appendChild(chip(n.owner));
+    c.appendChild(h);
+    var p = el('p', null, n.text);
+    c.appendChild(p);
+    var m = el('div', 'n-meta');
+    m.appendChild(el('span', null, n.text.length + ' characters' + (n.post ? ' · post ' + n.post : '')));
+    m.appendChild(copyBtn(n.text, p));
+    c.appendChild(m);
+    return c;
   }
 
   function renderHead() {
@@ -215,13 +274,112 @@
     });
   }
 
+  /* ---------- Who am I: one picker drives every block below ---------- */
+  function renderMe() {
+    var p = $('me-pick'); clear(p);
+    ROLE_ORDER.forEach(function (r) {
+      var b = el('button', null, title(r));
+      if (nameOf(r)) b.appendChild(el('small', null, nameOf(r)));
+      b.type = 'button';
+      b.setAttribute('data-role', r);
+      b.setAttribute('aria-pressed', me === r ? 'true' : 'false');
+      b.addEventListener('click', function () { me = r; pref('me', r); renderPersonal(); });
+      p.appendChild(b);
+    });
+    var hint = $('me-hint');
+    hint.textContent = me === 'members'
+      ? 'Officer? Pick your role and the whole page shows your jobs too.'
+      : me === 'leader'
+        ? 'You see every officer\'s jobs, so you can check nothing is dropped.'
+        : 'You see your officer jobs plus everything a member does.';
+  }
+
+  function group(heading, role) {
+    var g = el('div', 'grp'); g.setAttribute('data-role', role);
+    g.appendChild(el('h3', null, heading));
+    return g;
+  }
+
+  function renderToday() {
+    var box = $('today-box'); clear(box);
+    var t = todayUTC(), d = dayOf(t), tasks = d ? d.tasks : [];
+    $('today-date').textContent = fmt(t) + (d && d.label ? ' · ' + d.label : '');
+    if (d && d.on.length) {
+      var tags = el('div', 'day-tags today-on');
+      tags.appendChild(el('span', 'on-k', 'In game today'));
+      d.on.forEach(function (o) { tags.appendChild(onTag(o)); });
+      box.appendChild(tags);
+    }
+
+    if (me !== 'members') {
+      var job = group('Your job as ' + roleName(me), me);
+      var mine = tasks.filter(function (x) { return x.role === me; });
+      var nts = (week.notices || []).filter(function (n) { return n.date === t && n.owner === me; });
+      mine.forEach(function (x) { job.appendChild(todo(t, me + ':' + x.text, x.text)); });
+      nts.forEach(function (n) {
+        job.appendChild(el('p', 'sub', 'Post this notice today'));
+        job.appendChild(noticeCard(n));
+      });
+      if (!mine.length && !nts.length) job.appendChild(el('p', 'empty', me === 'leader' ? 'Nothing only for you today.' : 'No officer jobs today. Your next ones are in the 14 days below.'));
+      box.appendChild(job);
+    }
+
+    if (me === 'leader') {
+      var off = group('Your officers today', 'leader');
+      var ot = tasks.filter(function (x) { return x.role !== 'members' && x.role !== 'leader'; });
+      ot.sort(function (a, b) { return ROLE_ORDER.indexOf(a.role) - ROLE_ORDER.indexOf(b.role); });
+      ot.forEach(function (x) {
+        var row = el('div', 'task'); row.setAttribute('data-role', x.role);
+        row.appendChild(chip(x.role, nameOf(x.role) || roles[x.role].short));
+        row.appendChild(el('span', null, x.text));
+        off.appendChild(row);
+      });
+      (week.notices || []).filter(function (n) { return n.date === t; }).forEach(function (n) {
+        var row = el('div', 'task'); row.setAttribute('data-role', n.owner);
+        row.appendChild(chip(n.owner, nameOf(n.owner) || roles[n.owner].short));
+        row.appendChild(el('span', null, 'Posts the notice "' + n.title + '".'));
+        off.appendChild(row);
+      });
+      if (off.children.length === 1) off.appendChild(el('p', 'empty', 'No officer jobs today.'));
+      box.appendChild(off);
+    }
+
+    var mem = group(me === 'members' ? 'Your to-do' : 'As a member', 'members');
+    var mt = tasks.filter(function (x) { return x.role === 'members'; });
+    if (mt.length) {
+      mem.appendChild(el('p', 'sub', 'Today'));
+      mt.forEach(function (x) { mem.appendChild(todo(t, 'm:' + x.text, x.text, 'big')); });
+    }
+    if ((guides.daily || []).length) {
+      mem.appendChild(el('p', 'sub', 'Every day'));
+      guides.daily.forEach(function (x) { mem.appendChild(todo(t, 'd:' + x, x)); });
+    }
+    box.appendChild(mem);
+
+    var nx = week.days.filter(function (x) { return x.date > t; })[0];
+    if (nx) {
+      var n = nx.tasks.filter(forMe).length;
+      var a = el('a', 'tomorrow'); a.href = '#day-' + nx.date;
+      var tm = new Date(Date.parse(t + 'T00:00Z') + DAY).toISOString().slice(0, 10) === nx.date;
+      a.appendChild(el('b', null, (tm ? 'Tomorrow, ' : 'Next, ') + fmt(nx.date)));
+      var names = nx.on.slice(0, 3).map(function (o) { return typeof o === 'string' ? o : o.text; });
+      a.appendChild(el('span', null, names.join(', ') + (nx.on.length > 3 ? ' and more' : '') +
+        '. ' + n + (n === 1 ? ' task' : ' tasks') + ' for you.'));
+      box.appendChild(a);
+    }
+  }
+
   function renderGoals() {
     $('headline').textContent = week.headline;
     var g = $('goal-list'); clear(g);
-    week.goals.forEach(function (x) {
-      var c = el('div', 'goal');
+    function mineG(x) { return x.owner === me || (me !== 'leader' && x.owner === 'members'); }
+    week.goals.slice().sort(function (a, b) { return (mineG(b) ? 1 : 0) - (mineG(a) ? 1 : 0); }).forEach(function (x) {
+      var c = el('div', 'goal' + (mineG(x) ? ' mine' : ''));
       c.setAttribute('data-role', x.owner);
-      c.appendChild(chip(x.owner));
+      var top = el('div', 'goal-top');
+      top.appendChild(chip(x.owner));
+      if (mineG(x)) top.appendChild(el('span', 'yours', x.owner === 'members' ? 'You help' : 'Yours'));
+      c.appendChild(top);
       c.appendChild(el('b', null, x.title));
       if (x.when) c.appendChild(el('span', 'when', x.when));
       c.appendChild(el('p', null, x.detail));
@@ -231,24 +389,21 @@
     week.rules.forEach(function (t) { r.appendChild(el('li', null, t)); });
   }
 
-  function renderPick() {
-    var p = $('role-pick'); clear(p);
-    ['all'].concat(ROLE_ORDER).forEach(function (r) {
-      var b = el('button', null, r === 'all' ? 'Everything' : roleName(r));
-      b.type = 'button';
-      b.setAttribute('data-role', r);
-      b.setAttribute('aria-pressed', filter === r ? 'true' : 'false');
-      b.addEventListener('click', function () { filter = r; pref('filter', r); renderPick(); renderDays(); });
-      p.appendChild(b);
-    });
-  }
-
   function renderDays() {
     var box = $('day-list'); clear(box);
     var t = todayUTC();
-    var evIds = {};
-    guides.events.forEach(function (e) { evIds[e.id] = true; });
+    $('days-note').textContent = me === 'leader'
+      ? 'Every task for every officer. Times are UTC, the game clock; Central Europe is one hour ahead.'
+      : 'Showing what a ' + title(me) + (me === 'members' ? '' : ' and every member') + ' does. Times are UTC, the game clock; Central Europe is one hour ahead.';
+    var past = week.days.filter(function (d) { return d.date < t; });
+    if (past.length) {
+      var more = el('button', 'more', showPast ? 'Hide earlier days' : 'Show ' + past.length + ' earlier ' + (past.length === 1 ? 'day' : 'days'));
+      more.type = 'button';
+      more.addEventListener('click', function () { showPast = !showPast; renderDays(); });
+      box.appendChild(more);
+    }
     week.days.forEach(function (d) {
+      if (d.date < t && !showPast) return;
       var card = el('article', 'day' + (d.date < t ? ' past' : '') + (d.date === t ? ' today' : ''));
       if (d.kind) card.setAttribute('data-kind', d.kind);
       card.id = 'day-' + d.date;
@@ -258,23 +413,18 @@
       if (d.date === t) h.appendChild(el('span', 'now', 'Today'));
       card.appendChild(h);
       var tags = el('div', 'day-tags');
-      d.on.forEach(function (o) {
-        var name = typeof o === 'string' ? o : o.text;
-        var ref = typeof o === 'string' ? null : o.event;
-        if (ref && evIds[ref]) {
-          var a = el('a', 'tag', name); a.href = '#ev-' + ref;
-          a.addEventListener('click', function () { var dd = document.getElementById('ev-' + ref); if (dd) dd.open = true; });
-          tags.appendChild(a);
-        } else tags.appendChild(el('span', 'tag', name));
-      });
+      d.on.forEach(function (o) { tags.appendChild(onTag(o)); });
       card.appendChild(tags);
-      var list = d.tasks.filter(function (x) { return filter === 'all' || x.role === filter; });
-      list.sort(function (a, b) { return ROLE_ORDER.indexOf(a.role) - ROLE_ORDER.indexOf(b.role); });
-      if (!list.length) card.appendChild(el('p', 'empty', 'Nothing for ' + roleName(filter) + ' this day.'));
+      var list = d.tasks.filter(forMe);
+      list.sort(function (a, b) {
+        function rank(r) { return r === me ? -1 : ROLE_ORDER.indexOf(r); }
+        return rank(a.role) - rank(b.role);
+      });
+      if (!list.length) card.appendChild(el('p', 'empty', 'Nothing for you this day.'));
       list.forEach(function (x) {
-        var row = el('div', 'task');
+        var row = el('div', 'task' + (x.role === me && me !== 'members' ? ' mine' : ''));
         row.setAttribute('data-role', x.role);
-        row.appendChild(chip(x.role, roles[x.role] ? roles[x.role].short : x.role));
+        row.appendChild(chip(x.role, x.role === 'members' ? 'All' : (x.role === me ? 'You' : roles[x.role].short)));
         row.appendChild(el('span', null, x.text));
         card.appendChild(row);
       });
@@ -299,29 +449,64 @@
     return a;
   }
 
+  /* Guides follow the timeline: what is coming soonest comes first. */
+  function nextOf(id, now) {
+    var best = null;
+    (week.timeline || []).forEach(function (it) {
+      if (it.event === id && ms(it.end) > now && (!best || ms(it.start) < ms(best.start))) best = it;
+    });
+    return best;
+  }
+
   function renderEvents() {
-    var box = $('event-list'); clear(box);
-    guides.events.forEach(function (e) {
+    var box = $('event-list');
+    var open = {};
+    Array.prototype.forEach.call(box.querySelectorAll('details[open]'), function (d) { open[d.id] = true; });
+    clear(box);
+    var now = Date.now();
+    var rec = {};
+    (week.recurring || []).forEach(function (r) { if (r.event) rec[r.event] = r; });
+    var list = guides.events.map(function (e) { return { e: e, nx: nextOf(e.id, now), rec: rec[e.id] }; });
+    function key(x) { return x.rec ? now : x.nx ? ms(x.nx.start) : Infinity; }
+    list.sort(function (a, b) { return key(a) - key(b); });
+    var later = false;
+    box.appendChild(el('h3', 'ev-group', 'Coming up'));
+    list.forEach(function (x) {
+      var e = x.e;
+      if (!x.nx && !x.rec && !later) { later = true; box.appendChild(el('h3', 'ev-group', 'Not in the next two weeks')); }
       var d = el('details', 'ev'); d.id = 'ev-' + e.id;
+      if (open[d.id]) d.open = true;
       var s = el('summary');
       var top = el('div', 'ev-top'); top.appendChild(el('span', 'ev-name', e.name));
       s.appendChild(top);
-      s.appendChild(el('span', 'ev-when', e.when));
+      var meta = el('div', 'ev-meta');
+      if (x.nx) {
+        var st = status(x.nx, now);
+        meta.appendChild(el('span', 'ev-next' + (st.live ? ' live' : ''), st.live ? 'Live now' : dLabel(ms(x.nx.start)) + ' · ' + st.text.replace('Starts in', 'in')));
+      } else if (x.rec) meta.appendChild(el('span', 'ev-next', 'Repeats'));
+      if (e.owner && e.owner === me) meta.appendChild(chip(me, 'You run this'));
+      meta.appendChild(el('span', 'ev-when', e.when));
+      s.appendChild(meta);
       d.appendChild(s);
       var b = el('div', 'ev-body');
-      function list(title, items) {
+      if (e.owner && roles[e.owner]) {
+        b.appendChild(el('p', 'ev-owner', e.owner === me
+          ? 'You run this event. Your jobs for it are in Your day and the 14 days.'
+          : 'Run by the ' + roleName(e.owner) + (nameOf(e.owner) ? ', ' + nameOf(e.owner) : '') + '. Ask them first.'));
+      }
+      function list2(t, items) {
         if (!items || !items.length) return;
-        b.appendChild(el('h4', null, title));
+        b.appendChild(el('h4', null, t));
         var ul = el('ul');
-        items.forEach(function (t) { ul.appendChild(el('li', null, t)); });
+        items.forEach(function (t2) { ul.appendChild(el('li', null, t2)); });
         b.appendChild(ul);
       }
-      list('What to know', e.know);
-      list('What to do', e.todo);
+      list2('What you do', e.todo);
+      list2('What to know', e.know);
       if (e.videos && e.videos.length) {
         b.appendChild(el('h4', null, 'Watch'));
         var v = el('div', 'vids');
-        e.videos.forEach(function (x) { var r = videoRow(x); if (r) v.appendChild(r); });
+        e.videos.forEach(function (y) { var r = videoRow(y); if (r) v.appendChild(r); });
         b.appendChild(v);
       }
       if (e.links && e.links.length) {
@@ -333,7 +518,6 @@
       d.appendChild(b);
       box.appendChild(d);
     });
-    openFromHash();
   }
 
   function openFromHash() {
@@ -342,6 +526,8 @@
     if (t) { t.open = true; t.scrollIntoView(); }
   }
   window.addEventListener('hashchange', openFromHash);
+
+  function renderPersonal() { renderMe(); renderToday(); renderGoals(); renderDays(); renderEvents(); renderOfficers(); }
 
   function renderTools() {
     var box = $('tool-list'); clear(box);
@@ -361,38 +547,24 @@
 
   function renderOfficers() {
     var box = $('role-list'); clear(box);
-    ROLE_ORDER.forEach(function (r) {
-      var R = roles[r]; if (!R || r === 'members') return;
-      var c = el('div', 'role'); c.setAttribute('data-role', r);
-      c.appendChild(el('h3', null, R.title));
+    var order = ROLE_ORDER.filter(function (r) { return r !== 'members'; });
+    if (me !== 'members') order = [me].concat(order.filter(function (r) { return r !== me; }));
+    order.forEach(function (r) {
+      var R = roles[r]; if (!R) return;
+      var c = el('div', 'role' + (r === me ? ' you' : '')); c.setAttribute('data-role', r);
+      var h = el('h3', null, R.title);
+      if (r === me) h.appendChild(el('span', 'yours', 'You'));
+      c.appendChild(h);
       c.appendChild(el('p', 'who', R.name ? R.name : 'Name to be added'));
       c.appendChild(el('div', null, R.owns));
       if (R.backup) c.appendChild(el('p', 'bk', 'Backup: ' + roleName(R.backup)));
       box.appendChild(c);
     });
-    var nb = $('notice-list'); clear(nb);
-    (week.notices || []).forEach(function (n) {
-      var c = el('div', 'notice'); c.setAttribute('data-role', n.owner);
-      var h = el('h4', null, n.title + ' · ');
-      h.appendChild(chip(n.owner));
-      c.appendChild(h);
-      var p = el('p', null, n.text);
-      c.appendChild(p);
-      var m = el('div', 'n-meta');
-      m.appendChild(el('span', null, n.text.length + ' characters' + (n.post ? ' · post ' + n.post : '')));
-      var btn = el('button', 'copy', 'Copy'); btn.type = 'button';
-      btn.addEventListener('click', function () {
-        function ok() { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy'; }, 1500); }
-        function fb() {
-          try { var r = document.createRange(); r.selectNodeContents(p); var s = getSelection(); s.removeAllRanges(); s.addRange(r); } catch (e) {}
-          btn.textContent = 'Selected – copy it'; setTimeout(function () { btn.textContent = 'Copy'; }, 2500);
-        }
-        try { navigator.clipboard.writeText(n.text).then(ok, fb); } catch (e) { fb(); }
-      });
-      m.appendChild(btn);
-      c.appendChild(m);
-      nb.appendChild(c);
-    });
+    var wrap = $('notices'), nb = $('notice-list'); clear(nb);
+    var ns = (week.notices || []).filter(function (n) { return me === 'leader' || n.owner === me; });
+    wrap.hidden = me === 'members' || !ns.length;
+    $('notices-h').textContent = me === 'leader' ? 'Notices to post this fortnight' : 'Your notices to post';
+    ns.forEach(function (n) { nb.appendChild(noticeCard(n)); });
   }
 
   function renderFoot() {
@@ -421,10 +593,11 @@
   tick(); setInterval(tick, 20000);
   Promise.all([load('data/week.json'), load('data/guides.json')]).then(function (res) {
     week = res[0]; guides = res[1]; roles = guides.roles;
-    var saved = pref('filter');
-    if (saved && (saved === 'all' || roles[saved])) filter = saved;
-    renderHead(); renderNext(); renderTimeline(); renderGoals();
-    setInterval(function () { renderNext(); }, 60000); renderPick(); renderDays(); renderEvents(); renderTools(); renderOfficers(); renderFoot();
+    var saved = pref('me');
+    if (saved && roles[saved]) me = saved;
+    renderHead(); renderNext(); renderTimeline(); renderPersonal(); renderTools(); renderFoot();
+    openFromHash();
+    setInterval(function () { renderNext(); }, 60000);
   }).catch(function (e) {
     $('stamp').textContent = 'The plan did not load. Refresh the page; if it keeps failing, tell an officer. (' + e.message + ')';
   });
