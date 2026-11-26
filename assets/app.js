@@ -484,6 +484,24 @@
     return best;
   }
 
+  /* Our alliance's own rules for an event, with a chat-ready copy. */
+  function oursBlock(O) {
+    var box = el('div', 'ours');
+    box.appendChild(el('h4', null, 'Our alliance rules'));
+    var ul = el('ul');
+    O.rules.forEach(function (r) { ul.appendChild(el('li', null, r)); });
+    box.appendChild(ul);
+    if (O.chat) {
+      var p = el('p', 'ours-chat', O.chat);
+      var m = el('div', 'n-meta');
+      m.appendChild(el('span', null, 'Chat version' + (O.by ? ' · by ' + O.by : '')));
+      m.appendChild(copyBtn(O.chat, p));
+      box.appendChild(p);
+      box.appendChild(m);
+    } else if (O.by) box.appendChild(el('p', 'plan-intro', 'By ' + O.by));
+    return box;
+  }
+
   /* An alliance battle plan inside a guide: pick your group, see only your steps. */
   function planBlock(e) {
     var P = e.plan, key = 'group-' + e.id;
@@ -583,6 +601,7 @@
         items.forEach(function (t2) { ul.appendChild(el('li', null, t2)); });
         b.appendChild(ul);
       }
+      if (e.ours) b.appendChild(oursBlock(e.ours));
       if (e.plan) b.appendChild(planBlock(e));
       list2('In short', e.know);
       list2('What you do', e.todo);
