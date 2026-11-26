@@ -62,7 +62,7 @@
         "The kingdom that wins prep attacks, and the castle fight happens in the loser's kingdom.",
         "Battle day: 10:00–12:00 open fighting, 12:00–17:00 King's Castle, 17:00–22:00 open fighting.",
         "Kills only score against cities within 3 Town Center levels of yours.",
-        "After 22:00 Field Triage opens for about two days. Each member sends 20 Rescue Orders and can receive 50."
+        "After 22:00 Field Triage opens and brings back up to 90% of lost troops. It has its own guide."
       ],
       "todo": [
         "Before prep: hold speedups, Truegold, roulette spins, hero shards, taming marks, forgehammers and widgets.",
@@ -70,7 +70,7 @@
         "Every prep day: spend on that day's theme and open all three daily chests.",
         "Can't play on battle day? Shield before 10:00 UTC with cover until 22:00.",
         "Battle day: join the rallies the War Lead calls, never march on the castle alone, heal in small batches.",
-        "At 22:00: open Field Triage and send all 20 Rescue Orders."
+        "At 22:00: open Field Triage (see its guide)."
       ],
       "videos": [
         {
@@ -105,6 +105,53 @@
         }
       ],
       "owner": "war"
+    },
+    {
+      "id": "triage",
+      "name": "Field Triage",
+      "when": "Right after the KvK battle: opens Sat 22:00 UTC, runs about two days",
+      "know": [
+        "It opens at 22:00 UTC the moment the KvK battle ends and runs about two days. The in-game timer is the truth.",
+        "It brings back troops lost in KvK. The system revives 30%, Rescue Orders from allies add up to 50% more, and Medical Satchels (gems) up to 10%. The most you get back is 90%.",
+        "Each member has 20 Rescue Orders to send and can receive up to 50. Each order adds 1% and costs nothing.",
+        "There are fewer orders to send than to receive, so we split them by plan, not first come, first served.",
+        "Troops lost beyond a full infirmary go to the Enlistment Office instead (70% back for Loyalty Points). Check both screens."
+      ],
+      "todo": [
+        "At 22:00 Saturday open Field Triage and see how many troops you can get back.",
+        "Send all 20 Rescue Orders the way the People Officer posts it, within the first 24 hours.",
+        "Collect your free orders first. Buy Medical Satchels only if you lost high-tier troops.",
+        "During the battle, heal in small batches so your infirmary never overflows."
+      ],
+      "videos": [
+        {
+          "title": "DON'T FREAK OUT after KVK losses! Field Triage – MUST WATCH",
+          "channel": "KingShotChronicles",
+          "url": "https://www.youtube.com/watch?v=3LLaJsCsxc4",
+          "year": 2025
+        },
+        {
+          "title": "You're NOT Losing All Your Troops in KvK – How Kingshot's Casualty System Really Works",
+          "channel": "BurgasGR",
+          "url": "https://www.youtube.com/watch?v=Rd8gK5bA-ss",
+          "year": 2025
+        }
+      ],
+      "links": [
+        {
+          "text": "Official revive breakdown",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/faq/8355-it-is-shown-that-90-of-my-troops-will-be-revived-but-why-are-my-actual-revived-troops-less-than-that/"
+        },
+        {
+          "text": "Field Triage guide",
+          "url": "https://kingshothandbook.com/guides/kvk-field-triage-guide"
+        },
+        {
+          "text": "KvK guide (recovery section)",
+          "url": "https://www.kingshotmastery.com/guides/kingshot-kingdom-of-power-guide"
+        }
+      ],
+      "owner": "people"
     },
     {
       "id": "castle",
@@ -751,6 +798,7 @@
   "confirm": [
     "Every date on this page. They come from a fan tracker, so check the in-game Events tab.",
     "Time slots on the registration screens, which can differ from what is listed here.",
-    "Castle hold time: official help says 2.5 hours; some fan sites still say 3."
+    "Castle hold time: official help says 2.5 hours; some fan sites still say 3.",
+    "Field Triage: can players outside the alliance send us Rescue Orders, and when exactly does it close?"
   ]
 }

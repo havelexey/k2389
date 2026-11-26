@@ -16,7 +16,7 @@ The site is static: `index.html` + `assets/` render two data files. Weekly work 
 ## Steps (Sunday run)
 
 1. Branch `weekly/<YYYY-MM-DD>` from `main`.
-2. Get the dates. Open https://www.kingshotguide.org/kingdom-rankings/2389 → **Events** tab (it renders client-side: use a real browser such as Playwright, `chromium.launch()`; plain curl returns a loading shell). Read every event from tomorrow (Monday) to the Sunday 13 days later. Note KvK phases, Castle Battle, Tri-Alliance, Swordland, Sanctuary, Championship, Vikings, Caesar's Fury, Mobilization, Brawl, and the smaller events.
+2. Get the dates. Open https://www.kingshotguide.org/kingdom-rankings/2389 → **Events** tab (it renders client-side: use a real browser such as Playwright, `chromium.launch()`; plain curl returns a loading shell). Read every event from tomorrow (Monday) to the Sunday 13 days later. Note KvK phases (Field Triage links to its own guide, `triage`), Castle Battle, Tri-Alliance, Swordland, Sanctuary, Championship, Vikings, Caesar's Fury, Mobilization, Brawl, and the smaller events.
    - Fallback if the tracker fails: https://www.kingshotguide.org/calendar (generic rotation; per-kingdom phase can shift Champagne Fair, Fishing, Mystic Divination, Call of the Sovereign by 14 days and Caesar's Fury by 7).
 3. Rewrite `data/week.json`:
    - `updated` = today, `next_update` = next Sunday, `window.start` = Monday, `window.end` = the Sunday 13 days later (two weeks; the second week can be lighter).
