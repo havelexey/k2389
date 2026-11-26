@@ -332,12 +332,13 @@
       "name": "Sanctuary Battle",
       "when": "Weekly: sign-up from Tuesday, battle on Friday",
       "know": [
-        "We fight for one Sanctuary and one Fortress on the kingdom map. Losses are 30% wounded, none dead.",
-        "Only members in the rally that clears the NPC garrison get the participation chest.",
-        "A contested building needs 30 minutes of unbroken control."
+        "We hold two Sanctuaries and no Fortress. Every building we hold is signed up again by itself for the next phase, so we defend both if another alliance attacks.",
+        "On top of that, each phase we can sign up for one more Sanctuary and one Fortress (R4 or R5 does it). Losses are 30% wounded, none dead.",
+        "When the battle starts, NPCs garrison the buildings again. Only members in the rally that clears them get the participation chest.",
+        "A contested building needs 30 minutes of unbroken control. Holding buildings earns season points."
       ],
       "todo": [
-        "Join the War Lead's NPC rally until it is full.",
+        "Join the War Lead's NPC rallies on our Sanctuaries until they are full.",
         "After the clear, garrison the building with infantry and cavalry."
       ],
       "videos": [

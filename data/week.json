@@ -339,7 +339,7 @@
         {
           "role": "members",
           "on": "Sanctuary Battle",
-          "text": "Join the Sanctuary NPC rally when it is called."
+          "text": "Join the NPC rallies on both our Sanctuaries when they are called."
         },
         {
           "role": "members",
@@ -349,7 +349,7 @@
         {
           "role": "war",
           "on": "Sanctuary Battle",
-          "text": "Lead the Sanctuary NPC rally with a full rally, then garrison at once."
+          "text": "Clear the NPCs on both our Sanctuaries with full rallies, then garrison both at once."
         },
         {
           "role": "events",
@@ -567,7 +567,7 @@
         {
           "role": "events",
           "on": "Sanctuary sign-up",
-          "text": "Sign up one Sanctuary and one Fortress for Friday. Pick 3 time slots."
+          "text": "Check both our Sanctuaries are signed up again for Friday. With the War Lead, decide whether to also sign up a Fortress (we hold none). Pick 3 time slots."
         }
       ]
     },
@@ -684,7 +684,7 @@
         {
           "role": "war",
           "on": "Sanctuary Battle",
-          "text": "Lead the Sanctuary rally."
+          "text": "Lead the rallies on both our Sanctuaries."
         },
         {
           "role": "war",
