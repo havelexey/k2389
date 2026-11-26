@@ -597,8 +597,13 @@
     if (saved && roles[saved]) me = saved;
     renderHead(); renderNext(); renderTimeline(); renderPersonal(); renderTools(); renderFoot();
     openFromHash();
+    try { sessionStorage.removeItem('k2389-reloaded'); } catch (x) {}
     setInterval(function () { renderNext(); }, 60000);
   }).catch(function (e) {
+    // Page and script from two different versions (a cached copy right after an update): reload once.
+    var again = false;
+    try { again = sessionStorage.getItem('k2389-reloaded') === '1'; sessionStorage.setItem('k2389-reloaded', '1'); } catch (x) { again = true; }
+    if (!again) { location.reload(); return; }
     $('stamp').textContent = 'The plan did not load. Refresh the page; if it keeps failing, tell an officer. (' + e.message + ')';
   });
 })();
