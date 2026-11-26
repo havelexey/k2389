@@ -229,3 +229,22 @@ details.ev[open] .ev-top::after{content:"\2212"}
 .ev-link{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--bg);border-radius:10px;padding:8px 12px;font-size:14px;font-weight:600;text-decoration:none}
 .ev-link::after{content:"\2197";font-weight:400;color:var(--muted)}
 .ev-link:hover{border-color:var(--accent)}
+
+/* Alliance battle plan inside a guide */
+.plan{border:1px solid var(--war);border-radius:12px;background:var(--war-tint);padding:12px 14px;display:flex;flex-direction:column;gap:8px;margin:4px 0 6px}
+.plan h4{color:var(--war)!important;margin:0!important}
+.plan-intro{margin:0;font-size:13.5px;color:var(--muted)}
+.plan-pick{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.plan-pick .me-k{margin-right:4px}
+.plan-pick button{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;font-weight:700;font-size:14px;color:var(--muted);min-width:44px}
+.plan-pick button[aria-pressed="true"]{background:var(--war);border-color:var(--war);color:#fff}
+.plan-grp{background:var(--surface);border-radius:10px;padding:8px 12px;font-size:13.5px;display:flex;flex-direction:column;margin-bottom:6px}
+.plan-grp b{font-size:14px}
+.plan-path{margin:10px 0 4px;font:700 15px/1.2 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--war)}
+.plan-step{display:grid;grid-template-columns:52px 1fr;gap:10px;background:var(--surface);border-radius:10px;padding:9px 12px;margin-bottom:6px;font-size:14px}
+.plan-step.in-path{margin-left:10px}
+.plan-step b{display:block;font-size:14px}
+.plan-step p{margin:3px 0 0}
+.plan-at{font:700 17px/1.1 var(--display);color:var(--war);font-variant-numeric:tabular-nums}
+.plan-who{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--war);margin-right:6px}
+.plan-rules{margin:4px 0 0;padding-left:20px;font-size:13.5px;display:flex;flex-direction:column;gap:4px}
