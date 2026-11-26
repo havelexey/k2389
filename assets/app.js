@@ -484,6 +484,62 @@
     return best;
   }
 
+  /* An alliance battle plan inside a guide: pick your group, see only your steps. */
+  function planBlock(e) {
+    var P = e.plan, key = 'group-' + e.id;
+    var box = el('div', 'plan');
+    box.appendChild(el('h4', null, 'Our battle plan'));
+    box.appendChild(el('p', 'plan-intro', (P.by ? 'Plan by ' + P.by + '. ' : '') + P.intro));
+    var pick = el('div', 'plan-pick'), body = el('div');
+    box.appendChild(pick); box.appendChild(body);
+    function draw() {
+      var g = pref(key) || 'all';
+      clear(pick); clear(body);
+      pick.appendChild(el('span', 'me-k', 'My group'));
+      P.groups.map(function (x) { return x.id; }).concat('all').forEach(function (id) {
+        var b = el('button', null, id === 'all' ? 'All' : id); b.type = 'button';
+        b.setAttribute('aria-pressed', g === id ? 'true' : 'false');
+        b.addEventListener('click', function () { pref(key, id); draw(); });
+        pick.appendChild(b);
+      });
+      P.groups.forEach(function (x) {
+        if (g !== 'all' && g !== x.id) return;
+        var c = el('div', 'plan-grp');
+        c.appendChild(el('b', null, 'Group ' + x.id + ' · ' + x.who));
+        c.appendChild(el('span', null, x.role));
+        body.appendChild(c);
+      });
+      var lastPath = null;
+      P.steps.forEach(function (st) {
+        var acts = Object.keys(st.do).filter(function (k) { return g === 'all' || k === g || k === 'all'; });
+        if (!acts.length) return;
+        if ((st.path || null) !== lastPath) {
+          lastPath = st.path || null;
+          if (lastPath) body.appendChild(el('p', 'plan-path', lastPath));
+        }
+        var row = el('div', 'plan-step' + (st.path ? ' in-path' : ''));
+        row.appendChild(el('span', 'plan-at', st.at));
+        var t = el('div');
+        t.appendChild(el('b', null, st.title));
+        acts.forEach(function (k) {
+          var line = el('p');
+          if (g === 'all' || k === 'all') line.appendChild(el('span', 'plan-who', k === 'all' ? 'Everyone' : 'Group ' + k));
+          line.appendChild(document.createTextNode(st.do[k]));
+          t.appendChild(line);
+        });
+        row.appendChild(t);
+        body.appendChild(row);
+      });
+      if (P.rules && P.rules.length) {
+        var ul = el('ul', 'plan-rules');
+        P.rules.forEach(function (r) { ul.appendChild(el('li', null, r)); });
+        body.appendChild(ul);
+      }
+    }
+    draw();
+    return box;
+  }
+
   function renderEvents() {
     var box = $('event-list');
     var open = {};
@@ -527,6 +583,7 @@
         items.forEach(function (t2) { ul.appendChild(el('li', null, t2)); });
         b.appendChild(ul);
       }
+      if (e.plan) b.appendChild(planBlock(e));
       list2('In short', e.know);
       list2('What you do', e.todo);
       list2('Get the most out of it', e.tips);
