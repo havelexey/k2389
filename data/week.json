@@ -466,6 +466,11 @@
         {
           "role": "members",
           "on": "Swordland Showdown battle",
+          "text": "Open the Swordland guide and read your group's steps (A, B or C by Town Center level)."
+        },
+        {
+          "role": "members",
+          "on": "Swordland Showdown battle",
           "text": "Empty your infirmary before Swordland."
         },
         {
@@ -476,7 +481,7 @@
         {
           "role": "war",
           "on": "Swordland Showdown battle",
-          "text": "Lead Swordland. Hold buildings; do not chase kills."
+          "text": "Run our Swordland battle plan. Call the phase changes and Plan A or Plan B in chat."
         },
         {
           "role": "ops",

@@ -73,6 +73,19 @@ for i, e in enumerate(guides.get("events", [])):
         for k in ("title", "channel"):
             if not v.get(k):
                 err(f"event {e.get('id')}: video missing {k}")
+for e in guides.get("events", []):
+    P = e.get("plan")
+    if not P:
+        continue
+    gids = {x.get("id") for x in P.get("groups", [])}
+    if not gids or not P.get("steps"):
+        err(f"event {e.get('id')}: plan needs groups and steps")
+    for st in P.get("steps", []):
+        if not st.get("at") or not st.get("title") or not st.get("do"):
+            err(f"event {e.get('id')}: plan step missing at/title/do")
+        for g in st.get("do", {}):
+            if g != "all" and g not in gids:
+                err(f"event {e.get('id')}: plan step {st.get('at')} names unknown group {g!r}")
 if not isinstance(guides.get("daily", []), list) or not all(isinstance(x, str) and x for x in guides.get("daily", [])):
     err("guides.daily must be a list of non-empty strings")
 for g in guides.get("tool_groups", []):

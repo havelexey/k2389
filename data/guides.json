@@ -373,7 +373,7 @@
       "todo": [
         "Answer the roll call if you can play Sunday.",
         "Empty your infirmary before you enter.",
-        "Hold buildings; do not chase kills."
+        "Find your group (A, B or C) in our battle plan below and follow its steps."
       ],
       "tips": [
         "Your personal reward tier depends on your own Relic Points, so keep scoring even if the match is lost.",
@@ -409,7 +409,136 @@
           "url": "https://www.kingshotguide.org/tools/swordland-showdown-planner"
         }
       ],
-      "owner": "war"
+      "owner": "war",
+      "plan": {
+        "by": "Bravo1Ghost",
+        "intro": "Times are minutes into the match. Your group follows your Town Center level, not your troop level.",
+        "groups": [
+          {
+            "id": "A",
+            "who": "Town Center 30 and above",
+            "role": "Core strike force and rally leaders"
+          },
+          {
+            "id": "B",
+            "who": "Town Center 28 and 29",
+            "role": "Heavy garrisons, counter-attackers and target scouts"
+          },
+          {
+            "id": "C",
+            "who": "Below Town Center 28",
+            "role": "Buff cappers, Mercenary Camp operators and late-game sweepers"
+          }
+        ],
+        "steps": [
+          {
+            "at": "00:00",
+            "title": "Phase 1: first captures and buffs",
+            "do": {
+              "A": "Capture nearby Sanctums for the first-occupation points, then fall back at once.",
+              "C": "Send fast marches to capture the nearest Royal Stables and Bell Tower."
+            }
+          },
+          {
+            "at": "12:00",
+            "title": "Phase 2: garrison",
+            "do": {
+              "A": "Enter empty quadrant buildings first to lock in the strongest defense stats. Type \"Held\" in chat.",
+              "B": "Fill the garrisons behind Group A until troop capacity is maxed.",
+              "C": "Fill the garrisons behind Group A until troop capacity is maxed."
+            }
+          },
+          {
+            "at": "15:00",
+            "title": "Mercenaries",
+            "do": {
+              "C": "Take and hold the Mercenary Camp. Keep firing its NPC strikes at enemy buildings."
+            }
+          },
+          {
+            "at": "25:00",
+            "title": "Town Center snipe",
+            "do": {
+              "A": "Teleport to the posted coordinates and solo-strike those Town Centers to burn them off and evict their troops.",
+              "B": "Scout for enemy Town Centers whose troops are out holding buildings. Post their coordinates in chat.",
+              "C": "Scout for enemy Town Centers whose troops are out holding buildings. Post their coordinates in chat."
+            }
+          },
+          {
+            "at": "30:00",
+            "path": "Plan A – the center Sanctum can be won",
+            "title": "Center push",
+            "do": {
+              "A": "Start a coordinated rally on the center Sanctum.",
+              "B": "Fill Group A's rally at once."
+            }
+          },
+          {
+            "at": "32:00",
+            "path": "Plan A – the center Sanctum can be won",
+            "title": "Secure the core",
+            "do": {
+              "A": "The moment it flips, occupy it first.",
+              "B": "Send all your remaining troops inside to max out the defense.",
+              "C": "Send all your remaining troops inside to max out the defense."
+            }
+          },
+          {
+            "at": "35:00",
+            "path": "Plan A – the center Sanctum can be won",
+            "title": "Perimeter defense",
+            "do": {
+              "C": "Hold the Mercenary Camp and strike enemy Town Centers that send marches at our Sanctum."
+            }
+          },
+          {
+            "at": "30:00",
+            "path": "Plan B – enemy whales lock the center",
+            "title": "Abandon the center",
+            "do": {
+              "all": "Leave the center Sanctum alone. Don't waste troops on it."
+            }
+          },
+          {
+            "at": "32:00",
+            "path": "Plan B – enemy whales lock the center",
+            "title": "Outer ring",
+            "do": {
+              "A": "Loop the outer ring and capture all four Abbeys to outscore the enemy.",
+              "B": "Loop the outer ring and capture all four Abbeys to outscore the enemy."
+            }
+          },
+          {
+            "at": "35:00",
+            "path": "Plan B – enemy whales lock the center",
+            "title": "Bleed them",
+            "do": {
+              "C": "Stay at the Mercenary Camp and keep striking the enemy Sanctum garrison."
+            }
+          },
+          {
+            "at": "45:00",
+            "title": "Phase 3: steal points and harvest",
+            "do": {
+              "A": "Rally weak enemy targets to drain 50% of their points.",
+              "B": "Fill Group A's rallies.",
+              "C": "Leave PvP. Use every march to mine Undercellars and collect Arsenal Loot Crates."
+            }
+          },
+          {
+            "at": "55:00",
+            "title": "Final lockdown",
+            "do": {
+              "all": "Put every healthy troop into your quadrant buildings and hold until the clock hits zero."
+            }
+          }
+        ],
+        "rules": [
+          "Every 15 minutes: if your infirmary hits 80%, don't type. Teleport to safety, leave the battlefield, wait out the 12-minute free heal and come back fresh. Healing with speedups instead is your choice.",
+          "Away for a while? Don't make risky attacks. Any attack on your own must be calculated.",
+          "This is our first organised plan. It will change as we learn."
+        ]
+      }
     },
     {
       "id": "sanctuary",
