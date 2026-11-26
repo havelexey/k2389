@@ -9,6 +9,7 @@ The site is static: `index.html` + `assets/` render two data files. Weekly work 
 
 - `data/week.json` – the plan: window, goals, rules for everyone, day-by-day calendar with tasks per role, notices.
 - `data/guides.json` – evergreen: roles (+ officer names), `daily` (the every-day checklist for all members), event guides (`know` = In short, `todo` = What you do, `tips` = Get the most out of it, `videos`, `links` = Full guides, optional `owner` = the officer role who runs it), tool groups, things to confirm in game.
+- `ours` (our alliance's rules for an event, with a `chat` copy) and `plan` (a battle plan by group) are written by Alex's officers. Never change or drop them in a weekly run; if research contradicts them, say so in the PR. Event `todo` must not contradict `ours`.
 - The page is person-centred: a reader picks "I am" (Member or an officer role) and sees today's to-do, the next 14 days, goals and notices for that role. So every task must make sense on its own, read by that one person.
 - `scripts/check.py` – the gate CI runs. Run it locally before every commit.
 - Merge to `main` = deploy to GitHub Pages (https://havelexey.github.io/k2389/). Never push to main directly; always a PR.

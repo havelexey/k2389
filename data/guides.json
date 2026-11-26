@@ -212,6 +212,17 @@
       "id": "bear",
       "name": "Bear Hunt",
       "when": "Every 2 days at the alliance's fixed hour",
+      "ours": {
+        "by": "Bravo1Ghost",
+        "rules": [
+          "Rally leader: use your best 3 heroes. No Diana and no blue heroes.",
+          "Rally leader: watch who joins and kick anyone with the wrong first hero.",
+          "Joiners: your FIRST hero must be Chenko, Amadeus, Yeonwoo or Amane. The other two can be any heroes.",
+          "Don't have any of those four? Send troops only, with no heroes.",
+          "Troops: archer-heavy, 10% infantry, 10% cavalry, 80% archers."
+        ],
+        "chat": "🐻 BEAR TRAP 🐻\nRally leader: best 3 heroes. No Diana, no blue heroes.\nJoiners: FIRST hero must be Chenko, Amadeus, Yeonwoo or Amane (+ any 2 heroes).\nNone of these 4? Send troops only, no heroes.\nTroops: 10% inf / 10% cav / 80% archers."
+      },
       "know": [
         "A 30-minute damage race with no troop losses. It pays forgehammers and hero gear chests.",
         "Only R4 and above can start it. You have a 46-hour personal cooldown across both traps, counted from the end of the hunt you joined.",
@@ -220,8 +231,7 @@
         "Leaving the alliance wipes your Bear Hunt ranking points, even if you rejoin."
       ],
       "todo": [
-        "Joiners: first-slot hero Chenko, Amadeus or Yeonwoo, then Amane or Margot.",
-        "Never put Jabel, Gordon, Edwin, Long Fei, Helga or Diana first. Join with no hero instead.",
+        "Follow our alliance rules above: the right first hero, or troops only.",
         "Troop mix: 10% infantry, 10% cavalry, 80% archers. Bring all troops home from gathering before the hunt starts.",
         "Donate Hunting Arrows until the Pitfall is level 5."
       ],
@@ -365,51 +375,6 @@
       "id": "swordland",
       "name": "Swordland Showdown",
       "when": "Every 2 weeks: vote, register, matchmaking, battle on Sunday",
-      "know": [
-        "A one-hour Legion against Legion battle, won on points from held buildings. Troops heal for free when you leave, and you can return after 12 minutes.",
-        "Points per minute: Swordshrine 1,800, Sanctum 1,200, Abbey 600. Kills only give personal points.",
-        "Alliance rewards follow Legion 1, so the most reliable players go there."
-      ],
-      "todo": [
-        "Answer the roll call if you can play Sunday.",
-        "Empty your infirmary before you enter.",
-        "Find your group (A, B or C) in our battle plan below and follow its steps."
-      ],
-      "tips": [
-        "Your personal reward tier depends on your own Relic Points, so keep scoring even if the match is lost.",
-        "The first capture of each building pays a one-time bonus on top of its points per minute. Be in the opening wave.",
-        "Attackers earn 80 personal points per 10,000 enemy power defeated, defenders 40. Pick off isolated enemy marches.",
-        "Loot the crates that drop when a building changes hands, and mine Undercellars in the last phase."
-      ],
-      "videos": [
-        {
-          "title": "Kingshot Swordland Showdown: Complete Guide, Strategies, and Tips to Maximize Rewards",
-          "channel": "wetcat",
-          "url": "https://www.youtube.com/watch?v=Gfrz-ZS0dAA",
-          "year": 2026
-        },
-        {
-          "title": "Ultimate Swordland Showdown Guide | Kingshot",
-          "channel": "Strat Game Sloth",
-          "url": "https://www.youtube.com/watch?v=_KffCiPI_HM",
-          "year": 2025
-        }
-      ],
-      "links": [
-        {
-          "text": "Official battlefield rules",
-          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/faq/9226-swordland-summit-league-battlefield-rules/"
-        },
-        {
-          "text": "Full guide (Kingshot Mastery)",
-          "url": "https://kingshotmastery.com/guides/swordland-showdown"
-        },
-        {
-          "text": "Swordland planner",
-          "url": "https://www.kingshotguide.org/tools/swordland-showdown-planner"
-        }
-      ],
-      "owner": "war",
       "plan": {
         "by": "Bravo1Ghost",
         "intro": "Times are minutes into the match. Your group follows your Town Center level, not your troop level.",
@@ -538,7 +503,52 @@
           "Away for a while? Don't make risky attacks. Any attack on your own must be calculated.",
           "This is our first organised plan. It will change as we learn."
         ]
-      }
+      },
+      "know": [
+        "A one-hour Legion against Legion battle, won on points from held buildings. Troops heal for free when you leave, and you can return after 12 minutes.",
+        "Points per minute: Swordshrine 1,800, Sanctum 1,200, Abbey 600. Kills only give personal points.",
+        "Alliance rewards follow Legion 1, so the most reliable players go there."
+      ],
+      "todo": [
+        "Answer the roll call if you can play Sunday.",
+        "Empty your infirmary before you enter.",
+        "Find your group (A, B or C) in our battle plan below and follow its steps."
+      ],
+      "tips": [
+        "Your personal reward tier depends on your own Relic Points, so keep scoring even if the match is lost.",
+        "The first capture of each building pays a one-time bonus on top of its points per minute. Be in the opening wave.",
+        "Attackers earn 80 personal points per 10,000 enemy power defeated, defenders 40. Pick off isolated enemy marches.",
+        "Loot the crates that drop when a building changes hands, and mine Undercellars in the last phase."
+      ],
+      "videos": [
+        {
+          "title": "Kingshot Swordland Showdown: Complete Guide, Strategies, and Tips to Maximize Rewards",
+          "channel": "wetcat",
+          "url": "https://www.youtube.com/watch?v=Gfrz-ZS0dAA",
+          "year": 2026
+        },
+        {
+          "title": "Ultimate Swordland Showdown Guide | Kingshot",
+          "channel": "Strat Game Sloth",
+          "url": "https://www.youtube.com/watch?v=_KffCiPI_HM",
+          "year": 2025
+        }
+      ],
+      "links": [
+        {
+          "text": "Official battlefield rules",
+          "url": "https://centurygames.helpshift.com/hc/en/140-kingshot/faq/9226-swordland-summit-league-battlefield-rules/"
+        },
+        {
+          "text": "Full guide (Kingshot Mastery)",
+          "url": "https://kingshotmastery.com/guides/swordland-showdown"
+        },
+        {
+          "text": "Swordland planner",
+          "url": "https://www.kingshotguide.org/tools/swordland-showdown-planner"
+        }
+      ],
+      "owner": "war"
     },
     {
       "id": "sanctuary",

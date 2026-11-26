@@ -74,6 +74,9 @@ for i, e in enumerate(guides.get("events", [])):
             if not v.get(k):
                 err(f"event {e.get('id')}: video missing {k}")
 for e in guides.get("events", []):
+    O = e.get("ours")
+    if O is not None and (not O.get("rules") or not all(isinstance(x, str) and x for x in O["rules"])):
+        err(f"event {e.get('id')}: ours.rules must be a list of non-empty strings")
     P = e.get("plan")
     if not P:
         continue
